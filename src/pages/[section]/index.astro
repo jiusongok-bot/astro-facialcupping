@@ -1,0 +1,50 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import Footer from "@/components/Footer.astro";
+import ArticleCard from "@/components/ArticleCard.astro";
+import SectionHeading from "@/components/SectionHeading.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import { sections } from "@/lib/content";
+
+export function getStaticPaths() {
+  return sections.map((section) => ({
+    params: { section: section.slug },
+    props: { section },
+  }));
+}
+
+const { section } = Astro.props;
+---
+
+<BaseLayout title={section.title} description={section.description}>
+  <Nav />
+  <main class="flex-1">
+    <div class="max-w-[1200px] mx-auto px-5 pt-10 pb-20">
+      <Breadcrumb items={[{ label: section.title, href: `/${section.slug}` }]} />
+
+      <!-- Section header -->
+      <div class="mt-8 mb-12">
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-forest">
+          {section.title}
+        </h1>
+        <p class="mt-4 text-lg text-muted max-w-[60ch] leading-relaxed">
+          {section.description}
+        </p>
+      </div>
+
+      <!-- Articles grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {section.articles.map((article: { slug: string; title: string; description: string }) => (
+          <ArticleCard
+            title={article.title}
+            description={article.description}
+            href={`/${section.slug}/${article.slug}`}
+            tag={section.title}
+          />
+        ))}
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

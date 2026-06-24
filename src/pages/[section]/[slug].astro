@@ -1,0 +1,100 @@
+---
+import ArticleLayout from "@/layouts/ArticleLayout.astro";
+import { sections } from "@/lib/content";
+
+export function getStaticPaths() {
+  const paths: { params: { section: string; slug: string }; props: { article: typeof sections[0]["articles"][0]; sectionTitle: string; sectionSlug: string; relatedArticles: typeof sections[0]["articles"] } }[] = [];
+
+  for (const section of sections) {
+    for (const article of section.articles) {
+      paths.push({
+        params: { section: section.slug, slug: article.slug },
+        props: {
+          article,
+          sectionTitle: section.title,
+          sectionSlug: section.slug,
+          relatedArticles: section.articles.filter((a) => a.slug !== article.slug).slice(0, 3),
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { article, sectionTitle, sectionSlug, relatedArticles } = Astro.props;
+
+// Convert markdown-like content to HTML
+function renderContent(text: string): string {
+  return text
+    .split("\n\n")
+    .map((block) => {
+      const trimmed = block.trim();
+      if (trimmed.startsWith("## ")) {
+        return `<h2>${trimmed.slice(3)}</h2>`;
+      }
+      if (trimmed.startsWith("### ")) {
+        return `<h3>${trimmed.slice(4)}</h3>`;
+      }
+      // Handle lists
+      if (trimmed.startsWith("- ")) {
+        const items = trimmed
+          .split("\n")
+          .filter((l) => l.trim().startsWith("- "))
+          .map((l) => {
+            let content = l.trim().slice(2);
+            // Handle bold
+            content = content.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+            return `<li>${content}</li>`;
+          })
+          .join("");
+        return `<ul>${items}</ul>`;
+      }
+      // Handle numbered lists
+      if (/^\d+\.\s/.test(trimmed)) {
+        const items = trimmed
+          .split("\n")
+          .filter((l) => /^\d+\.\s/.test(l.trim()))
+          .map((l) => {
+            const content = l.trim().replace(/^\d+\.\s/, "");
+            return `<li>${content}</li>`;
+          })
+          .join("");
+        return `<ol class="list-decimal pl-5 space-y-2 mb-5 text-muted">${items}</ol>`;
+      }
+      // Regular paragraph
+      let content = trimmed.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+      return `<p>${content}</p>`;
+    })
+    .join("\n");
+}
+---
+
+<ArticleLayout
+  title={article.title}
+  description={article.description}
+  breadcrumbs={[
+    { label: sectionTitle, href: `/${sectionSlug}` },
+    { label: article.title, href: `/${sectionSlug}/${article.slug}` },
+  ]}
+>
+  <Fragment set:html={renderContent(article.content)} />
+
+  <!-- Related articles -->
+  {relatedArticles.length > 0 && (
+    <div class="mt-16 pt-10 border-t border-border">
+      <h2 class="text-xl font-semibold text-forest mb-6">Related in {sectionTitle}</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {relatedArticles.map((related: { slug: string; title: string; description: string }) => (
+          <a
+            href={`/${sectionSlug}/${related.slug}`}
+            class="block p-4 rounded-[var(--radius-card)] border border-border hover:border-forest/30 transition-colors"
+          >
+            <h3 class="text-sm font-semibold text-forest mb-1">{related.title}</h3>
+            <p class="text-xs text-muted line-clamp-2">{related.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+</ArticleLayout>

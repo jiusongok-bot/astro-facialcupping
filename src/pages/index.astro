@@ -1,0 +1,298 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import Footer from "@/components/Footer.astro";
+import TopicCard from "@/components/TopicCard.astro";
+import ArticleCard from "@/components/ArticleCard.astro";
+import SectionHeading from "@/components/SectionHeading.astro";
+
+const topics = [
+  {
+    title: "Learn",
+    description: "What facial cupping is, how it works, and its rich history spanning thousands of years.",
+    href: "/learn",
+    icon: "01",
+    featured: true,
+  },
+  {
+    title: "Benefits",
+    description: "From reducing wrinkles to improving lymphatic drainage and circulation.",
+    href: "/benefits",
+    icon: "02",
+  },
+  {
+    title: "How To",
+    description: "Step-by-step guides, daily routines and technique library for every skill level.",
+    href: "/how-to",
+    icon: "03",
+  },
+  {
+    title: "Safety",
+    description: "Evidence-based safety guidelines, side effects and contraindications.",
+    href: "/safety",
+    icon: "04",
+  },
+  {
+    title: "Tools",
+    description: "Compare the best facial cupping sets, silicone cups and recommended oils.",
+    href: "/tools",
+    icon: "05",
+  },
+  {
+    title: "Research",
+    description: "Before and after results, clinical evidence and expert opinions reviewed.",
+    href: "/research",
+    icon: "06",
+  },
+];
+
+const popularGuides = [
+  {
+    title: "What Is Facial Cupping?",
+    description: "A comprehensive guide to the ancient practice of facial cupping therapy, its origins, and how it differs from body cupping.",
+    href: "/learn/what-is",
+    image: "https://picsum.photos/seed/facial-cupping-intro/600/380",
+    tag: "Learn",
+  },
+  {
+    title: "Facial Cupping Benefits",
+    description: "Discover the science-backed benefits including reduced puffiness, improved circulation and a more youthful appearance.",
+    href: "/benefits/overview",
+    image: "https://picsum.photos/seed/facial-benefits/600/380",
+    tag: "Benefits",
+  },
+  {
+    title: "How To Do Facial Cupping",
+    description: "A beginner-friendly tutorial covering everything from preparation to technique, with common mistakes to avoid.",
+    href: "/how-to/beginner",
+    image: "https://picsum.photos/seed/facial-howto/600/380",
+    tag: "How To",
+  },
+  {
+    title: "Does Facial Cupping Work?",
+    description: "An honest look at the clinical evidence, expert opinions, and what the research actually says about facial cupping.",
+    href: "/safety/does-it-work",
+    image: "https://picsum.photos/seed/facial-research/600/380",
+    tag: "Research",
+  },
+];
+
+const tools = [
+  {
+    name: "GlowCup Pro Set",
+    category: "Best Overall",
+    description: "Medical-grade silicone cups designed for facial contours.",
+    href: "/tools/best-sets",
+  },
+  {
+    name: "Facial Cupping Oil Guide",
+    category: "Essential",
+    description: "The right oils make a significant difference in glide and results.",
+    href: "/tools/oils",
+  },
+  {
+    name: "Silicone vs Glass Cups",
+    category: "Comparison",
+    description: "Material matters: which type is safer and more effective for facial use.",
+    href: "/tools/silicone",
+  },
+];
+
+const researchArticles = [
+  {
+    title: "Facial Cupping and Lymphatic Drainage: What the Evidence Shows",
+    date: "June 2026",
+    href: "/research/evidence",
+  },
+  {
+    title: "Cupping Therapy for Skin Rejuvenation: A Research Review",
+    date: "May 2026",
+    href: "/research/studies",
+  },
+  {
+    title: "Expert Panel: Dermatologists Weigh In on Facial Cupping",
+    date: "April 2026",
+    href: "/research/experts",
+  },
+];
+---
+
+<BaseLayout title="Home">
+  <Nav />
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="max-w-[1200px] mx-auto px-5 pt-16 pb-20 md:pt-20 md:pb-28">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-forest leading-[1.08]">
+              Facial Cupping,<br />Explained.
+            </h1>
+            <p class="mt-5 text-lg text-muted max-w-[50ch] leading-relaxed">
+              Learn the benefits, techniques, safety considerations and tools used in facial cupping.
+            </p>
+            <div class="mt-8">
+              <a
+                href="/learn"
+                class="inline-flex items-center gap-2 px-6 py-3 bg-forest text-bone text-sm font-semibold rounded-[var(--radius-btn)] hover:bg-forest-light transition-colors active:-translate-y-[1px]"
+              >
+                Learn Facial Cupping
+              </a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="aspect-[4/3] rounded-[var(--radius-card)] overflow-hidden bg-sage">
+              <img
+                src="https://picsum.photos/seed/facial-cupping-hero/800/600"
+                alt="Facial cupping therapy illustration"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="absolute -bottom-4 -left-4 w-24 h-24 rounded-[var(--radius-card)] bg-amber/10 border border-amber/20 -z-10" />
+          </div>
+        </div>
+      </div>
+      <!-- Decorative gradient -->
+      <div class="absolute top-0 right-0 w-[40%] h-full bg-gradient-to-l from-sage/50 to-transparent -z-20 pointer-events-none" />
+    </section>
+
+    <!-- Topic Hub -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="max-w-[1200px] mx-auto px-5">
+        <SectionHeading
+          title="Explore Facial Cupping"
+          subtitle="Everything you need to know, organized by topic."
+        />
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {topics.map((topic) => (
+            <TopicCard
+              title={topic.title}
+              description={topic.description}
+              href={topic.href}
+              icon={topic.icon}
+              featured={topic.featured}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Popular Guides -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-[1200px] mx-auto px-5">
+        <SectionHeading
+          title="Most Popular Guides"
+          subtitle="The guides our readers visit most."
+          href="/learn"
+          hrefLabel="All guides"
+        />
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {popularGuides.map((guide) => (
+            <ArticleCard
+              title={guide.title}
+              description={guide.description}
+              href={guide.href}
+              image={guide.image}
+              tag={guide.tag}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Before & After -->
+    <section class="py-16 md:py-24 bg-sage">
+      <div class="max-w-[1200px] mx-auto px-5">
+        <SectionHeading
+          title="Before & After"
+          subtitle="Real results from consistent facial cupping practice."
+          href="/research/before-after"
+          hrefLabel="See all results"
+        />
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[1, 2, 3, 4].map((i) => (
+            <div class="aspect-[3/4] rounded-[var(--radius-card)] overflow-hidden bg-white border border-border">
+              <img
+                src={`https://picsum.photos/seed/before-after-${i}/400/530`}
+                alt={`Before and after facial cupping result ${i}`}
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Tool Recommendations -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-[1200px] mx-auto px-5">
+        <SectionHeading
+          title="Tool Recommendations"
+          subtitle="Independently evaluated facial cupping tools and accessories."
+          href="/tools"
+          hrefLabel="All tools"
+        />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {tools.map((tool) => (
+            <a
+              href={tool.href}
+              class="group block rounded-[var(--radius-card)] border border-border bg-white p-6 hover:border-forest/30 hover:shadow-md transition-all active:-translate-y-[1px]"
+            >
+              <span class="text-xs font-medium text-amber uppercase tracking-wider">
+                {tool.category}
+              </span>
+              <h3 class="text-lg font-semibold text-forest mt-2 mb-2 group-hover:text-forest-light transition-colors">
+                {tool.name}
+              </h3>
+              <p class="text-sm text-muted leading-relaxed">
+                {tool.description}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Research -->
+    <section class="py-16 md:py-24 bg-forest text-bone">
+      <div class="max-w-[1200px] mx-auto px-5">
+        <div class="flex items-end justify-between mb-8">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-bone">
+              Latest Research
+            </h2>
+            <p class="mt-2 text-bone/60 max-w-[55ch]">
+              Evidence-based reviews of facial cupping science and clinical findings.
+            </p>
+          </div>
+          <a
+            href="/research"
+            class="hidden sm:inline-block text-sm font-medium text-amber-light hover:text-amber transition-colors shrink-0 ml-4"
+          >
+            All research &rarr;
+          </a>
+        </div>
+        <div class="divide-y divide-bone/10">
+          {researchArticles.map((article) => (
+            <a
+              href={article.href}
+              class="group flex items-center justify-between py-5 hover:pl-2 transition-all"
+            >
+              <div>
+                <h3 class="text-base font-medium text-bone group-hover:text-amber-light transition-colors">
+                  {article.title}
+                </h3>
+                <span class="text-sm text-bone/40 mt-1">{article.date}</span>
+              </div>
+              <span class="text-amber/60 group-hover:text-amber group-hover:translate-x-1 transition-all text-lg">
+                &rarr;
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

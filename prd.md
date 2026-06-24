@@ -470,50 +470,6 @@ Does Facial Cupping Work
 
 ---
 
-# Astro目录结构
-
-```text
-src/
-
-content/
-
-learn/
-
-benefits/
-
-how-to/
-
-safety/
-
-tools/
-
-research/
-
-glowcup/
-
-pages/
-
-learn/
-
-benefits/
-
-how-to/
-
-safety/
-
-tools/
-
-research/
-
-glowcup/
-
-components/
-
-layouts/
-```
-
----
-
 # 首页权重分配
 
 按照 SEMrush 数据：

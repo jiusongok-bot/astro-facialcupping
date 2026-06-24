@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  icon: string;
+  featured?: boolean;
+}
+
+const { title, description, href, icon, featured = false } = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    "group block rounded-[var(--radius-card)] border border-border p-6 transition-all hover:border-forest/30 hover:shadow-md active:-translate-y-[1px]",
+    featured ? "bg-forest text-bone border-forest hover:border-forest-light hover:shadow-forest/10" : "bg-white hover:bg-sage/30",
+  ]}
+>
+  <span class="text-2xl mb-3 block" aria-hidden="true">{icon}</span>
+  <h3 class:list={[
+    "text-lg font-semibold mb-2",
+    featured ? "text-bone" : "text-forest",
+  ]}>
+    {title}
+  </h3>
+  <p class:list={[
+    "text-sm leading-relaxed",
+    featured ? "text-bone/70" : "text-muted",
+  ]}>
+    {description}
+  </p>
+  <span class:list={[
+    "inline-block mt-4 text-sm font-medium transition-colors",
+    featured ? "text-amber-light group-hover:text-amber" : "text-amber group-hover:text-forest",
+  ]}>
+    Explore &rarr;
+  </span>
+</a>
