@@ -1,5 +1,5 @@
 ---
 title: "Safety"
-description: "Evidence-based safety information about facial cupping, including side effects and contraindications."
+description: "Evidence-based safety guidelines for facial cupping — understand potential side effects, contraindications, daily use limits, and whether it actually works. All information reviewed for accuracy."
 order: 4
 ---

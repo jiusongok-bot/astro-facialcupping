@@ -1,5 +1,5 @@
 ---
-title: "Editorial Guidelines"
+title: "FacialCupping.com Editorial Guidelines"
 description: "The standards that govern all content on FacialCupping.com."
 section: "about"
 ---

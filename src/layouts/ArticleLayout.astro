@@ -9,9 +9,12 @@ interface Props {
   description?: string;
   ogImage?: string;
   breadcrumbs: { label: string; href: string }[];
+  author?: string;
+  datePublished?: string;
+  dateUpdated?: string;
 }
 
-const { title, description, ogImage, breadcrumbs } = Astro.props;
+const { title, description, ogImage, breadcrumbs, author, datePublished, dateUpdated } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} ogImage={ogImage}>
@@ -23,6 +26,19 @@ const { title, description, ogImage, breadcrumbs } = Astro.props;
         <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-forest leading-tight">
           {title}
         </h1>
+        <div class="flex flex-wrap items-center gap-3 mt-4 text-sm text-muted">
+          {author && <span class="font-medium text-forest">{author}</span>}
+          {datePublished && (
+            <time datetime={datePublished} class="text-muted">
+              {new Date(datePublished).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+            </time>
+          )}
+          {dateUpdated && dateUpdated !== datePublished && (
+            <span class="text-muted/60">
+              (Updated {new Date(dateUpdated).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })})
+            </span>
+          )}
+        </div>
         <div class="mt-8 prose-content">
           <slot />
         </div>

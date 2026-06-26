@@ -22,6 +22,9 @@ const articles = defineCollection({
     description: z.string(),
     section: z.string(),
     published: z.boolean().default(true),
+    author: z.string().default("FacialCupping.com Team"),
+    datePublished: z.string().default("2026-01-01"),
+    dateUpdated: z.string().optional(),
   }),
 });
 

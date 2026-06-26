@@ -56,6 +56,9 @@ const articleURL = `https://facialcupping.com/${sectionSlug}/${articleSlug}`;
   title={entry.data.title}
   description={entry.data.description}
   ogImage={ogImage}
+  author={entry.data.author}
+  datePublished={entry.data.datePublished}
+  dateUpdated={entry.data.dateUpdated}
   breadcrumbs={[
     { label: sectionTitle, href: `/${sectionSlug}` },
     { label: entry.data.title, href: `/${sectionSlug}/${entry.id.split("/")[1]}` },
@@ -73,9 +76,19 @@ const articleURL = `https://facialcupping.com/${sectionSlug}/${articleSlug}`;
     description: entry.data.description,
     url: articleURL,
     image: ogImage ? `https://facialcupping.com${ogImage}` : undefined,
-    isPartOf: {
+    author: {
+      "@type": "Person",
+      name: entry.data.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "FacialCupping.com",
+    },
+    datePublished: entry.data.datePublished,
+    dateModified: entry.data.dateUpdated || entry.data.datePublished,
+    mainEntityOfPage: {
       "@type": "WebPage",
-      url: articleURL,
+      "@id": articleURL,
     },
   })} />
 

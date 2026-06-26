@@ -1,5 +1,5 @@
 ---
 title: "GlowCup"
-description: "The brand behind FacialCupping.com — our story, philosophy, and standards."
+description: "Meet GlowCup — our philosophy on premium facial cupping, rigorous product standards, partnership opportunities, brand story, and contact information for inquiries and collaboration."
 order: 9
 ---

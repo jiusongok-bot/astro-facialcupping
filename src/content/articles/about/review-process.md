@@ -1,5 +1,5 @@
 ---
-title: "How We Review Content"
+title: "How We Review Facial Cupping Content"
 description: "Our content review and fact-checking process."
 section: "about"
 ---

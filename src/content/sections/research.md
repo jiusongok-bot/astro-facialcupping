@@ -1,5 +1,5 @@
 ---
 title: "Research"
-description: "Evidence-based reviews and analysis of facial cupping science."
+description: "Explore the clinical evidence behind facial cupping — systematic research reviews, published studies, before and after results, expert opinions from dermatologists, and realistic results timelines."
 order: 6
 ---

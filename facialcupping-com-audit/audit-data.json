@@ -1,0 +1,370 @@
+{
+  "summary": {
+    "health_score": 73,
+    "business_type": "Content / Affiliate Resource Center",
+    "domain": "facialcupping.com",
+    "total_pages_crawled": 61,
+    "top_findings": [
+      "Missing author bylines and dates on articles hurts E-E-A-T",
+      "All images use PNG format — should convert to WebP for performance",
+      "Article schema missing author, datePublished, publisher fields",
+      "No FAQ/HowTo schema on relevant articles (missed rich result opportunities)",
+      "No robots meta tags for indexation control",
+      "Homepage title 'Home | FacialCupping.com' is suboptimal for SEO",
+      "Some articles are thin content (~150-300 words)",
+      "No llms.txt for AI crawler discoverability"
+    ],
+    "quick_wins": [
+      "Add author bylines and publish dates to article pages",
+      "Convert PNG images to WebP format with proper dimensions",
+      "Add FAQ schema to FAQ articles for rich results",
+      "Improve homepage title tag to be more descriptive",
+      "Add BreadcrumbList structured data site-wide",
+      "Create a custom 404 page"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 85,
+      "weight": 22,
+      "what_works": [
+        "Sitemap generated automatically with all 61 pages",
+        "robots.txt properly configured allowing all crawlers",
+        "Canonical URLs present on every page via BaseLayout",
+        "Clean URL structure with logical hierarchy (/section/slug)",
+        "HTML lang='en' attribute set correctly on all pages",
+        "Static site generation (SSG) — fast, no server rendering overhead",
+        "HTTPS-ready with SSL configuration in site URL",
+        "Viewport meta tag present for mobile responsiveness"
+      ],
+      "findings": [
+        {
+          "title": "No robots meta tags for per-page indexation control",
+          "severity": "Medium",
+          "description": "No page has a meta robots tag. While the site is fully indexable, this prevents controlling indexation of specific pages (e.g., thin content pages, tag pages).",
+          "recommendation": "Add meta robots tags to BaseLayout with configurable noindex/nofollow per page."
+        },
+        {
+          "title": "No custom 404 page",
+          "severity": "Medium",
+          "description": "The site relies on the default Astro 404 page. A custom 404 improves user experience and can guide lost traffic back to relevant content.",
+          "recommendation": "Create a custom 404.astro page with search, popular links, and navigation."
+        },
+        {
+          "title": "No hreflang tags (minor — single language site)",
+          "severity": "Info",
+          "description": "Site serves only English content. No hreflang needed, but self-referencing hreflang is a best practice.",
+          "recommendation": "Add self-referencing hreflang tag 'en' to all pages for completeness."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 70,
+      "weight": 23,
+      "what_works": [
+        "Original, well-researched content across 52 articles",
+        "Clear topical organization across 10 content sections",
+        "E-E-A-T signals present: editorial guidelines, review process, about page",
+        "Evidence-based approach with references to research and expert opinions",
+        "Good breadth of coverage: learn, benefits, how-to, safety, tools, comparisons"
+      ],
+      "findings": [
+        {
+          "title": "No author bylines on any article",
+          "severity": "High",
+          "description": "Articles lack author attribution, which is a critical E-E-A-T signal for Google's content quality assessment.",
+          "recommendation": "Add author frontmatter field to articles and display author name, bio, and link on each article page."
+        },
+        {
+          "title": "No publish or last-updated dates on articles",
+          "severity": "High",
+          "description": "Google uses publish and update dates as freshness signals. Only the research section lists dates in the homepage display.",
+          "recommendation": "Add date and lastUpdated frontmatter to all articles and display them prominently in ArticleLayout."
+        },
+        {
+          "title": "Several articles have thin content (< 300 words)",
+          "severity": "Medium",
+          "description": "Articles like benefits/wrinkles.md and benefits/jawline.md are approximately 150-200 words of body content.",
+          "recommendation": "Expand thin articles to at least 500 words with more detailed guidance, examples, and citations."
+        },
+        {
+          "title": "Section landing pages lack substantive content",
+          "severity": "Medium",
+          "description": "Section pages (e.g., /benefits/, /safety/) only list article cards with no introductory content about the section itself.",
+          "recommendation": "Add 100-200 word introductory content above the article grid on each section landing page."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 80,
+      "weight": 20,
+      "what_works": [
+        "Title tags follow consistent '<Page> | FacialCupping.com' pattern",
+        "Meta descriptions present on every page from Markdown frontmatter",
+        "H1 headings present on all pages with clear, descriptive text",
+        "Good heading hierarchy (h1 → h2 → h3) throughout",
+        "Semantic HTML5 elements (header, nav, main, footer, article)",
+        "Breadcrumb navigation on section and article pages",
+        "Alt text on all hero/decorative images"
+      ],
+      "findings": [
+        {
+          "title": "Homepage title 'Home | FacialCupping.com' is suboptimal",
+          "severity": "Medium",
+          "description": "The homepage title tag is 'Home | FacialCupping.com' which provides minimal keyword relevance and doesn't describe the site's value proposition.",
+          "recommendation": "Change to 'Facial Cupping Resource: Benefits, Techniques, Safety & Tools | FacialCupping.com'"
+        },
+        {
+          "title": "Homepage meta description is generic",
+          "severity": "Low",
+          "description": "Description reads 'The Facial Cupping Resource Center — learn benefits, techniques, safety and tools.' Could be more compelling.",
+          "recommendation": "Write a more benefit-driven meta description targeting relevant search intents."
+        },
+        {
+          "title": "No Open Graph image on homepage",
+          "severity": "Medium",
+          "description": "Homepage does not pass ogImage prop, so no OG image is set. This impacts social sharing appearance.",
+          "recommendation": "Set a default OG image in BaseLayout and pass it explicitly on the homepage."
+        },
+        {
+          "title": "Twitter cards lack image on all pages",
+          "severity": "Medium",
+          "description": "BaseLayout sets twitter:title and twitter:description but never a twitter:image tag.",
+          "recommendation": "Add twitter:image meta tag using the same ogImage value for consistency."
+        },
+        {
+          "title": "Section image mapping error: 'tools' points to research.png",
+          "severity": "Low",
+          "description": "In [section]/index.astro, the 'tools' section is mapped to '/images/research.png' instead of a tools-specific image.",
+          "recommendation": "Create a dedicated tools.png image and update the mapping."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 55,
+      "weight": 10,
+      "what_works": [
+        "WebSite schema (JSON-LD) on all pages via BaseLayout",
+        "Article schema (JSON-LD) on each article page via [slug].astro",
+        "Valid JSON-LD syntax throughout"
+      ],
+      "findings": [
+        {
+          "title": "Article schema missing required and recommended fields",
+          "severity": "High",
+          "description": "Article schema lacks author, datePublished, dateModified, and publisher fields. This prevents eligibility for Google's rich results (Top Stories, rich snippets).",
+          "recommendation": "Add author, datePublished, dateModified, and publisher (Organization) to the Article JSON-LD."
+        },
+        {
+          "title": "Missing BreadcrumbList schema",
+          "severity": "Medium",
+          "description": "Breadcrumb navigation is rendered in HTML but no structured data is provided. BreadcrumbList schema can enable breadcrumb rich results in SERPs.",
+          "recommendation": "Add BreadcrumbList JSON-LD to BaseLayout or ArticleLayout using current breadcrumb data."
+        },
+        {
+          "title": "No FAQ schema on FAQ articles",
+          "severity": "Medium",
+          "description": "Articles like /learn/faq and /safety/faq contain Q&A content but lack FAQPage schema, missing eligibility for FAQ rich results.",
+          "recommendation": "Add FAQPage schema to FAQ-formatted articles with question/answer pairs."
+        },
+        {
+          "title": "No HowTo schema on technique/tutorial articles",
+          "severity": "Medium",
+          "description": "Articles like /how-to/beginner and /how-to/techniques contain step-by-step instructions but lack HowTo schema.",
+          "recommendation": "Add HowTo schema with steps, tools, and time estimates to tutorial articles."
+        },
+        {
+          "title": "No Organization or AboutPage schema",
+          "severity": "Low",
+          "description": "The site lacks Organization schema which could improve brand visibility in knowledge panels.",
+          "recommendation": "Add Organization schema with logo, social links, and contact info to the site."
+        },
+        {
+          "title": "WebSite schema lacks search action",
+          "severity": "Low",
+          "description": "WebSite schema does not include potentialAction for site search. Enables Sitelinks Search Box in SERPs.",
+          "recommendation": "Add SearchAction to the WebSite schema with target URL and query parameter."
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 75,
+      "weight": 10,
+      "what_works": [
+        "Static site generation ensures fast Time to First Byte (TTFB)",
+        "Minimal JavaScript — only MobileMenu component uses React hydration",
+        "CSS is scoped and optimized via Astro/Vite build pipeline",
+        "Tailwind CSS v4 with JIT compilation produces minimal CSS bundles",
+        "Images use lazy loading on non-hero sections",
+        "No heavy third-party scripts (analytics, trackers, ads)"
+      ],
+      "findings": [
+        {
+          "title": "All images in PNG format — no WebP or AVIF",
+          "severity": "High",
+          "description": "All 7 public images and 19 article images are PNG or JPG. No WebP or AVIF versions exist. PNG files are significantly larger than modern formats.",
+          "recommendation": "Convert all images to WebP format with responsive srcsets. Provide PNG fallbacks for older browsers."
+        },
+        {
+          "title": "Images lack explicit width and height attributes",
+          "severity": "Medium",
+          "description": "No images have width/height attributes set in HTML, which can cause Cumulative Layout Shift (CLS) as images load.",
+          "recommendation": "Add explicit width and height attributes to all img tags, or use CSS aspect-ratio boxes."
+        },
+        {
+          "title": "No resource hints (preload/preconnect) for critical resources",
+          "severity": "Medium",
+          "description": "No preload or preconnect hints for fonts, hero images, or critical CSS. This delays rendering of above-fold content.",
+          "recommendation": "Preload the hero image and preconnect to font sources. Preload the primary CSS bundle."
+        },
+        {
+          "title": "Font loading may block render",
+          "severity": "Low",
+          "description": "Outfit font is loaded via @fontsource CSS import which triggers a font download. With swap strategy this is acceptable but could be optimized.",
+          "recommendation": "Ensure font-display: swap is active. Consider preloading the woff2 files for faster first paint."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness (GEO)",
+      "score": 70,
+      "weight": 10,
+      "what_works": [
+        "Content is well-structured with clear headings and hierarchy",
+        "Article-level descriptions available in frontmatter",
+        "Schema.org Article markup present (though incomplete)",
+        "Clean, semantic HTML structure throughout",
+        "Content organized into clear topical categories"
+      ],
+      "findings": [
+        {
+          "title": "No llms.txt file for AI crawler guidance",
+          "severity": "Medium",
+          "description": "llms.txt is a standard way to help AI crawlers (ChatGPT, Perplexity, etc.) understand site structure. Missing entirely.",
+          "recommendation": "Create /llms.txt with site summary, key page links, and content overview for AI consumption."
+        },
+        {
+          "title": "Article schema missing fields that AI crawlers use for citation",
+          "severity": "Medium",
+          "description": "AI models use schema fields like author, datePublished, and description when citing sources. Missing fields reduce citability.",
+          "recommendation": "Complete the Article schema with all recommended fields to increase chances of AI citation."
+        },
+        {
+          "title": "Passage-level content could be better structured for AI extraction",
+          "severity": "Low",
+          "description": "Longer articles lack explicit section summaries or key-takeaway boxes that AI crawlers can easily extract for featured snippets.",
+          "recommendation": "Add 'Key Takeaways' or summary sections to major articles. Use <section> elements with clear headings."
+        },
+        {
+          "title": "No brand mention signals or external authority amplification",
+          "severity": "Low",
+          "description": "The site does not have prominent author bios with links to external profiles (Google Scholar, LinkedIn, etc.) that establish expertise.",
+          "recommendation": "Add author pages with credentials, links to professional profiles, and publication history."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 55,
+      "weight": 5,
+      "what_works": [
+        "Alt text present on almost all images",
+        "Decorative images correctly use empty alt attribute",
+        "Consistent aspect ratio handling via CSS classes",
+        "Lazy loading on non-critical images"
+      ],
+      "findings": [
+        {
+          "title": "All images use outdated formats (PNG/JPG instead of WebP/AVIF)",
+          "severity": "High",
+          "description": "7 section images are PNG format. 19 article images are JPG format. Modern formats offer 25-35% smaller file sizes.",
+          "recommendation": "Convert all images to WebP format. Consider AVIF for even better compression where browser support allows."
+        },
+        {
+          "title": "No responsive image srcsets",
+          "severity": "Medium",
+          "description": "All images have a single fixed resolution. Mobile users download desktop-sized images, wasting bandwidth.",
+          "recommendation": "Add srcset attributes with multiple image breakpoints (480w, 768w, 1200w) for all content images."
+        },
+        {
+          "title": "ArticleCard images use data: URLs for article images (missing actual images)",
+          "severity": "Medium",
+          "description": "In [section]/index.astro, each article in a section uses the same section-level image. Articles lack unique lead images.",
+          "recommendation": "Add an 'image' field to article frontmatter and display unique lead images per article."
+        },
+        {
+          "title": "No image dimensions set on img elements",
+          "severity": "Medium",
+          "description": "None of the img tags include width or height attributes, causing potential layout shift as images load.",
+          "recommendation": "Add width and height attributes to all img tags matching the image's natural aspect ratio."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Add author bylines with names and bios to all articles",
+          "Add publish dates and last-updated dates to all articles (frontmatter + display)",
+          "Complete Article schema with author, datePublished, dateModified, publisher fields",
+          "Convert all PNG/JPG images to WebP format",
+          "Add BreadcrumbList JSON-LD structured data site-wide",
+          "Add meta robots tags to BaseLayout with configurable per-page control"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Add FAQPage schema to learn/faq and safety/faq articles",
+          "Add HowTo schema to how-to/beginner, how-to/techniques, how-to/tutorial articles",
+          "Improve homepage title tag with descriptive, keyword-rich content",
+          "Add Open Graph image to homepage and set default OG image in BaseLayout",
+          "Add twitter:image meta tag alongside OG image",
+          "Fix section image mapping (tools → tools.png instead of research.png)",
+          "Expand thin-content articles (< 300 words) to at least 500 words",
+          "Add width/height attributes to all img elements to prevent CLS"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Create llms.txt for AI crawler discoverability",
+          "Add Organization schema with logo, social links, and contact info",
+          "Add SearchAction to WebSite schema for Sitelinks Search Box",
+          "Create a custom 404 page with navigation and search",
+          "Add introductory content to section landing pages (100-200 words each)",
+          "Create unique lead images per article instead of reusing section images",
+          "Implement responsive image srcsets across all content images",
+          "Add resource hints (preload/preconnect) for critical assets"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Set up Google Search Console and monitor indexation status",
+          "Submit sitemap to Google Search Console and Bing Webmaster Tools",
+          "Monitor Core Web Vitals via CrUX and address any regressions",
+          "Regular content audits to maintain freshness and accuracy",
+          "Build backlinks through guest posts and expert contributions",
+          "Add analytics to track organic traffic and user behavior",
+          "Implement automated SEO drift monitoring"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

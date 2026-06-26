@@ -1,5 +1,5 @@
 ---
 title: "How To"
-description: "Practical guides and tutorials for practicing facial cupping safely and effectively."
+description: "Follow our step-by-step facial cupping guides — from your first session and daily 5-minute routines to advanced techniques and common mistakes to avoid. Tutorials designed for every skill level."
 order: 3
 ---
