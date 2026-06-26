@@ -24,6 +24,20 @@ export async function getStaticPaths() {
 }
 
 const { section, sectionArticles } = Astro.props;
+
+// Section-level image mapping
+const sectionImages: Record<string, string> = {
+  learn: "/images/learn.png",
+  benefits: "/images/benefits.png",
+  "how-to": "/images/howto.png",
+  safety: "/images/safety.png",
+  tools: "/images/research.png",
+  research: "/images/research.png",
+  comparisons: "/images/articles/silicone-therapy.jpg",
+  brands: "/images/articles/skincare-cream.jpg",
+  glowcup: "/images/articles/woman-cupping-cup.jpg",
+  about: "/images/articles/doctor-smiling.jpg",
+};
 ---
 
 <BaseLayout title={section.data.title} description={section.data.description}>
@@ -51,6 +65,7 @@ const { section, sectionArticles } = Astro.props;
               title={article.data.title}
               description={article.data.description}
               href={`/${section.id}/${slug}`}
+              image={sectionImages[section.id] ?? sectionImages["learn"]}
               tag={section.data.title}
             />
           );

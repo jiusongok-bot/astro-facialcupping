@@ -9,6 +9,8 @@ const navItems = [
   { label: "Safety", href: "/safety" },
   { label: "Tools", href: "/tools" },
   { label: "Research", href: "/research" },
+  { label: "Comparisons", href: "/comparisons" },
+  { label: "Brands", href: "/brands" },
   { label: "GlowCup", href: "/glowcup" },
   { label: "About", href: "/about" },
 ];
@@ -23,13 +25,13 @@ const currentPath = Astro.url.pathname;
     </a>
 
     <!-- Desktop nav -->
-    <ul class="hidden lg:flex items-center gap-1">
+    <ul class="hidden lg:flex items-center gap-0.5">
       {navItems.map((item) => (
         <li>
           <a
             href={item.href}
             class:list={[
-              "px-3 py-2 text-sm font-medium rounded-[var(--radius-btn)] transition-colors",
+              "px-2 py-2 text-sm font-medium rounded-[var(--radius-btn)] transition-colors",
               currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href))
                 ? "text-forest bg-sage"
                 : "text-muted hover:text-forest hover:bg-sage/60",

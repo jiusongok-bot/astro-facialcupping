@@ -32,11 +32,30 @@ export async function getStaticPaths() {
 
 const { entry, sectionTitle, sectionSlug, related } = Astro.props;
 const { Content } = await render(entry);
+
+// OG image mapping
+const sectionOG: Record<string, string> = {
+  learn: "/images/learn.png",
+  benefits: "/images/benefits.png",
+  "how-to": "/images/howto.png",
+  safety: "/images/safety.png",
+  tools: "/images/research.png",
+  research: "/images/research.png",
+  comparisons: "/images/articles/silicone-therapy.jpg",
+  brands: "/images/articles/skincare-cream.jpg",
+  glowcup: "/images/articles/woman-cupping-cup.jpg",
+  about: "/images/articles/doctor-smiling.jpg",
+};
+const ogImage = sectionOG[sectionSlug] ?? "/images/hero.png";
+
+const articleSlug = entry.id.split("/")[1];
+const articleURL = `https://facialcupping.com/${sectionSlug}/${articleSlug}`;
 ---
 
 <ArticleLayout
   title={entry.data.title}
   description={entry.data.description}
+  ogImage={ogImage}
   breadcrumbs={[
     { label: sectionTitle, href: `/${sectionSlug}` },
     { label: entry.data.title, href: `/${sectionSlug}/${entry.id.split("/")[1]}` },
@@ -45,6 +64,20 @@ const { Content } = await render(entry);
   <div class="prose-content">
     <Content />
   </div>
+
+  <!-- Article JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: entry.data.title,
+    description: entry.data.description,
+    url: articleURL,
+    image: ogImage ? `https://facialcupping.com${ogImage}` : undefined,
+    isPartOf: {
+      "@type": "WebPage",
+      url: articleURL,
+    },
+  })} />
 
   <!-- Related articles -->
   {related.length > 0 && (
