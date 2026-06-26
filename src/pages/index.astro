@@ -51,28 +51,28 @@ const popularGuides = [
     title: "What Is Facial Cupping?",
     description: "A comprehensive guide to the ancient practice of facial cupping therapy, its origins, and how it differs from body cupping.",
     href: "/learn/what-is",
-    image: "https://picsum.photos/seed/facial-cupping-intro/600/380",
+    image: "/images/learn.png",
     tag: "Learn",
   },
   {
     title: "Facial Cupping Benefits",
     description: "Discover the science-backed benefits including reduced puffiness, improved circulation and a more youthful appearance.",
     href: "/benefits/overview",
-    image: "https://picsum.photos/seed/facial-benefits/600/380",
+    image: "/images/benefits.png",
     tag: "Benefits",
   },
   {
     title: "How To Do Facial Cupping",
     description: "A beginner-friendly tutorial covering everything from preparation to technique, with common mistakes to avoid.",
     href: "/how-to/beginner",
-    image: "https://picsum.photos/seed/facial-howto/600/380",
+    image: "/images/howto.png",
     tag: "How To",
   },
   {
     title: "Does Facial Cupping Work?",
     description: "An honest look at the clinical evidence, expert opinions, and what the research actually says about facial cupping.",
     href: "/safety/does-it-work",
-    image: "https://picsum.photos/seed/facial-research/600/380",
+    image: "/images/safety.png",
     tag: "Research",
   },
 ];
@@ -143,7 +143,7 @@ const researchArticles = [
           <div class="relative">
             <div class="aspect-[4/3] rounded-[var(--radius-card)] overflow-hidden bg-sage">
               <img
-                src="https://picsum.photos/seed/facial-cupping-hero/800/600"
+                src="/images/hero.png"
                 alt="Facial cupping therapy illustration"
                 class="w-full h-full object-cover"
               />
@@ -210,11 +210,11 @@ const researchArticles = [
           hrefLabel="See all results"
         />
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4].map((i) => (
+          {["/images/learn.png", "/images/benefits.png", "/images/howto.png", "/images/research.png"].map((img, i) => (
             <div class="aspect-[3/4] rounded-[var(--radius-card)] overflow-hidden bg-white border border-border">
               <img
-                src={`https://picsum.photos/seed/before-after-${i}/400/530`}
-                alt={`Before and after facial cupping result ${i}`}
+                src={img}
+                alt={`Before and after facial cupping result ${i + 1}`}
                 class="w-full h-full object-cover"
                 loading="lazy"
               />

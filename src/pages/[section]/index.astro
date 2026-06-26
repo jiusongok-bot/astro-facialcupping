@@ -3,46 +3,58 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Nav from "@/components/Nav.astro";
 import Footer from "@/components/Footer.astro";
 import ArticleCard from "@/components/ArticleCard.astro";
-import SectionHeading from "@/components/SectionHeading.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
-import { sections } from "@/lib/content";
+import { getCollection } from "astro:content";
 
-export function getStaticPaths() {
-  return sections.map((section) => ({
-    params: { section: section.slug },
-    props: { section },
-  }));
+export async function getStaticPaths() {
+  const allSections = await getCollection("sections");
+  const allArticles = await getCollection("articles");
+
+  return allSections
+    .sort((a, b) => a.data.order - b.data.order)
+    .map((section) => {
+      const sectionArticles = allArticles.filter(
+        (a) => a.data.section === section.id
+      );
+      return {
+        params: { section: section.id },
+        props: { section, sectionArticles },
+      };
+    });
 }
 
-const { section } = Astro.props;
+const { section, sectionArticles } = Astro.props;
 ---
 
-<BaseLayout title={section.title} description={section.description}>
+<BaseLayout title={section.data.title} description={section.data.description}>
   <Nav />
   <main class="flex-1">
     <div class="max-w-[1200px] mx-auto px-5 pt-10 pb-20">
-      <Breadcrumb items={[{ label: section.title, href: `/${section.slug}` }]} />
+      <Breadcrumb items={[{ label: section.data.title, href: `/${section.id}` }]} />
 
       <!-- Section header -->
       <div class="mt-8 mb-12">
         <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-forest">
-          {section.title}
+          {section.data.title}
         </h1>
         <p class="mt-4 text-lg text-muted max-w-[60ch] leading-relaxed">
-          {section.description}
+          {section.data.description}
         </p>
       </div>
 
       <!-- Articles grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {section.articles.map((article: { slug: string; title: string; description: string }) => (
-          <ArticleCard
-            title={article.title}
-            description={article.description}
-            href={`/${section.slug}/${article.slug}`}
-            tag={section.title}
-          />
-        ))}
+        {sectionArticles.map((article) => {
+          const slug = article.id.split("/")[1];
+          return (
+            <ArticleCard
+              title={article.data.title}
+              description={article.data.description}
+              href={`/${section.id}/${slug}`}
+              tag={section.data.title}
+            />
+          );
+        })}
       </div>
     </div>
   </main>
