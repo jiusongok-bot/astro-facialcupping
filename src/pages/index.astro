@@ -50,12 +50,7 @@ const topics = [
     href: "/oils",
     icon: "07",
   },
-  {
-    title: "Before & After",
-    description: "Real results, realistic timelines and documented transformations.",
-    href: "/before-after",
-    icon: "08",
-  },
+
 ];
 
 const popularGuides = [
@@ -119,7 +114,7 @@ const researchArticles = [
   {
     title: "Facial Cupping Before & After: What Real Results Look Like",
     date: "June 2026",
-    href: "/before-after/before-after",
+    href: "/benefits/before-after",
   },
   {
     title: "Expert Panel: Dermatologists Weigh In on Facial Cupping",
@@ -207,30 +202,6 @@ const researchArticles = [
               image={guide.image}
               tag={guide.tag}
             />
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <!-- Before & After -->
-    <section class="py-16 md:py-24 bg-sage">
-      <div class="max-w-[1200px] mx-auto px-5">
-        <SectionHeading
-          title="Before & After"
-          subtitle="Real results from consistent facial cupping practice."
-          href="/before-after/before-after"
-          hrefLabel="See all results"
-        />
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {["/images/learn.png", "/images/benefits.png", "/images/howto.png", "/images/research.png"].map((img, i) => (
-            <div class="aspect-[3/4] rounded-[var(--radius-card)] overflow-hidden bg-white border border-border">
-              <img
-                src={img}
-                alt={`Before and after facial cupping result ${i + 1}`}
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
           ))}
         </div>
       </div>

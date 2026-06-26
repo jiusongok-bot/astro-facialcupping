@@ -1,7 +1,7 @@
 ---
 title: "Facial Cupping Before & After Results"
 description: "Documented results from facial cupping practitioners, with context on what to expect."
-section: "before-after"
+section: "benefits"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-01"
 dateUpdated: "2026-06-15"
@@ -23,4 +23,4 @@ It is important to approach before and after results with realistic expectations
 
 ---
 
-**Related:** [How Long to See Results](/before-after/how-long-to-work) | [Results Timeline](/before-after/results-timeline) | [Benefits Overview](/benefits/facial-cupping-benefits)
+**Related:** [How Long to See Results](/benefits/how-long-to-work) | [Results Timeline](/benefits/results-timeline) | [Benefits Overview](/benefits/facial-cupping-benefits)
