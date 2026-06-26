@@ -1,7 +1,7 @@
 ---
 title: "Best Facial Oils for Facial Cupping"
 description: "Guide to choosing the right facial oil for cupping, including recommendations by skin type and application tips for smooth, effective sessions."
-section: "tools"
+section: "oils"
 author: "FacialCupping.com Team"
 datePublished: "2026-02-10"
 dateUpdated: "2026-06-01"
@@ -37,4 +37,4 @@ Avoid oils with strong essential oil blends, which can sting or irritate under t
 
 ---
 
-**Related:** [Silicone vs Glass Cups](/tools/silicone) | [Buying Guide](/tools/buying-guide) | [Best Cupping Sets](/tools/best-sets)
+**Related:** [Best Oil for Facial Cupping](/oils/best-oil) | [Silicone vs Glass Cups](/tools/silicone) | [Buying Guide](/tools/buying-guide)

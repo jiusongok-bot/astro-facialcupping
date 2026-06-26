@@ -25,4 +25,4 @@ A quick quality test: pinch and twist the cup. Low-quality silicone will show wh
 
 When selecting silicone cups, look for clear material-grade labeling, smooth edge finishing (no burrs or rough spots), and cups that are thick enough to hold their shape without collapsing during use. Avoid cups with strong chemical odors, visible bubbles in the material, or uneven wall thickness.
 
-**Related:** [Buying Guide](/tools/buying-guide) | [Best Facial Cupping Sets](/tools/best-sets) | [Best Tools](/tools/best-tools)
+**Related:** [Buying Guide](/tools/buying-guide) | [Best Facial Cupping Sets](/tools/best-facial-cupping-sets) | [Best Tools](/tools/best-tools)

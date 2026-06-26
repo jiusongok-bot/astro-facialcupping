@@ -37,4 +37,4 @@ If seeking professional facial cupping, look for licensed estheticians or acupun
 
 ---
 
-**Related:** [What Is Facial Cupping](/learn/what-is) | [How It Works](/learn/how-it-works) | [History of Facial Cupping](/learn/history)
+**Related:** [What Is Facial Cupping](/learn/what-is-facial-cupping) | [How It Works](/learn/how-it-works) | [History of Facial Cupping](/learn/history)

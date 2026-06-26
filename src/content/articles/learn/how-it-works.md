@@ -31,4 +31,4 @@ This mechanism is similar to how microneedling works, though facial cupping is f
 
 What makes facial cupping powerful is that these three mechanisms work synergistically. Better circulation supports the lymphatic system. Lymphatic drainage reduces inflammation, which allows fibroblasts to work more efficiently. And collagen production improves skin structure, which in turn supports healthy circulation. It is a virtuous cycle that builds on itself with consistent practice.
 
-**Related:** [What Is Facial Cupping](/learn/what-is) | [Benefits Overview](/benefits/overview) | [Improved Circulation](/benefits/circulation)
+**Related:** [What Is Facial Cupping](/learn/what-is-facial-cupping) | [Benefits Overview](/benefits/facial-cupping-benefits) | [Improved Circulation](/benefits/circulation)

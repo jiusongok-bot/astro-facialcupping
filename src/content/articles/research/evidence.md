@@ -47,4 +47,4 @@ Facial cupping appears safe when practiced correctly, with many users reporting 
 
 ---
 
-**Related:** [Does Facial Cupping Work?](/safety/does-it-work) | [Before & After Results](/research/before-after) | [Expert Opinions](/research/experts)
+**Related:** [Does Facial Cupping Work?](/safety/does-facial-cupping-work) | [Before & After Results](/before-after/before-after) | [Expert Opinions](/research/experts)

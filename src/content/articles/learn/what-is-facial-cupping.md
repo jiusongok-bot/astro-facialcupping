@@ -27,4 +27,4 @@ People turn to facial cupping for a variety of reasons including reducing facial
 
 The accessibility of modern silicone cups has made facial cupping possible for anyone to practice at home with minimal training, though learning proper technique from a qualified professional is always recommended for best results.
 
-**Related:** [How Facial Cupping Works](/learn/how-it-works) | [Benefits Overview](/benefits/overview) | [Safety Guide](/safety/safety-guide)
+**Related:** [How Facial Cupping Works](/learn/how-it-works) | [Benefits Overview](/benefits/facial-cupping-benefits) | [Safety Guide](/safety/safety-guide)

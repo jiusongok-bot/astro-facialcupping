@@ -57,4 +57,4 @@ Body cups are too large and create excessive suction for facial use. Always use 
 
 If you have a medical condition affecting your skin, circulation, or healing, consult a healthcare provider before starting facial cupping. This includes individuals on blood-thinning medications, those with active skin infections, and anyone with a history of vascular disorders.
 
-**Related:** [Facial Cupping FAQ](/learn/faq) | [How Facial Cupping Works](/learn/how-it-works) | [Benefits Overview](/benefits/overview)
+**Related:** [Facial Cupping FAQ](/learn/faq) | [How Facial Cupping Works](/learn/how-it-works) | [Benefits Overview](/benefits/facial-cupping-benefits)

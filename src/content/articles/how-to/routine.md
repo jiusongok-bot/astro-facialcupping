@@ -29,4 +29,4 @@ If you are new to facial cupping, start with 3 sessions per week for the first t
 
 ---
 
-**Related:** [Step-by-Step Tutorial](/how-to/tutorial) | [Beginner Guide](/how-to/beginner) | [Common Mistakes](/how-to/mistakes)
+**Related:** [Step-by-Step Tutorial](/how-to/tutorial) | [Beginner Guide](/how-to/how-to-do-facial-cupping) | [Common Mistakes](/how-to/mistakes)

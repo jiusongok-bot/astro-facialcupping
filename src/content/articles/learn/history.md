@@ -35,4 +35,4 @@ The practice continues to evolve. Recent innovations include electric cupping de
 
 ---
 
-**Related:** [What Is Facial Cupping](/learn/what-is) | [How It Works](/learn/how-it-works) | [Facial Cupping Therapy](/learn/therapy)
+**Related:** [What Is Facial Cupping](/learn/what-is-facial-cupping) | [How It Works](/learn/how-it-works) | [Facial Cupping Therapy](/learn/therapy)

@@ -35,4 +35,4 @@ Avoid cupping if you have active sinus infections, as the pressure may cause dis
 
 ---
 
-**Related:** [Jawline & Contouring](/benefits/jawline) | [Lymphatic Drainage](/benefits/lymphatic) | [Beginner's Guide](/how-to/beginner)
+**Related:** [Jawline & Contouring](/benefits/jawline) | [Lymphatic Drainage](/benefits/lymphatic) | [Beginner's Guide](/how-to/how-to-do-facial-cupping)

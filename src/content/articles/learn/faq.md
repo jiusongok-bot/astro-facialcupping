@@ -29,4 +29,4 @@ Yes. Many facial cupping sets are designed for home use. Start with gentle sucti
 
 While not strictly required, using a facial oil or serum is strongly recommended. The glide provided by these products allows the cups to move smoothly across the skin without tugging or pulling. Look for products with nourishing ingredients like jojoba oil, rosehip oil, or hyaluronic acid that complement the benefits of cupping by hydrating and soothing the skin.
 
-**Related:** [Safety Guide](/safety/safety-guide) | [How Facial Cupping Works](/learn/how-it-works) | [What Is Facial Cupping](/learn/what-is)
+**Related:** [Safety Guide](/safety/safety-guide) | [How Facial Cupping Works](/learn/how-it-works) | [What Is Facial Cupping](/learn/what-is-facial-cupping)

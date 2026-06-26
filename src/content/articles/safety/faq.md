@@ -23,4 +23,4 @@ This is a question best directed to your healthcare provider, as every pregnancy
 
 ---
 
-**Related:** [Side Effects](/safety/side-effects) | [Contraindications](/safety/contraindications) | [Beginner Guide](/how-to/beginner)
+**Related:** [Side Effects](/safety/side-effects) | [Contraindications](/safety/contraindications) | [Beginner Guide](/how-to/how-to-do-facial-cupping)

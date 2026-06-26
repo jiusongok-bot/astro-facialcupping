@@ -31,4 +31,4 @@ The stationary technique involves placing the cup with very light suction and ho
 
 ---
 
-**Related:** [Step-by-Step Tutorial](/how-to/tutorial) | [Beginner Guide](/how-to/beginner) | [Common Mistakes](/how-to/mistakes)
+**Related:** [Step-by-Step Tutorial](/how-to/tutorial) | [Beginner Guide](/how-to/how-to-do-facial-cupping) | [Common Mistakes](/how-to/mistakes)

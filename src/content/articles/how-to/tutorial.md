@@ -33,4 +33,4 @@ Use the smallest cup with extremely light suction for the delicate under-eye are
 
 ---
 
-**Related:** [Beginner Guide](/how-to/beginner) | [Technique Library](/how-to/techniques) | [5-Minute Routine](/how-to/routine)
+**Related:** [Beginner Guide](/how-to/how-to-do-facial-cupping) | [Technique Library](/how-to/techniques) | [5-Minute Routine](/how-to/routine)

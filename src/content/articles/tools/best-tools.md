@@ -21,4 +21,4 @@ Electric facial cupping devices automate the suction process using battery-power
 
 Some tool manufacturers combine facial cupping with gua sha in multi-tool kits. These bundles typically include one or two silicone cups alongside a gua sha stone or stainless steel scraping tool. While convenient for beginners wanting to explore both techniques, dedicated tools for each practice typically perform better than combo kits where both tools may be entry-level quality.
 
-**Related:** [Best Facial Cupping Sets](/tools/best-sets) | [Buying Guide](/tools/buying-guide) | [Silicone vs Glass](/tools/silicone)
+**Related:** [Best Facial Cupping Sets](/tools/best-facial-cupping-sets) | [Buying Guide](/tools/buying-guide) | [Silicone vs Glass](/tools/silicone)

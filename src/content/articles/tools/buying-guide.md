@@ -27,4 +27,4 @@ Quality facial cupping sets typically range from $15 to $45. Sets under $10 ofte
 
 A storage case keeps cups clean and organized. A cleaning brush helps maintain the cups' interior surfaces. An illustrated guide or access to instructional content is invaluable for beginners. Some sets also include massage oils or gua sha tools as bundled extras.
 
-**Related:** [Silicone vs Glass](/tools/silicone) | [Best Facial Cupping Sets](/tools/best-sets) | [Best Tools](/tools/best-tools)
+**Related:** [Silicone vs Glass](/tools/silicone) | [Best Facial Cupping Sets](/tools/best-facial-cupping-sets) | [Best Tools](/tools/best-tools)

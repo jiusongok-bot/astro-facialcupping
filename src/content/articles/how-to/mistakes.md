@@ -27,4 +27,4 @@ Body cupping cups are larger and designed for the thicker skin of the back, shou
 
 ---
 
-**Related:** [Beginner Guide](/how-to/beginner) | [Step-by-Step Tutorial](/how-to/tutorial) | [Technique Library](/how-to/techniques)
+**Related:** [Beginner Guide](/how-to/how-to-do-facial-cupping) | [Step-by-Step Tutorial](/how-to/tutorial) | [Technique Library](/how-to/techniques)

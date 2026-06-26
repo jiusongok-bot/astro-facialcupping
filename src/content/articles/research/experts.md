@@ -29,4 +29,4 @@ Practitioners of Traditional Chinese Medicine (TCM) see facial cupping as a natu
 
 TCM practitioners often integrate facial cupping with other modalities like acupuncture, gua sha, and herbal treatments. They stress that facial cupping is most effective when part of a holistic approach rather than a standalone treatment. Dr. Lin Wei, a TCM practitioner with 15 years of experience, notes: "The face responds to the same energetic principles as the rest of the body. When we move stagnation in the face, patients often report improvements beyond skin — better sleep, reduced tension, and a sense of relaxation."
 
-**Related:** [Scientific Studies](/research/studies) | [Evidence Overview](/research/evidence) | [What Is Facial Cupping](/learn/what-is)
+**Related:** [Scientific Studies](/research/studies) | [Evidence Overview](/research/evidence) | [What Is Facial Cupping](/learn/what-is-facial-cupping)
