@@ -3,27 +3,16 @@ interface Props {
   title: string;
   description: string;
   href: string;
-  image?: string;
   tag?: string;
 }
 
-const { title, description, href, image, tag } = Astro.props;
+const { title, description, href, tag } = Astro.props;
 ---
 
 <a
   href={href}
   class="group block rounded-[var(--radius-card)] overflow-hidden bg-white border border-border hover:border-forest/30 hover:shadow-md transition-all active:-translate-y-[1px]"
 >
-  {image && (
-    <div class="aspect-[16/10] overflow-hidden bg-sage">
-      <img
-        src={image}
-        alt=""
-        class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
-        loading="lazy"
-      />
-    </div>
-  )}
   <div class="p-5">
     {tag && (
       <span class="text-xs font-medium text-amber uppercase tracking-wider">

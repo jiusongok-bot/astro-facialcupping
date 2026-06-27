@@ -9,8 +9,6 @@ dateUpdated: "2026-06-10"
 
 Facial cupping is not suitable for everyone. Understanding the contraindications — both absolute and relative — helps you make an informed decision about whether this practice is right for you.
 
-![Cupping therapy on face](/images/articles/therapist-patient.jpg)
-
 ## Absolute Contraindications
 
 These conditions mean you should not practice facial cupping under any circumstances.

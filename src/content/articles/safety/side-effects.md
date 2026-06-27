@@ -9,8 +9,6 @@ dateUpdated: "2026-06-10"
 
 When done correctly, facial cupping has minimal side effects. However, being aware of what can occur — and why — helps you practice safely and recognize when something is wrong.
 
-![Cupping therapy on skin](/images/articles/cupping-glass.jpg)
-
 ## Common (Mild)
 
 **Temporary redness** is the most common side effect and is completely normal. The suction brings blood to the surface of the skin, which can cause a flushed appearance that fades within 5 to 30 minutes after your session. This response is actually a sign of increased circulation and is generally considered a positive outcome.
@@ -33,4 +31,4 @@ If you experience persistent pain (not just mild tenderness), significant bruisi
 
 ---
 
-**Related:** [Safety FAQ](/safety/faq) | [Contraindications](/safety/contraindications) | [How to Avoid Mistakes](/how-to/mistakes)
+**Related:** [Safety FAQ](/safety/faq) | [Contraindications](/safety/contraindications) | [How to Avoid Mistakes](/how-to/common-facial-cupping-mistakes)

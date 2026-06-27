@@ -29,4 +29,4 @@ Facial cupping for rejuvenation appears to be most effective for people in their
 
 ---
 
-**Related:** [Facial Cupping Benefits Overview](/benefits/facial-cupping-benefits) | [How Facial Cupping Works](/learn/how-it-works) | [Does Facial Cupping Work](/safety/does-facial-cupping-work)
+**Related:** [Facial Cupping Benefits Overview](/benefits/facial-cupping-benefits) | [How Facial Cupping Works](/learn/how-facial-cupping-works) | [Does Facial Cupping Work](/safety/does-facial-cupping-work)

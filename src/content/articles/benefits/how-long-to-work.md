@@ -6,8 +6,6 @@ section: "benefits"
 
 One of the most common questions from new practitioners is how quickly facial cupping produces visible results. The answer depends on what you're trying to achieve.
 
-![Jade roller skincare products](/images/articles/jade-roller-skincare.jpg)
-
 ## Immediate Effects (Same Day)
 
 Right after a facial cupping session, you can expect:

@@ -6,8 +6,6 @@ section: "comparisons"
 
 Facial cupping and gua sha are two of the most popular facial massage techniques in the wellness world. While both originated in Traditional Chinese Medicine and share similar goals — improved circulation, lymphatic drainage, and a more sculpted appearance — they differ significantly in technique, tools, and experience.
 
-![Silicone cupping therapy session](/images/articles/silicone-therapy.jpg)
-
 ## Key Differences at a Glance
 
 | Aspect | Facial Cupping | Gua Sha |

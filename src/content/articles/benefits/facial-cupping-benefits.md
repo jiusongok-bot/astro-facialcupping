@@ -35,4 +35,4 @@ When the skin has been stimulated through cupping, blood flow increases and the 
 
 While many users report positive experiences, clinical research specific to facial cupping is still limited. Most evidence comes from broader cupping therapy studies and anecdotal reports. However, the physiological mechanisms — increased circulation, lymphatic stimulation, and mechanical tissue manipulation — are well-supported by medical science. As interest in facial cupping grows, more targeted research is emerging to validate the experiences of practitioners worldwide.
 
-**Related:** [Improved Circulation](/benefits/circulation) | [How Facial Cupping Works](/learn/how-it-works) | [Facial Cupping FAQ](/learn/faq)
+**Related:** [Improved Circulation](/benefits/circulation) | [How Facial Cupping Works](/learn/how-facial-cupping-works) | [Facial Cupping FAQ](/learn/facial-cupping-faq)

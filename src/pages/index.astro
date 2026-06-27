@@ -58,28 +58,24 @@ const popularGuides = [
     title: "What Is Facial Cupping?",
     description: "A comprehensive guide to the ancient practice of facial cupping therapy, its origins, and how it differs from body cupping.",
     href: "/learn/what-is-facial-cupping",
-    image: "/images/learn.png",
     tag: "Learn",
   },
   {
     title: "Facial Cupping Benefits",
     description: "Discover the science-backed benefits including reduced puffiness, improved circulation and a more youthful appearance.",
     href: "/benefits/facial-cupping-benefits",
-    image: "/images/benefits.png",
     tag: "Benefits",
   },
   {
     title: "How To Do Facial Cupping",
     description: "A beginner-friendly tutorial covering everything from preparation to technique, with common mistakes to avoid.",
     href: "/how-to/how-to-do-facial-cupping",
-    image: "/images/howto.png",
     tag: "How To",
   },
   {
     title: "Does Facial Cupping Work?",
     description: "An honest look at the clinical evidence, expert opinions, and what the research actually says about facial cupping.",
     href: "/safety/does-facial-cupping-work",
-    image: "/images/safety.png",
     tag: "Research",
   },
 ];
@@ -109,7 +105,7 @@ const researchArticles = [
   {
     title: "Facial Cupping and Lymphatic Drainage: What the Evidence Shows",
     date: "June 2026",
-    href: "/research/evidence",
+    href: "/research/facial-cupping-evidence-review",
   },
   {
     title: "Facial Cupping Before & After: What Real Results Look Like",
@@ -119,7 +115,7 @@ const researchArticles = [
   {
     title: "Expert Panel: Dermatologists Weigh In on Facial Cupping",
     date: "April 2026",
-    href: "/research/experts",
+    href: "/research/facial-cupping-expert-opinions",
   },
 ];
 ---
@@ -128,17 +124,18 @@ const researchArticles = [
   <Nav />
   <main class="flex-1">
     <!-- Hero -->
-    <section class="relative overflow-hidden">
-      <div class="max-w-[1200px] mx-auto px-5 pt-16 pb-20 md:pt-20 md:pb-28">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section class="relative overflow-hidden min-h-[400px]  lg:aspect-[330/100]" style="background-image: url(/images/hero-bg.png); background-size: cover; background-position: center top;">
+      <div class="absolute inset-0 bg-bone/70 -z-10" />
+      <div class="max-w-[1200px] mx-auto px-5 pt-8 pb-12 md:pt-12 md:pb-16 lg:pt-16 lg:pb-20">
+        <div class="max-w-[600px]">
           <div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-forest leading-[1.08]">
+            <h1 class="text-[clamp(1.75rem,5vw,3.75rem)] font-bold tracking-tighter text-forest leading-[1.08]">
               Facial Cupping,<br />Explained.
             </h1>
-            <p class="mt-5 text-lg text-muted max-w-[50ch] leading-relaxed">
+            <p class="mt-3 text-[clamp(0.875rem,2.5vw,1.125rem)] text-muted max-w-[50ch] leading-relaxed">
               Learn the benefits, techniques, safety considerations and tools used in facial cupping.
             </p>
-            <div class="mt-8">
+            <div class="mt-5">
               <a
                 href="/learn"
                 class="inline-flex items-center gap-2 px-6 py-3 bg-forest text-bone text-sm font-semibold rounded-[var(--radius-btn)] hover:bg-forest-light transition-colors active:-translate-y-[1px]"
@@ -147,16 +144,6 @@ const researchArticles = [
               </a>
             </div>
           </div>
-          <div class="relative">
-            <div class="aspect-[4/3] rounded-[var(--radius-card)] overflow-hidden bg-sage">
-              <img
-                src="/images/hero.png"
-                alt="Facial cupping therapy illustration"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div class="absolute -bottom-4 -left-4 w-24 h-24 rounded-[var(--radius-card)] bg-amber/10 border border-amber/20 -z-10" />
-          </div>
         </div>
       </div>
       <!-- Decorative gradient -->
@@ -164,7 +151,7 @@ const researchArticles = [
     </section>
 
     <!-- Topic Hub -->
-    <section class="py-16 md:py-24 bg-white">
+    <section class="py-16 md:py-20 bg-white">
       <div class="max-w-[1200px] mx-auto px-5">
         <SectionHeading
           title="Explore Facial Cupping"
@@ -199,7 +186,6 @@ const researchArticles = [
               title={guide.title}
               description={guide.description}
               href={guide.href}
-              image={guide.image}
               tag={guide.tag}
             />
           ))}

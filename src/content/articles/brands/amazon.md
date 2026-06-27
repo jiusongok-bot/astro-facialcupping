@@ -6,8 +6,6 @@ section: "brands"
 
 Amazon offers a vast selection of facial cupping sets at every price point. While the convenience is appealing, the variety makes it challenging to separate quality products from poor ones.
 
-![Cupping equipment on table](/images/articles/cupping-equipment.jpg)
-
 ## What to Look For
 
 When shopping on Amazon for facial cupping sets, prioritize these factors:

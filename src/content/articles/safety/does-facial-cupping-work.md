@@ -9,8 +9,6 @@ dateUpdated: "2026-06-01"
 
 This is one of the most common questions about facial cupping. The honest answer is nuanced: some effects are well-supported by evidence, while others are based on anecdotal reports and extrapolation from broader cupping research.
 
-![Doctor with cupping device](/images/articles/doctor-device.jpg)
-
 ## What the Evidence Supports
 
 **Increased local blood flow:** Multiple studies using Doppler ultrasound and laser Doppler flowmetry have confirmed that cupping increases circulation in the treated area. A 2019 systematic review in the Journal of Traditional and Complementary Medicine found that cupping therapy significantly increases local blood flow through multiple physiological mechanisms, supporting tissue oxygenation and nutrient delivery [\[source\]](https://doi.org/10.1016/j.jtcme.2018.03.003). A 2021 dose-response study measured skin blood flow increases of 5-17 times baseline following cupping [\[source\]](https://doi.org/10.1111/srt.12970).
@@ -33,4 +31,4 @@ The effects on collagen, wrinkles, and long-term skin remodeling are plausible b
 
 ---
 
-**Related:** [Safety Guide](/safety/safety-guide) | [Evidence Review](/research/evidence) | [Side Effects](/safety/side-effects)
+**Related:** [Safety Guide](/safety/safety-guide) | [Evidence Review](/research/facial-cupping-evidence-review) | [Side Effects](/safety/side-effects)

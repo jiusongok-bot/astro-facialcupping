@@ -9,8 +9,6 @@ dateUpdated: "2026-05-18"
 
 FacialCupping.com exists to be the most comprehensive and trustworthy resource for facial cupping information online. We built this site because the existing options were not good enough.
 
-![Professional medical expertise](/images/articles/doctor-smiling.jpg)
-
 ## Why We Built the Site
 
 Facial cupping is growing in popularity, but quality information is hard to find. Many sources are either promotional pieces designed to sell products or dismissive articles that brush off the practice without serious examination. We aim for the middle ground: honest, well-researched content that helps people make informed decisions about whether and how to incorporate facial cupping into their routine.

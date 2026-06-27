@@ -8,16 +8,17 @@ interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  ogType?: string;
   breadcrumbs: { label: string; href: string }[];
   author?: string;
   datePublished?: string;
   dateUpdated?: string;
 }
 
-const { title, description, ogImage, breadcrumbs, author, datePublished, dateUpdated } = Astro.props;
+const { title, description, ogImage, ogType, breadcrumbs, author, datePublished, dateUpdated } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} ogImage={ogImage}>
+<BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType}>
   <Nav />
   <main class="flex-1">
     <div class="max-w-[1200px] mx-auto px-5 pt-8 pb-16">

@@ -6,8 +6,6 @@ section: "brands"
 
 Rena Chris has become a popular choice on Amazon for affordable facial cupping sets. But does lower price mean lower quality? We tested their set against premium brands to find out whether the savings come with meaningful trade-offs.
 
-![Facial cupping sets](/images/articles/cupping-cups-set.jpg)
-
 ## What You Get
 
 The Rena Chris facial cupping set typically includes 4 silicone cups in different sizes (small, medium, large, and extra large), a travel storage pouch, and an illustrated instruction guide. The cups range from approximately 15 mm to 40 mm in diameter, providing adequate coverage for most facial areas including the under-eye region, cheeks, jawline, and forehead. The set also includes a bonus e-book with technique guidance.

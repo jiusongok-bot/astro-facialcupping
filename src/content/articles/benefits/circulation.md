@@ -31,4 +31,4 @@ The increase in blood flow also helps with product absorption. When circulation 
 
 Blood circulation and lymphatic drainage work hand in hand. The lymphatic system relies on movement and muscle action to transport lymph fluid. Facial cupping provides both the movement and the directional guidance needed to stimulate lymph flow, which in turn supports the circulatory system by reducing fluid buildup and inflammation.
 
-**Related:** [Benefits Overview](/benefits/facial-cupping-benefits) | [How Facial Cupping Works](/learn/how-it-works) | [What Is Facial Cupping](/learn/what-is-facial-cupping)
+**Related:** [Benefits Overview](/benefits/facial-cupping-benefits) | [How Facial Cupping Works](/learn/how-facial-cupping-works) | [What Is Facial Cupping](/learn/what-is-facial-cupping)

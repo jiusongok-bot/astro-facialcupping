@@ -9,8 +9,6 @@ dateUpdated: "2026-05-22"
 
 We believe in honest, evidence-based information that empowers readers to make informed decisions about facial cupping. Our philosophy rests on three principles that guide every article and evaluation on this site.
 
-![Wellness therapy session](/images/articles/therapy-treatment.jpg)
-
 ## Evidence-First Approach
 
 We present what the research says, what it does not say, and where the evidence is limited. We do not overpromise. When a claimed benefit lacks strong scientific support, we say so directly. When preliminary research is promising but inconclusive, we explain the context. This approach means some of our articles are more cautious than the marketing language you will find on product pages — and that is intentional.

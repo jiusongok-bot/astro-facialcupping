@@ -6,8 +6,6 @@ section: "safety"
 
 A common concern about facial cupping is whether it can damage the skin. When practiced correctly, facial cupping is generally safe — but improper technique can cause problems.
 
-![Cupping therapy on arm](/images/articles/cupping-arm.jpg)
-
 ## When It's Safe
 
 Facial cupping is safe when:

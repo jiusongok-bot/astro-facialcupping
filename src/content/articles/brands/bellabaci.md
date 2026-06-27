@@ -6,8 +6,6 @@ section: "brands"
 
 Bellabaci is one of the most recognized brands in the facial cupping space, known for their distinctive pink silicone cups and comprehensive treatment systems. Founded by a South African esthetician, the brand has built a global presence through a combination of product quality and practitioner education.
 
-![Massage oil and treatment](/images/articles/massage-oil.jpg)
-
 ## Product Range
 
 Bellabaci offers several facial cupping sets, from basic starter kits (3 cups with a guide) to complete treatment systems that include multiple cup sizes, training oils, and access to video libraries. Their cups feature a patented design with a built-in squeeze-and-release suction mechanism that gives users fine control over pressure. The range includes five cup sizes — extra small through large — covering the entire face from the delicate under-eye area to the broader cheeks and forehead.

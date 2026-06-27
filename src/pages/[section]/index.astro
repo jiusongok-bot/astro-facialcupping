@@ -4,7 +4,21 @@ import Nav from "@/components/Nav.astro";
 import Footer from "@/components/Footer.astro";
 import ArticleCard from "@/components/ArticleCard.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
+import PageHero from "@/components/PageHero.astro";
 import { getCollection } from "astro:content";
+
+// Section → background image mapping
+const sectionBgImage: Record<string, string> = {
+  learn: "/images/learn.png",
+  benefits: "/images/benefits.png",
+  "how-to": "/images/howto.png",
+  safety: "/images/safety.png",
+  tools: "/images/tools.png",
+  research: "/images/research.png",
+  oils: "/images/oils.png",
+  glowcup: "/images/glowcup.png",
+  about: "/images/about.png",
+};
 
 export async function getStaticPaths() {
   const allSections = await getCollection("sections");
@@ -24,41 +38,24 @@ export async function getStaticPaths() {
 }
 
 const { section, sectionArticles } = Astro.props;
-
-// Section-level image mapping
-const sectionImages: Record<string, string> = {
-  learn: "/images/learn.png",
-  benefits: "/images/benefits.png",
-  "how-to": "/images/howto.png",
-  safety: "/images/safety.png",
-  tools: "/images/articles/cupping-cups-set.jpg",
-  research: "/images/research.png",
-  oils: "/images/articles/jade-roller-skincare.jpg",
-  comparisons: "/images/articles/silicone-therapy.jpg",
-  brands: "/images/articles/skincare-cream.jpg",
-  glowcup: "/images/articles/woman-cupping-cup.jpg",
-  about: "/images/articles/doctor-smiling.jpg",
-};
+const bgImage = sectionBgImage[section.id] ?? "/images/hero-bg.png";
 ---
 
 <BaseLayout title={section.data.title} description={section.data.description}>
   <Nav />
   <main class="flex-1">
-    <div class="max-w-[1200px] mx-auto px-5 pt-10 pb-20">
+    <!-- Section Hero -->
+    <PageHero
+      title={section.data.title}
+      description={section.data.description}
+      backgroundImage={bgImage}
+    />
+
+    <div class="max-w-[1200px] mx-auto px-5 pt-6 pb-20">
       <Breadcrumb items={[{ label: section.data.title, href: `/${section.id}` }]} />
 
-      <!-- Section header -->
-      <div class="mt-8 mb-12">
-        <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-forest">
-          {section.data.title}
-        </h1>
-        <p class="mt-4 text-lg text-muted max-w-[60ch] leading-relaxed">
-          {section.data.description}
-        </p>
-      </div>
-
       <!-- Articles grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
         {sectionArticles.map((article) => {
           const slug = article.id.split("/")[1];
           return (
@@ -66,7 +63,6 @@ const sectionImages: Record<string, string> = {
               title={article.data.title}
               description={article.data.description}
               href={`/${section.id}/${slug}`}
-              image={sectionImages[section.id] ?? sectionImages["learn"]}
               tag={section.data.title}
             />
           );

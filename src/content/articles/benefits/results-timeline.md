@@ -6,8 +6,6 @@ section: "benefits"
 
 When you start facial cupping, results develop gradually. Understanding the timeline helps set realistic expectations and keeps you motivated.
 
-![Senior woman with mirror checking skin](/images/articles/senior-mirror.jpg)
-
 ## Week 1-2: Initial Changes
 
 In the first two weeks, you may notice:

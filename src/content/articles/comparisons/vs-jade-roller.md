@@ -6,8 +6,6 @@ section: "comparisons"
 
 Jade rollers have been a skincare staple for years, but how do they compare to facial cupping? Both tools offer benefits, but they work through different mechanisms and produce different results.
 
-![Skincare cream and facial tools](/images/articles/skincare-cream.jpg)
-
 ## Mechanism of Action
 
 | Factor | Facial Cupping | Jade Roller |

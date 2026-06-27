@@ -6,8 +6,6 @@ section: "brands"
 
 Primally Pure is a clean beauty brand known for its natural, non-toxic skincare philosophy. Their facial cupping set has gained popularity among those who prioritize chemical-free beauty tools and want a complete system that includes both cups and compatible skincare products.
 
-![Natural skincare products](/images/articles/skincare-cream.jpg)
-
 ## What Primally Pure Offers
 
 Primally Pure's facial cupping set includes medical-grade silicone cups in multiple sizes along with their signature organic facial oil. What sets them apart from most competitors is that the set is designed as a complete system — the oil is formulated specifically to provide the right glide consistency for cupping while delivering skincare benefits through ingredients like jojoba, rosehip, and sea buckthorn. The set comes in a reusable storage case with an illustrated guide.

@@ -6,8 +6,6 @@ section: "safety"
 
 One of the most frequently asked questions about facial cupping is whether it can be practiced daily. The answer depends on your experience level, technique, and skin sensitivity.
 
-![Facial cupping massage](/images/articles/cupping-massage.jpg)
-
 ## For Beginners
 
 If you are new to facial cupping, start with 2-3 times per week. This allows your skin to adapt to the practice and gives you time to refine your technique without overstimulating your skin.

@@ -9,8 +9,6 @@ dateUpdated: "2026-05-20"
 
 Starting facial cupping for the first time? This guide covers everything you need to know to begin safely and confidently.
 
-![Facial cupping set equipment](/images/articles/cupping-cups-set.jpg)
-
 ## What You'll Need
 
 A facial cupping set designed for the face — silicone cups are strongly recommended for beginners because they are easy to control and allow you to adjust suction by squeezing more or less. You will also need a facial oil or serum for glide; thicker oils like jojoba or grapeseed work best. Finally, start with clean, dry skin — always remove makeup and cleanse before each session.
@@ -33,4 +31,4 @@ Look for oils that provide lasting slip rather than those that absorb quickly. J
 
 ---
 
-**Related:** [Step-by-Step Tutorial](/how-to/tutorial) | [Technique Library](/how-to/techniques) | [Common Mistakes](/how-to/mistakes)
+**Related:** [Step-by-Step Tutorial](/how-to/facial-cupping-step-by-step-tutorial) | [Technique Library](/how-to/facial-cupping-techniques) | [Common Mistakes](/how-to/common-facial-cupping-mistakes)

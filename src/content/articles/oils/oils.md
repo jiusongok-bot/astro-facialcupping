@@ -9,8 +9,6 @@ dateUpdated: "2026-06-01"
 
 Choosing the right facial oil is essential for safe and effective cupping. The oil creates the glide needed to move cups smoothly across the skin without dragging, pulling, or causing irritation.
 
-![Skincare oils and jade roller](/images/articles/jade-roller-skincare.jpg)
-
 ## What Makes a Good Cupping Oil
 
 A good cupping oil needs three qualities: it must provide sustained slip (not absorb too quickly), be non-comedogenic (won't clog pores), and be free of irritating ingredients like fragrance or essential oils that could sting under suction. Pure carrier oils work better than blended moisturizers.

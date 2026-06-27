@@ -9,8 +9,6 @@ dateUpdated: "2026-05-20"
 
 GlowCup started with a simple observation: people searching for facial cupping information online had few reliable, well-researched resources. Most search results were either thin blog posts promoting affiliate products or dense academic articles inaccessible to general readers. There was no middle ground — no place that combined thorough research with practical, readable guidance.
 
-![Facial cupping product](/images/articles/woman-cupping-cup.jpg)
-
 ## The Beginning
 
 We set out to create a comprehensive resource center covering facial cupping from every angle — benefits, techniques, safety, tools, and research. Our team includes contributors with backgrounds in skincare, research methodology, and content creation who share a commitment to honest information. We spent months reviewing the existing literature, testing tools, and consulting practitioners before publishing a single article.

@@ -6,8 +6,6 @@ section: "comparisons"
 
 Microcurrent facial devices have gained popularity as at-home alternatives to professional facial toning treatments. But how do they stack up against facial cupping?
 
-![Microcurrent facial device treatment](/images/articles/microcurrent-device.jpg)
-
 ## How Each Works
 
 **Facial cupping** uses mechanical suction to stimulate blood flow, lymphatic drainage, and collagen production. It is a passive technique — the suction does the work.

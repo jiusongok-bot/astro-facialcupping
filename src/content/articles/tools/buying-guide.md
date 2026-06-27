@@ -9,8 +9,6 @@ dateUpdated: "2026-06-10"
 
 Whether you are buying your first facial cupping set or upgrading from a basic kit, understanding what separates a good set from a bad one will save you money and frustration. Here is what to consider.
 
-![Cupping equipment on table](/images/articles/cupping-equipment.jpg)
-
 ## Material
 
 Medical-grade silicone is the standard for facial cupping. It is flexible, hypoallergenic, easy to clean, and provides controlled suction. Avoid sets that do not specify their material grade. If the label says only "silicone" without qualification, treat it with caution. Plastic and glass cups are less suitable for facial use — plastic is too rigid for facial contours, and glass requires external suction sources that make pressure control harder.

@@ -35,4 +35,4 @@ Immediate results from lymphatic drainage are visible after the first session â€
 
 ---
 
-**Related:** [Reducing Puffiness](/benefits/puffiness) | [Lymphatic Drainage Benefits](/benefits/lymphatic) | [Daily Routine Guide](/how-to/routine)
+**Related:** [Reducing Puffiness](/benefits/puffiness) | [Lymphatic Drainage Benefits](/benefits/lymphatic) | [Daily Routine Guide](/how-to/facial-cupping-daily-routine)

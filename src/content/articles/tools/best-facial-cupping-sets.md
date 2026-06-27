@@ -9,8 +9,6 @@ dateUpdated: "2026-06-10"
 
 We evaluate facial cupping sets based on five criteria that matter most for a safe and effective experience. Below is our framework and the sets that perform best across each dimension.
 
-![Facial cupping sets](/images/articles/cupping-cups-set.jpg)
-
 ## Evaluation Criteria
 
 - **Material quality:** Medical-grade silicone construction verified by material labeling. We reject sets that do not disclose their material grade.

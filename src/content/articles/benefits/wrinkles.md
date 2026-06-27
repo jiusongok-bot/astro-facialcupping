@@ -37,4 +37,4 @@ Avoid cupping over areas with active breakouts, sunburn, or broken capillaries. 
 
 ---
 
-**Related:** [Benefits Overview](/benefits/facial-cupping-benefits) | [Facial Cupping Techniques](/how-to/techniques) | [How Cupping Works on Skin](/learn/how-it-works)
+**Related:** [Benefits Overview](/benefits/facial-cupping-benefits) | [Facial Cupping Techniques](/how-to/facial-cupping-techniques) | [How Cupping Works on Skin](/learn/how-facial-cupping-works)
