@@ -2,7 +2,6 @@ import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
-import { unified } from "@astrojs/markdown-remark";
 import rehypeExternalLinks from "rehype-external-links";
 import { visit } from "unist-util-visit";
 
@@ -55,19 +54,17 @@ export default defineConfig({
   site: "https://facialcupping.com",
   integrations: [react(), sitemap()],
   markdown: {
-    processor: unified({
-      rehypePlugins: [
-        rehypeHeadingIds,
-        rehypeLazyImages,
-        [
-          rehypeExternalLinks,
-          {
-            rel: ["nofollow", "noopener", "noreferrer"],
-            target: "_blank",
-          },
-        ],
+    rehypePlugins: [
+      rehypeHeadingIds,
+      rehypeLazyImages,
+      [
+        rehypeExternalLinks,
+        {
+          rel: ["nofollow", "noopener", "noreferrer"],
+          target: "_blank",
+        },
       ],
-    }),
+    ],
   },
   vite: {
     plugins: [tailwindcss()],
