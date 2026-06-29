@@ -26,6 +26,7 @@
     "react-dom": "^19.2.7",
     "rehype": "^13.0.2",
     "rehype-external-links": "^3.0.0",
+    "sharp": "^0.34.1",
     "tailwindcss": "^4.3.1",
     "unist-util-visit": "^5.1.0"
   },
