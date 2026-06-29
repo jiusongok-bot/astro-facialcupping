@@ -37,24 +37,26 @@ const { Content } = await render(entry);
 
 // OG image mapping
 const sectionOG: Record<string, string> = {
-  learn: "/images/learn.png",
-  benefits: "/images/benefits.png",
-  "how-to": "/images/howto.png",
-  safety: "/images/safety.png",
-  tools: "/images/research.png",
-  research: "/images/research.png",
+  learn: "/images/learn.webp",
+  benefits: "/images/benefits.webp",
+  "how-to": "/images/howto.webp",
+  safety: "/images/safety.webp",
+  tools: "/images/research.webp",
+  research: "/images/research.webp",
   oils: "/images/articles/jade-roller-skincare.jpg",
   comparisons: "/images/articles/silicone-therapy.jpg",
   brands: "/images/articles/skincare-cream.jpg",
   glowcup: "/images/articles/woman-cupping-cup.jpg",
   about: "/images/articles/doctor-smiling.jpg",
 };
-const ogImage = sectionOG[sectionSlug] ?? "/images/hero.png";
+const ogImage = sectionOG[sectionSlug] ?? "/images/hero.webp";
 
 const articleSlug = entry.id.split("/")[1];
-const articleURL = `https://facialcupping.com/${sectionSlug}/${articleSlug}`;
+const siteURL = Astro.site?.toString().replace(/\/$/, "") ?? "";
+const articleURL = `${siteURL}/${sectionSlug}/${articleSlug}`;
 const isFAQ = articleSlug.toLowerCase().includes("faq");
 const isContact = articleSlug === "contact";
+const isHowTo = sectionSlug === "how-to";
 
 // Build author object — use Organization for team name, Person for real names
 const authorType = entry.data.author === "FacialCupping.com Team" ? "Organization" : "Person";
@@ -63,7 +65,7 @@ const authorSchema = {
   name: entry.data.author,
 };
 
-// Build schema: FAQPage > ContactPage > Article
+// Build schema: FAQPage > HowTo > ContactPage > Article
 function buildSchema() {
   if (isFAQ) {
     return {
@@ -98,7 +100,7 @@ function buildSchema() {
       mainEntity: {
         "@type": "Organization",
         name: "FacialCupping.com",
-        url: "https://facialcupping.com",
+        url: siteURL,
         contactPoint: {
           "@type": "ContactPoint",
           contactType: "customer service",
@@ -108,13 +110,35 @@ function buildSchema() {
       }
     };
   }
+  if (isHowTo) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: entry.data.title,
+      description: entry.data.description,
+      url: articleURL,
+      image: ogImage ? `${siteURL}${ogImage}` : undefined,
+      author: authorSchema,
+      publisher: {
+        "@type": "Organization",
+        name: "FacialCupping.com",
+      },
+      totalTime: "PT10M",
+      tool: [
+        { "@type": "HowToTool", name: "Facial cupping set (silicone, 3–4 sizes)" },
+      ],
+      supply: [
+        { "@type": "HowToSupply", name: "Facial oil or serum (jojoba, grapeseed, or squalane)" },
+      ],
+    };
+  }
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: entry.data.title,
     description: entry.data.description,
     url: articleURL,
-    image: ogImage ? `https://facialcupping.com${ogImage}` : undefined,
+    image: ogImage ? `${siteURL}${ogImage}` : undefined,
     author: authorSchema,
     publisher: {
       "@type": "Organization",
@@ -125,6 +149,10 @@ function buildSchema() {
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": articleURL,
+    },
+    isPartOf: {
+      "@type": "WebPage",
+      "@id": `${siteURL}/${sectionSlug}`,
     },
   };
 }

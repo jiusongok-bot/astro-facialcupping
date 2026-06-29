@@ -32,7 +32,7 @@ A 2021 study published in *Skin Research and Technology* used laser Doppler imag
 - **Duration of effect:** Elevated blood flow persisted for several minutes after cup removal, suggesting a sustained vasodilation response beyond the immediate treatment window.
 - **Mechanism:** The increased perfusion is attributed to mechanical stretch of the tissue and local release of vasoactive substances such as nitric oxide [\[source\]](https://doi.org/10.1111/srt.12970).
 
-This study provides some of the strongest direct evidence that cupping can modulate local circulation — a finding frequently cited to support the [circulation benefits](/benefits/circulation) claimed by facial cupping practitioners.
+This study provides some of the strongest direct evidence that cupping can modulate local circulation — a finding frequently cited to support the circulation benefits claimed by facial cupping practitioners.
 
 ### The 2021 Dose-Response Study
 
@@ -48,7 +48,7 @@ These results suggest a dose-response relationship where stronger suction yields
 
 ### The Pressure Gap: Body vs. Facial Cupping
 
-A critical limitation shared by both circulation studies is that the suction levels tested (-225 to -300 mmHg) correspond to **body cupping** protocols, which are considerably stronger than the gentle suction used in facial cupping (-50 to -100 mmHg). Whether the circulation-boosting effects scale proportionally at lower pressures remains an open question, as noted in a study published in the *Journal of Back and Musculoskeletal Rehabilitation* [\[source\]](https://doi.org/10.3233/BMR-200120). For guidance on [safe facial cupping practices](/safety/safety-guide), the pressure differential between body and facial applications should always be kept in mind when interpreting these findings.
+A critical limitation shared by both circulation studies is that the suction levels tested (-225 to -300 mmHg) correspond to **body cupping** protocols, which are considerably stronger than the gentle suction used in facial cupping (-50 to -100 mmHg). Whether the circulation-boosting effects scale proportionally at lower pressures remains an open question, as noted in a study published in the *Journal of Back and Musculoskeletal Rehabilitation* [\[source\]](https://doi.org/10.3233/BMR-200120). The pressure differential between body and facial applications should always be kept in mind when interpreting these findings.
 
 ### Summary of Circulation Studies
 
@@ -71,7 +71,7 @@ A 2020 meta-analysis published in *The Journal of Pain* represents one of the mo
 - **Key finding:** Cupping therapy produced **large short-term effects on pain intensity** compared to no-treatment control groups.
 - **Important caveat:** When compared against **sham (placebo) cupping**, the effects were **not statistically significant**. This suggests that some of the observed pain relief may be attributable to placebo effects, expectancy, or the therapeutic context of the treatment rather than the suction mechanism alone [\[source\]](https://doi.org/10.1016/j.jpain.2020.01.002).
 
-This distinction — significant versus no-treatment but not versus sham — is critical for honest interpretation. The [full range of cosmetic benefits](/benefits/facial-cupping-benefits) often cited in popular media should be understood against this nuanced backdrop.
+This distinction — significant versus no-treatment but not versus sham — is critical for honest interpretation. The full range of cosmetic benefits often cited in popular media should be understood against this nuanced backdrop.
 
 ### The 2018 BMJ Open Systematic Review
 
@@ -85,7 +85,7 @@ A 2018 systematic review published in *BMJ Open* focused specifically on cupping
 
 ### Relevance to Facial Applications
 
-For facial applications, the [pain management research](/safety/faq) is indirectly relevant. Facial tension headaches, temporomandibular joint (TMJ) discomfort, and sinus pressure are conditions where practitioners anecdotally report positive outcomes from facial cupping. However, no dedicated RCTs have examined facial cupping specifically for these indications. The existing pain studies used body-cupping protocols on the back, shoulders, and neck — areas with thicker skin and deeper musculature than the face. Extrapolating these findings to facial tissue requires caution, as the [mechanisms of facial cupping](/learn/how-facial-cupping-works) operate at different pressure ranges on more delicate tissue.
+For facial applications, the pain management research is indirectly relevant. Facial tension headaches, temporomandibular joint (TMJ) discomfort, and sinus pressure are conditions where practitioners anecdotally report positive outcomes from facial cupping. However, no dedicated RCTs have examined facial cupping specifically for these indications. The existing pain studies used body-cupping protocols on the back, shoulders, and neck — areas with thicker skin and deeper musculature than the face. Extrapolating these findings to facial tissue requires caution, as the [mechanisms of facial cupping](/learn/how-facial-cupping-works) operate at different pressure ranges on more delicate tissue.
 
 ## Limitations of Current Evidence
 
@@ -119,7 +119,7 @@ To advance the evidence base, future studies should prioritize:
 
 ## What This Means for You
 
-If you are considering facial cupping, the current evidence suggests it is a **low-risk complementary practice** with plausible physiological mechanisms — increased blood flow, lymphatic stimulation, and mild mechanical stress on fibroblasts — but without definitive clinical proof of cosmetic efficacy. The circulation and pain studies provide a reasonable scientific foundation, yet the gap between body-cupping research and facial-specific outcomes means that results cannot be guaranteed. For a practical breakdown of what to expect, see our guide on [whether facial cupping actually works](/safety/does-facial-cupping-work).
+If you are considering facial cupping, the current evidence suggests it is a **low-risk complementary practice** with plausible physiological mechanisms — increased blood flow, lymphatic stimulation, and mild mechanical stress on fibroblasts — but without definitive clinical proof of cosmetic efficacy. The circulation and pain studies provide a reasonable scientific foundation, yet the gap between body-cupping research and facial-specific outcomes means that results cannot be guaranteed.
 
 We recommend approaching facial cupping as part of a broader [skincare routine](/how-to/how-to-do-facial-cupping) rather than a standalone treatment, and consulting a dermatologist before starting if you have underlying skin conditions.
 
@@ -129,4 +129,4 @@ The published research on cupping therapy provides encouraging — but incomplet
 
 We track new publications monthly and update this summary as the evidence base grows. If you are interested in the overall quality of the evidence and our effectiveness ratings by outcome, see the [Evidence Review](/research/facial-cupping-evidence-review). For professional perspectives from dermatologists, estheticians, and TCM practitioners, see [Expert Opinions](/research/facial-cupping-expert-opinions).
 
-**Related:** [Evidence Overview](/research/facial-cupping-evidence-review) | [Expert Opinions](/research/facial-cupping-expert-opinions) | [How Facial Cupping Works](/learn/how-facial-cupping-works) | [Safety Guide](/safety/safety-guide)
+**Related:** [Evidence Overview](/research/facial-cupping-evidence-review) | [Expert Opinions](/research/facial-cupping-expert-opinions) | [How Facial Cupping Works](/learn/how-facial-cupping-works)

@@ -16,7 +16,7 @@ Practitioners use facial cupping to address a wide range of skin and wellness co
 
 ### Lymphatic Drainage and De-Puffing
 
-For clients dealing with fluid retention and puffiness, the mechanical action of facial cupping provides immediate decongestion. The gentle suction moves stagnant interstitial fluid toward the cervical lymph nodes, reducing swelling particularly around the eyes, cheeks, and jawline. This [lymphatic drainage effect](/benefits/lymphatic) is one of the most immediately visible outcomes of a single session, with many clients reporting a noticeably more contoured appearance within minutes.
+For clients dealing with fluid retention and puffiness, the mechanical action of facial cupping provides immediate decongestion. The gentle suction moves stagnant interstitial fluid toward the cervical lymph nodes, reducing swelling particularly around the eyes, cheeks, and jawline. This lymphatic drainage effect is one of the most immediately visible outcomes of a single session, with many clients reporting a noticeably more contoured appearance within minutes.
 
 ### Improved Circulation and Skin Radiance
 
@@ -51,7 +51,7 @@ Each zone receives 3–5 passes with the cup, using light to medium suction depe
 
 ### Duration and Complementary Techniques
 
-Most sessions last 20–30 minutes. Many practitioners combine facial cupping with [gua sha](/comparisons/vs-gua-sha), facial massage, or targeted serums for a comprehensive facial treatment. Some advanced protocols also incorporate microcurrent or LED light therapy after cupping to further stimulate collagen production.
+Most sessions last 20–30 minutes. Many practitioners combine facial cupping with gua sha, facial massage, or targeted serums for a comprehensive facial treatment. Some advanced protocols also incorporate microcurrent or LED light therapy after cupping to further stimulate collagen production.
 
 ## Treatment Frequency and Expected Results
 
@@ -62,11 +62,11 @@ Most sessions last 20–30 minutes. Many practitioners combine facial cupping wi
 | Tension relief (jaw, forehead) | 2–3 times per week | Noticeable relaxation after 1–2 sessions |
 | Long-term skin tone improvement | 2–3 times per week | Gradual improvement over 4–8 weeks |
 
-Consistency is more important than session length. A focused 5–10 minute daily routine often produces better results than a single extended weekly session. For a detailed week-by-week breakdown, see our [results timeline guide](/benefits/results-timeline).
+Consistency is more important than session length. A focused 5–10 minute daily routine often produces better results than a single extended weekly session.
 
 ## At-Home vs Professional Treatment
 
-Home cupping is effective for maintenance and daily [lymphatic drainage](/benefits/lymphatic). Professional treatments offer several advantages:
+Home cupping is effective for maintenance and daily lymphatic drainage. Professional treatments offer several advantages:
 
 - **Precise skin assessment** — a trained practitioner can identify areas of congestion, tension, and sensitivity that you may miss.
 - **Stronger suction for deeper work** — professionals can safely apply higher suction levels for fascial release that home users should avoid.
@@ -85,7 +85,7 @@ While facial cupping is generally safe, certain individuals should exercise caut
 - **Blood-thinning medications** — anticoagulants increase the risk of bruising even with light suction.
 - **Broken capillaries (telangiectasia)** — suction can cause further capillary damage in affected areas.
 
-For a comprehensive list of contraindications, including guidance for pregnancy and chronic skin conditions, see our full [contraindications guide](/safety/contraindications). Always consult a dermatologist or licensed practitioner before starting facial cupping if you have any underlying skin concerns.
+For a comprehensive list of contraindications, including guidance for pregnancy and chronic skin conditions, always consult a dermatologist or licensed practitioner before starting facial cupping if you have any underlying skin concerns.
 
 ## Choosing a Practitioner
 
@@ -101,8 +101,8 @@ If seeking professional facial cupping, look for licensed estheticians or acupun
 Ready to start or deepen your facial cupping practice? Here are recommended next steps:
 
 1. **Beginner?** Start with our [complete beginner's guide](/how-to/how-to-do-facial-cupping) covering technique fundamentals, cup selection, and a simple 5-minute routine.
-2. **Concerned about safety?** Review the [safety guide](/safety/safety-guide) for essential do's and don'ts, then check the [contraindications list](/safety/contraindications) to confirm facial cupping is appropriate for you.
-3. **Choosing tools?** Our [best facial cupping tools guide](/tools/best-tools) compares silicone, glass, and hybrid options across budgets.
+2. **Concerned about safety?** Consult a dermatologist or licensed practitioner to confirm facial cupping is appropriate for you.
+3. **Choosing tools?** Look for medical-grade silicone cups designed specifically for facial use.
 4. **Want to understand the science?** Explore [how facial cupping works](/learn/how-facial-cupping-works) for a deeper look at the physiological mechanisms behind the technique.
 
 ---

@@ -28,13 +28,13 @@ The perspectives presented here were compiled from professional discussions, pub
 
 Most dermatologists view facial cupping as a low-risk complementary practice when performed correctly. The improved circulation from gentle massage techniques can benefit skin health by increasing oxygen delivery and nutrient exchange at the cellular level. Board-certified dermatologists generally describe it as a valid adjunctive technique for patients interested in non-invasive facial rejuvenation — provided they have no active skin conditions like severe acne, rosacea flares, or compromised skin barriers.
 
-For patients with sensitive or reactive skin, dermatologists recommend patch-testing suction intensity on the jawline before moving to more delicate areas like the under-eye region. Those taking blood-thinning medications or with a history of [broken capillaries](/safety/side-effects) should consult their dermatologist before starting any cupping practice.
+For patients with sensitive or reactive skin, dermatologists recommend patch-testing suction intensity on the jawline before moving to more delicate areas like the under-eye region. Those taking blood-thinning medications or with a history of broken capillaries should consult their dermatologist before starting any cupping practice.
 
 ### Clinical Recommendations
 
 Dermatologists emphasize that facial cupping should never replace medical treatments for diagnosed skin conditions. The consensus is that gentle, short-duration sessions (5–10 minutes) with proper lubrication pose minimal risk for healthy skin. Excessive suction or prolonged sessions, however, could cause bruising, petechiae, or broken capillaries — outcomes that counteract the intended benefits.
 
-For patients interested in [anti-aging benefits](/benefits/rejuvenation), dermatologists often position facial cupping alongside proven treatments like retinoids, vitamin C serums, and sun protection rather than as a replacement. The cupping component is seen as supporting overall skin vitality through enhanced [blood circulation](/benefits/circulation), which may improve product absorption and give the skin a healthier appearance.
+For patients interested in anti-aging benefits, dermatologists often position facial cupping alongside proven treatments like retinoids, vitamin C serums, and sun protection rather than as a replacement. The cupping component is seen as supporting overall skin vitality through enhanced blood circulation, which may improve product absorption and give the skin a healthier appearance.
 
 ### Bottom Line from Dermatology
 
@@ -44,13 +44,13 @@ Facial cupping is a reasonable wellness practice for healthy skin but is not a t
 
 ### Client Results
 
-Facial estheticians who incorporate cupping into their practice report positive client feedback, particularly for reducing puffiness and creating a more sculpted appearance. Many estheticians use cupping as part of a broader facial massage protocol, combining it with traditional techniques to enhance [lymphatic drainage](/benefits/lymphatic) and product absorption.
+Facial estheticians who incorporate cupping into their practice report positive client feedback, particularly for reducing puffiness and creating a more sculpted appearance. Many estheticians use cupping as part of a broader facial massage protocol, combining it with traditional techniques to enhance lymphatic drainage and product absorption.
 
 Client satisfaction data from esthetic practices suggests that cupping is most appreciated for its immediate de-puffing effect, especially around the cheeks and jawline. Some estheticians report that clients notice smoother makeup application and a more defined facial contour after a series of treatments.
 
 ### Technique Recommendations
 
-Estheticians note that client satisfaction depends heavily on managing expectations. Results are cumulative: one session looks good, but a series of 6–8 weekly sessions shows the real difference in skin tone and contour. They emphasize the importance of proper technique training and recommend that beginners start with [silicone cups](/tools/silicone) for better control and gentler suction.
+Estheticians note that client satisfaction depends heavily on managing expectations. Results are cumulative: one session looks good, but a series of 6–8 weekly sessions shows the real difference in skin tone and contour. They emphasize the importance of proper technique training and recommend that beginners start with silicone cups for better control and gentler suction.
 
 Many estheticians integrate cupping into a full facial protocol that includes cleansing, exfoliation, serum application, and cupping massage. The cups are typically moved in upward and outward strokes along the [established technique patterns](/how-to/facial-cupping-techniques), never held stationary on the face to avoid bruising.
 
@@ -81,8 +81,8 @@ Facial cupping is a legitimate therapeutic modality when understood within the f
 Despite their different theoretical frameworks, the three practitioner groups share several important areas of agreement:
 
 1. **Gentle technique is essential.** All three groups agree that excessive suction causes more harm than good. Light to moderate pressure, kept in constant motion, is the recommended approach.
-2. **Lubrication is non-negotiable.** Using a quality facial oil or serum before cupping prevents skin pulling and friction damage. See our guide on [the best oils for facial cupping](/oils/best-oil) for practitioner-recommended options.
-3. **Contraindications must be respected.** Active acne, open wounds, sunburn, rosacea flares, and certain medical conditions are universally recognized as reasons to avoid facial cupping. Review the full list of [contraindications](/safety/contraindications) before starting.
+2. **Lubrication is non-negotiable.** Using a quality facial oil or serum before cupping prevents skin pulling and friction damage.
+3. **Contraindications must be respected.** Active acne, open wounds, sunburn, rosacea flares, and certain medical conditions are universally recognized as reasons to avoid facial cupping.
 4. **Results are cumulative.** No practitioner group promises instant transformation. Consistent practice over weeks is the common recommendation.
 5. **It complements but does not replace medical care.** All three perspectives position facial cupping as a wellness practice, not a medical treatment.
 
@@ -117,10 +117,10 @@ Estheticians generally recommend a series of 6–8 weekly sessions for noticeabl
 
 ### Is facial cupping the same as gua sha?
 
-No. While both are rooted in Traditional Chinese Medicine, [facial cupping vs. gua sha](/comparisons/vs-gua-sha) differ in technique and tools. Cupping uses suction from cups to lift and stimulate tissue, while gua sha uses a scraping motion with a flat tool. Some practitioners combine both in a single session.
+No. While both are rooted in Traditional Chinese Medicine, facial cupping vs. gua sha differ in technique and tools. Cupping uses suction from cups to lift and stimulate tissue, while gua sha uses a scraping motion with a flat tool. Some practitioners combine both in a single session.
 
 ### Can facial cupping damage my skin?
 
-When performed incorrectly — with excessive suction, without lubrication, or on contraindicated skin conditions — facial cupping can cause bruising, broken capillaries, or skin irritation. Following [safety guidelines](/safety/safety-guide) and starting with gentle technique minimizes risk significantly.
+When performed incorrectly — with excessive suction, without lubrication, or on contraindicated skin conditions — facial cupping can cause bruising, broken capillaries, or skin irritation. Following safety guidelines and starting with gentle technique minimizes risk significantly.
 
 **Related:** [Scientific Studies](/research/facial-cupping-scientific-studies) | [Evidence Overview](/research/facial-cupping-evidence-review) | [What Is Facial Cupping](/learn/what-is-facial-cupping)

@@ -27,7 +27,6 @@ For questions about facial cupping — techniques, benefits, safety, or tool sel
 - [What Is Facial Cupping?](/learn/what-is-facial-cupping)
 - [Facial Cupping FAQ](/learn/facial-cupping-faq)
 - [How to Do Facial Cupping at Home](/how-to/how-to-do-facial-cupping)
-- [Safety & Contraindications](/safety/safety-guide)
 
 If you cannot find what you are looking for, email us and we will do our best to help.
 

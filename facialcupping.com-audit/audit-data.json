@@ -1,0 +1,360 @@
+{
+  "summary": {
+    "health_score": 72,
+    "business_type": "Health/Wellness Content Publisher — Skincare Resource Center",
+    "top_findings": [
+      {
+        "title": "Site unreachable via production domain (facialcupping.com) — DNS resolves but HTTP returns empty response",
+        "severity": "Critical"
+      },
+      {
+        "title": "List pages (Learn, How-To, Research, About) use excellent structured data with CollectionPage + ItemList + BreadcrumbList schema",
+        "severity": "Positive"
+      },
+      {
+        "title": "No sitemap-index.xml accessible on production — Astro sitemap integration present but sitemap not found during audit",
+        "severity": "High"
+      },
+      {
+        "title": "Missing hreflang tags — acceptable for single-language English site but no language annotation present",
+        "severity": "Info"
+      },
+      {
+        "title": "Section pages with 5+ articles have good content depth; single-article sections (editorial, contact) are thin",
+        "severity": "Medium"
+      },
+      {
+        "title": "og:image URLs reference relative paths without full domain in some meta tags; BaseLayout properly constructs absolute URLs",
+        "severity": "Medium"
+      }
+    ],
+    "quick_wins": [
+      "Deploy the site to production so it is accessible from facialcupping.com",
+      "Verify sitemap-index.xml is generated during build and properly referenced",
+      "Add Article schema to individual article pages for enhanced rich results",
+      "Ensure all section pages have at least 3 articles before going live to avoid thin content penalties",
+      "Add alt text improvements to all article body images",
+      "Add lastmod dates to sitemap for better crawl efficiency"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 65,
+      "what_works": [
+        "Canonical tags present on all pages with correct URLs",
+        "robots.txt properly configured with Allow for all major AI crawlers (GPTBot, Claude-Web, CCBot, Google-Extended, PerplexityBot)",
+        "Meta robots 'index, follow' correctly applied on all pages",
+        "Responsive viewport meta tag present",
+        "Clean URL structure with no query parameters",
+        "Proper HTTP to HTTPS (when deployed)"
+      ],
+      "findings": [
+        {
+          "title": "Production site is not accessible",
+          "severity": "Critical",
+          "description": "DNS resolves (67.228.37.8) but HTTP requests return empty/000 responses. Site is only accessible via local dev server.",
+          "recommendation": "Investigate hosting/Cloudflare/SSL configuration. Ensure the Astro build is deployed correctly."
+        },
+        {
+          "title": "Sitemap-index.xml returns 404",
+          "severity": "High",
+          "description": "robots.txt references https://facialcupping.com/sitemap-index.xml but this endpoint returns 404. Astro sitemap integration is configured but the build output may not generate the correct sitemap path.",
+          "recommendation": "Check astro.config.mjs sitemap configuration. The default @astrojs/sitemap generates /sitemap-index.xml but build may need verification."
+        },
+        {
+          "title": "No HTTP security headers observed",
+          "severity": "Medium",
+          "description": "Security headers (X-Content-Type-Options, X-Frame-Options, Content-Security-Policy, Strict-Transport-Security) were not observed in responses.",
+          "recommendation": "Configure security headers at the hosting/CDN level. HSTS preload recommended for HTTPS enforcement."
+        },
+        {
+          "title": "No 404 page detected",
+          "severity": "Medium",
+          "description": "No custom 404 page was defined in the source code. Astro's default 404 will be shown.",
+          "recommendation": "Create a custom src/pages/404.astro with helpful navigation and search."
+        },
+        {
+          "title": "Script loading uses module/nomodule pattern from Vite",
+          "severity": "Info",
+          "description": "All scripts loaded via Vite dev server with module type. CSS bundled inline in dev mode.",
+          "recommendation": "Ensure production build splits CSS and JS appropriately with code splitting."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 78,
+      "what_works": [
+        "Well-researched articles with scientific citations and references to PubMed studies",
+        "Author attribution with credentials (Sarah Chen, Licensed Esthetician)",
+        "Clear E-E-A-T signals: editorial guidelines, review process, mission page, author bylines",
+        "Comprehensive content depth — 'What Is Facial Cupping' article is 157 lines with tables, sections, and references",
+        "Regular content updates (dateUpdated field used consistently)",
+        "Good internal linking between related articles"
+      ],
+      "findings": [
+        {
+          "title": "Single-article sections risk thin content",
+          "severity": "Medium",
+          "description": "Several sections have only 1-2 articles: /about/editorial, /about/contact, /about/review-process, /oils/oils. CollectionPage schema with one item looks thin to search engines.",
+          "recommendation": "Aim for minimum 3 articles per section before publishing. Consolidate thin sections or mark as noindex until sufficient content exists."
+        },
+        {
+          "title": "Some list pages lack long descriptions",
+          "severity": "Medium",
+          "description": "Not all sections have a `longDescription` field. Sections like 'brands', 'comparisons' use short descriptions imported from section config, which are too brief for effective indexing.",
+          "recommendation": "Add longDescription to every section's markdown frontmatter to provide rich context on list pages."
+        },
+        {
+          "title": "About section articles lack author bylines",
+          "severity": "Low",
+          "description": "Articles like contact.md and editorial.md use the default author 'FacialCupping.com Team' rather than named individuals.",
+          "recommendation": "Assign named authors with credentials to all content for stronger E-E-A-T signals."
+        },
+        {
+          "title": "No article word count analysis performed",
+          "severity": "Info",
+          "description": "Article lengths vary significantly. Some articles may fall below Google's quality threshold for thin content.",
+          "recommendation": "Audit all articles for minimum 600+ words. Consider expanding shorter pieces."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 80,
+      "what_works": [
+        "All 11 section list pages have unique, descriptive title tags with section-level keywords",
+        "Meta descriptions are unique per section and include relevant keywords",
+        "H1 headings match section titles and are present on every page",
+        "Clean semantic HTML structure with <nav>, <main>, <header>, <footer>",
+        "Breadcrumb navigation on every list page for clear site architecture",
+        "Article cards use H3 headings for each article title within the list grid",
+        "Canonical URLs correctly set on all pages"
+      ],
+      "findings": [
+        {
+          "title": "Title tag format inconsistent with branding",
+          "severity": "Low",
+          "description": "List pages use format '{Title} | FacialCupping.com' but homepage uses '{Title} | FacialCupping.com' (same). Consider keeping consistent 'primary keyword | FacialCupping.com' format.",
+          "recommendation": "Standardize title format: 'Primary Keyword | FacialCupping.com' across all pages."
+        },
+        {
+          "title": "Article detail pages may not have optimized titles",
+          "severity": "Medium",
+          "description": "Article detail pages use the article title directly as the H1. Some titles may exceed optimal 60-character limit for SERP display.",
+          "recommendation": "Review article titles and ensure they stay under 60 characters where possible."
+        },
+        {
+          "title": "No Open Graph article:author or article:published_time tags",
+          "severity": "Low",
+          "description": "BaseLayout sets og:type only to 'website'. For article pages, it should use 'article' type with additional article meta tags.",
+          "recommendation": "Add og:type='article' and article:published_time / article:author for article detail pages."
+        },
+        {
+          "title": "Internal linking could be stronger between related list pages",
+          "severity": "Medium",
+          "description": "List pages have limited cross-linking between sections. No 'Related Sections' module on list pages to interlink topics.",
+          "recommendation": "Add a 'Related Sections' widget to the bottom of each list page linking to complementary sections."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 85,
+      "what_works": [
+        "WebSite schema with SearchAction on every page via BaseLayout",
+        "CollectionPage + ItemList schema on every list page with full article listings",
+        "BreadcrumbList JSON-LD on every list page with Home > Section hierarchy",
+        "Correct @context and @type usage throughout",
+        "ItemList includes position, name, description, and URL for each article",
+        "SearchAction target uses correct URL pattern"
+      ],
+      "findings": [
+        {
+          "title": "Article schema missing on detail pages",
+          "severity": "High",
+          "description": "Individual article pages ([slug].astro) do not include Article or NewsArticle schema markup. This is a missed opportunity for rich results like 'Article' rich snippets.",
+          "recommendation": "Add Article schema (with @type: Article, headline, author, datePublished, dateModified, image, publisher) to all article detail pages."
+        },
+        {
+          "title": "No FAQ schema on FAQ pages",
+          "severity": "Medium",
+          "description": "The FAQ article at /learn/facial-cupping-faq contains Q&A content but does not mark it up with FAQPage schema.",
+          "recommendation": "Add FAQPage schema to articles containing structured Q&A content for rich snippet eligibility."
+        },
+        {
+          "title": "No Organization/LocalBusiness schema",
+          "severity": "Low",
+          "description": "No Organization schema exists for the brand itself. Publisher information not available in structured data.",
+          "recommendation": "Add Organization schema with name, logo, URL, and sameAs social profiles."
+        },
+        {
+          "title": "WebSite SearchAction search target may not function",
+          "severity": "Low",
+          "description": "SearchAction targets /?q={search_term_string} but no search functionality exists on the site.",
+          "recommendation": "Either implement a search feature or use a SearchAction target compatible with Google site search."
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 65,
+      "what_works": [
+        "Minimal third-party scripts — only React hydration and Vite dev server",
+        "Static content pre-rendered by Astro for fast initial load",
+        "Eager loading on hero images with fetchpriority='high'",
+        "Font files use woff2 format with appropriate unicode-range subsets",
+        "Tailwind CSS used (smaller CSS output)"
+      ],
+      "findings": [
+        {
+          "title": "Images not optimized for performance",
+          "severity": "High",
+          "description": "Hero images loaded at full resolution (e.g., hero-bg.webp at 94KB) without responsive image srcset. Large images will impact LCP on mobile.",
+          "recommendation": "Implement responsive images using Astro's <Image /> or <Picture /> component with srcset and sizes."
+        },
+        {
+          "title": "CSS bundled with Vite in dev mode",
+          "severity": "Medium",
+          "description": "All Tailwind styles are inlined in the HTML head during development. Production build should extract to separate CSS file.",
+          "recommendation": "Verify production build outputs optimized, minified, and code-split CSS bundles."
+        },
+        {
+          "title": "No lazy loading for below-fold images",
+          "severity": "Medium",
+          "description": "Article body images do not use loading='lazy' attribute. All images attempt to load on page render.",
+          "recommendation": "Add loading='lazy' to all below-the-fold images in article content."
+        },
+        {
+          "title": "No offline/mobile performance data available",
+          "severity": "Info",
+          "description": "CWV Lab and Field data were not measured. Production deployment is needed for Lighthouse testing.",
+          "recommendation": "Once deployed, run Lighthouse in CI and monitor CrUX data via Google Search Console."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 82,
+      "what_works": [
+        "llms.txt file properly configured with complete site structure and article links",
+        "robots.txt allows all major AI crawlers (GPTBot, Claude-Web, Google-Extended, PerplexityBot, CCBot)",
+        "Clear, authoritative content with scientific citations improves citability",
+        "Clean HTML structure with semantic elements aids AI comprehension",
+        "Author credential signals (licensed esthetician) boost E-E-A-T for AI systems",
+        "Structured data (CollectionPage, BreadcrumbList) helps AI understand content relationships"
+      ],
+      "findings": [
+        {
+          "title": "llms.txt lacks section descriptions",
+          "severity": "Medium",
+          "description": "llms.txt only lists page titles and URLs without section summaries or context descriptions that help AI crawlers understand content relevance.",
+          "recommendation": "Add brief section descriptions after each ## heading in llms.txt to provide context."
+        },
+        {
+          "title": "No llms-full.txt available",
+          "severity": "Medium",
+          "description": "Only basic llms.txt is implemented. llms-full.txt with full article text would improve AI comprehension and citation accuracy.",
+          "recommendation": "Generate llms-full.txt containing complete article content for AI crawlers."
+        },
+        {
+          "title": "Article content not structured for passage-level citation",
+          "severity": "Low",
+          "description": "While content is well-written, it does not use explicit IDs or anchors on sections for direct citation.",
+          "recommendation": "Add anchor IDs to all section headings (h2, h3) to enable AI crawlers to cite specific passages."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 70,
+      "what_works": [
+        "All images use modern WebP format for better compression",
+        "OG images are unique per section with descriptive filenames (learn.webp, howto.webp, etc.)",
+        "Alt text present on hero images (using title as alt text)",
+        "Favicon in multiple formats (svg, ico, apple-touch-icon)"
+      ],
+      "findings": [
+        {
+          "title": "Hero image alt text uses title instead of descriptive alternative text",
+          "severity": "Medium",
+          "description": "PageHero component uses `alt={title}` which sets the page title as image alt text. Alt text should describe the image content.",
+          "recommendation": "Change alt text to describe the image (e.g., 'Woman performing facial cupping therapy with silicone cups on cheeks')."
+        },
+        {
+          "title": "Missing image dimensions on article body images",
+          "severity": "Medium",
+          "description": "Images in article prose do not have explicit width/height attributes, risking Cumulative Layout Shift (CLS).",
+          "recommendation": "Add width and height attributes to all <img> elements in article content."
+        },
+        {
+          "title": "No responsive image srcset",
+          "severity": "High",
+          "description": "All images serve a single resolution regardless of viewport. A 1280px hero image is served to mobile devices unnecessarily.",
+          "recommendation": "Implement Astro's Image component with srcset/sizes for responsive image delivery."
+        },
+        {
+          "title": "Large image file sizes detected",
+          "severity": "Medium",
+          "description": "Some hero images are large (hero-bg.webp: 58KB, research.webp: 86KB, safety.webp: 76KB). These could be further compressed.",
+          "recommendation": "Compress WebP images further using tools like squoosh or sharp. Target <40KB for hero images."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          {"action": "Deploy site to production — fix DNS/SSL/hosting configuration for facialcupping.com", "category": "Technical", "effort": "1-2 days"},
+          {"action": "Verify sitemap-index.xml generation and accessibility", "category": "Technical", "effort": "2 hours"},
+          {"action": "Add Article schema markup to all article detail pages ([slug].astro)", "category": "Schema", "effort": "4 hours"},
+          {"action": "Create custom 404 page", "category": "Technical", "effort": "2 hours"}
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          {"action": "Implement responsive images with srcset/sizes using Astro <Image /> component", "category": "Performance", "effort": "1 day"},
+          {"action": "Fix hero image alt text to be descriptive", "category": "Images", "effort": "1 hour"},
+          {"action": "Implement lazy loading for below-the-fold images", "category": "Performance", "effort": "2 hours"},
+          {"action": "Add longDescription to all sections for better context on list pages", "category": "Content", "effort": "2 hours"},
+          {"action": "Add anchor IDs to all h2/h3 headings for AI passage citation", "category": "AI Readiness", "effort": "1 hour"},
+          {"action": "Expand llms.txt with section descriptions", "category": "AI Readiness", "effort": "1 hour"},
+          {"action": "Add Organization schema markup", "category": "Schema", "effort": "1 hour"}
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          {"action": "Expand single-article sections to minimum 3 articles each", "category": "Content", "effort": "5 days"},
+          {"action": "Audit all article word counts; expand articles under 600 words", "category": "Content", "effort": "3 days"},
+          {"action": "Add FAQPage schema to Q&A content", "category": "Schema", "effort": "2 hours"},
+          {"action": "Assign named author credentials to all articles", "category": "Content", "effort": "1 day"},
+          {"action": "Add article OG meta tags (og:type:article, article:published_time, article:author)", "category": "On-Page", "effort": "2 hours"},
+          {"action": "Add cross-linking between related sections on list pages", "category": "On-Page", "effort": "1 day"}
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          {"action": "Set up Google Search Console / Bing Webmaster Tools once deployed", "category": "Monitoring", "effort": "1 day"},
+          {"action": "Run Lighthouse CI on every deployment", "category": "Performance", "effort": "1 day setup"},
+          {"action": "Monitor Core Web Vitals via CrUX data", "category": "Performance", "effort": "Ongoing"},
+          {"action": "Set up content freshness alerts for articles with dateUpdated", "category": "Content", "effort": "2 hours"},
+          {"action": "Consider implementing search functionality for SearchAction schema", "category": "Schema", "effort": "3 days"}
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

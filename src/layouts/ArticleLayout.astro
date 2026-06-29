@@ -18,7 +18,15 @@ interface Props {
 const { title, description, ogImage, ogType, breadcrumbs, author, datePublished, dateUpdated } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType}>
+<BaseLayout
+  title={title}
+  description={description}
+  ogImage={ogImage}
+  ogType={ogType}
+  author={author}
+  datePublished={datePublished}
+  dateUpdated={dateUpdated}
+>
   <Nav />
   <main class="flex-1">
     <div class="max-w-[1200px] mx-auto px-5 pt-8 pb-16">

@@ -4,9 +4,10 @@ interface Props {
   description: string;
   href: string;
   tag?: string;
+  date?: string;
 }
 
-const { title, description, href, tag } = Astro.props;
+const { title, description, href, tag, date } = Astro.props;
 ---
 
 <a
@@ -25,5 +26,10 @@ const { title, description, href, tag } = Astro.props;
     <p class="text-sm text-muted leading-relaxed line-clamp-2">
       {description}
     </p>
+    {date && (
+      <p class="text-xs text-muted/70 mt-2.5 pt-2.5 border-t border-border">
+        <time datetime={date}>{new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}</time>
+      </p>
+    )}
   </div>
 </a>

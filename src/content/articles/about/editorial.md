@@ -1,5 +1,5 @@
 ---
-title: "Editorial Guidelines & Content Standards | FacialCupping.com"
+title: "Editorial Guidelines & Content Standards"
 description: "Our editorial guidelines ensure accuracy, independence, and transparency across all FacialCupping.com content. Learn how we fact-check health claims, source research, and maintain editorial integrity."
 section: "about"
 status: "published"

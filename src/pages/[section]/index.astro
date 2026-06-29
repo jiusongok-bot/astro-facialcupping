@@ -7,18 +7,65 @@ import Breadcrumb from "@/components/Breadcrumb.astro";
 import PageHero from "@/components/PageHero.astro";
 import { getCollection } from "astro:content";
 import { filterVisible } from "@/lib/visibility";
+import { heroImages, heroAltText } from "@/assets/images";
 
-// Section → background image mapping
-const sectionBgImage: Record<string, string> = {
-  learn: "/images/learn.png",
-  benefits: "/images/benefits.png",
-  "how-to": "/images/howto.png",
-  safety: "/images/safety.png",
-  tools: "/images/tools.png",
-  research: "/images/research.png",
-  oils: "/images/oils.png",
-  glowcup: "/images/glowcup.png",
-  about: "/images/about.png",
+// Per-section SEO metadata
+const sectionSEO: Record<string, { title: string; description: string; ogImage: string }> = {
+  learn: {
+    title: "Learn Facial Cupping: Benefits, Techniques & Complete Guide",
+    description: "Learn facial cupping — expert guides on techniques, benefits, 3,000-year history, therapy sessions and FAQ for all skill levels.",
+    ogImage: "/images/learn.webp",
+  },
+  benefits: {
+    title: "Facial Cupping Benefits: Skin Rejuvenation, Circulation & More",
+    description: "Discover how facial cupping boosts circulation, reduces puffiness, and rejuvenates skin — evidence-based benefits explained by experts.",
+    ogImage: "/images/benefits.webp",
+  },
+  "how-to": {
+    title: "How to Do Facial Cupping: Step-by-Step Techniques & Tips",
+    description: "Step-by-step facial cupping guides for beginners and practitioners — learn proper technique, routines, and best practices at home.",
+    ogImage: "/images/howto.webp",
+  },
+  safety: {
+    title: "Facial Cupping Safety: Risks, Precautions & Expert Advice",
+    description: "Is facial cupping safe? Learn about risks, precautions, contraindications, and how to practice safely from licensed professionals.",
+    ogImage: "/images/safety.webp",
+  },
+  tools: {
+    title: "Facial Cupping Tools: Cups, Oils & Kits Compared",
+    description: "Compare the best facial cupping tools, cups, oils and kits — silicone vs glass, recommended brands, and what to look for.",
+    ogImage: "/images/research.webp",
+  },
+  research: {
+    title: "Facial Cupping Research: Science, Studies & Evidence",
+    description: "Peer-reviewed research and scientific evidence on facial cupping — what studies show about efficacy, mechanisms, and outcomes.",
+    ogImage: "/images/research.webp",
+  },
+  oils: {
+    title: "Best Oils for Facial Cupping: Jojoba, Rosehip & More",
+    description: "Find the best facial oils for cupping — jojoba, rosehip, squalane and more. Learn which oils give the best glide without clogging pores.",
+    ogImage: "/images/articles/jade-roller-skincare.jpg",
+  },
+  glowcup: {
+    title: "GlowCup Facial Cupping: Reviews, Routines & Results",
+    description: "GlowCup facial cupping reviews, routines and real results — everything you need to know about the GlowCup system.",
+    ogImage: "/images/articles/woman-cupping-cup.jpg",
+  },
+  comparisons: {
+    title: "Facial Cupping Comparisons: Gua Sha, Jade Roller & More",
+    description: "Compare facial cupping with gua sha, jade rolling, and microcurrent — pros, cons, and which method suits your skincare goals.",
+    ogImage: "/images/articles/silicone-therapy.jpg",
+  },
+  brands: {
+    title: "Facial Cupping Brand Reviews: Honest Comparisons",
+    description: "In-depth reviews of popular facial cupping brands — Primally Pure, Bellabaci, Rena Chris and more. Honest evaluations based on quality and value.",
+    ogImage: "/images/articles/skincare-cream.jpg",
+  },
+  about: {
+    title: "About FacialCupping.com: Our Mission & Team",
+    description: "Learn about FacialCupping.com — our mission, editorial standards, review process, and the team behind the content.",
+    ogImage: "/images/articles/doctor-smiling.jpg",
+  },
 };
 
 export async function getStaticPaths() {
@@ -43,17 +90,51 @@ export async function getStaticPaths() {
 }
 
 const { section, sectionArticles } = Astro.props;
-const bgImage = sectionBgImage[section.id] ?? "/images/hero-bg.png";
+const heroImage = heroImages[section.id] ?? heroImages["hero-bg"];
+const heroAlt = heroAltText[section.id] ?? section.data.title;
+const seo = sectionSEO[section.id];
+const seoTitle = seo?.title ?? section.data.title;
+const seoDescription = seo?.description ?? section.data.description;
+const ogImage = seo?.ogImage ?? "/images/hero-bg.webp";
+
+// Use longDescription for page hero if available; description for meta
+const heroDescription = section.data.longDescription ?? section.data.description;
+
+// Build CollectionPage JSON-LD
+const siteURL = Astro.site?.toString().replace(/\/$/, "") ?? "";
+const sectionURL = `${siteURL}/${section.id}`;
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: seoTitle,
+  description: seoDescription,
+  url: sectionURL,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: sectionArticles.map((article: { id: string; data: { title: string; description: string } }, index: number) => {
+      const slug = article.id.split("/")[1];
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        name: article.data.title,
+        description: article.data.description,
+        url: `${siteURL}/${section.id}/${slug}`,
+      };
+    }),
+  },
+};
+
 ---
 
-<BaseLayout title={section.data.title} description={section.data.description}>
+<BaseLayout title={seoTitle} description={seoDescription} ogImage={ogImage}>
   <Nav />
   <main class="flex-1">
     <!-- Section Hero -->
     <PageHero
       title={section.data.title}
-      description={section.data.description}
-      backgroundImage={bgImage}
+      description={heroDescription}
+      image={heroImage}
+      alt={heroAlt}
     />
 
     <div class="max-w-[1200px] mx-auto px-5 pt-6 pb-20">
@@ -69,6 +150,7 @@ const bgImage = sectionBgImage[section.id] ?? "/images/hero-bg.png";
               description={article.data.description}
               href={`/${section.id}/${slug}`}
               tag={section.data.title}
+              date={article.data.dateUpdated || article.data.datePublished}
             />
           );
         })}
@@ -76,4 +158,7 @@ const bgImage = sectionBgImage[section.id] ?? "/images/hero-bg.png";
     </div>
   </main>
   <Footer />
+
+  <!-- CollectionPage JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
 </BaseLayout>

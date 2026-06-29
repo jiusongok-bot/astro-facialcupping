@@ -1,0 +1,335 @@
+{
+  "summary": {
+    "health_score": 69,
+    "business_type": "Content Publisher / Wellness Resource (E-E-A-T-driven)",
+    "top_findings": [
+      "6 of 11 sections are in draft status — only 28 of 52 articles (53.8%) produce pages in production",
+      "Homepage title is generic 'Home | FacialCupping.com' — wasted keyword opportunity",
+      "No BreadcrumbList JSON-LD on any page — missing rich snippet opportunity across entire site",
+      "No images in any published article — massive missed opportunity for engagement and image search",
+      "Safety and Tools sections (11 articles combined) are in draft — high-value content hidden"
+    ],
+    "quick_wins": [
+      "Publish Safety section — unlock 7 articles with one status change",
+      "Add BreadcrumbList JSON-LD to Breadcrumb.astro component",
+      "Fix og:image to use absolute URLs in BaseLayout.astro",
+      "Add twitter:image meta tag alongside existing Twitter card markup",
+      "Rewrite homepage title from 'Home' to keyword-targeted title",
+      "Create /llms.txt for AI crawler guidance",
+      "Add publication dates to ArticleCard component",
+      "Change MobileMenu from client:load to client:idle"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 68,
+      "what_works": [
+        "Canonical URLs correctly set dynamically",
+        "Meta robots defaults to index, follow",
+        "Static site generation — excellent crawlability",
+        "@astrojs/sitemap integration auto-discovers pages",
+        "robots.txt allows all with correct sitemap reference",
+        "Clean URL structure across all pages",
+        "Draft control system prevents draft/dev pages from building"
+      ],
+      "findings": [
+        {
+          "title": "6 of 11 sections are draft — only 5 sections produce pages",
+          "severity": "Critical",
+          "description": "Only learn, benefits, how-to, research, about are published. Safety (7), Tools (4), Oils (2), Comparisons (3), Brands (4), GlowCup (5) are invisible to search engines. The site appears 55% smaller than its content library suggests.",
+          "recommendation": "Publish Safety section first (change sections/safety.md status to 'published'), then Tools, and remaining sections systematically"
+        },
+        {
+          "title": "Safety section is draft despite 7 articles",
+          "severity": "High",
+          "description": "sections/safety.md has status: 'draft'. This section has high-value YMYL keywords (side effects, contraindications, 'does it work').",
+          "recommendation": "Change sections/safety.md status to 'published'. Verify all 7 article frontmatter statuses are also 'published'."
+        },
+        {
+          "title": "Safety section is draft despite 7 articles",
+          "severity": "High",
+          "description": "sections/safety.md has status: 'draft'. Safety content is critical for YMYL trust signals including FAQ, side effects, contraindications, and 'does it work' queries.",
+          "recommendation": "Change sections/safety.md status to 'published' and verify article statuses."
+        },
+        {
+          "title": "No custom 404 page",
+          "severity": "Medium",
+          "description": "No src/pages/404.astro found. Astro's default 404 page is minimal and not on-brand.",
+          "recommendation": "Create src/pages/404.astro with branded design and search/sitemap links."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 78,
+      "what_works": [
+        "Named professionals (Sarah Chen L.E., James Liu TCM) author key articles",
+        "All published articles have datePublished and dateUpdated (2026 dates)",
+        "Scientific references: PubMed, Cochrane Library, PLoS One citations",
+        "Dedicated editorial guidelines, review process, mission pages",
+        "Readable structure: short paragraphs, headings, tables, bullets, FAQs",
+        "Rich cross-linking between articles and sections",
+        "Documented correction policy with reader-report mechanism",
+        "AI-assisted content policy disclosed in editorial guidelines"
+      ],
+      "findings": [
+        {
+          "title": "34 high-quality articles hidden behind draft status",
+          "severity": "Critical",
+          "description": "7 unpublished sections hide 34 articles with author names, dates, and references. These represent 65% of total content investment.",
+          "recommendation": "Systematically publish sections: Safety → Tools → Oils → Comparisons → Brands → GlowCup"
+        },
+        {
+          "title": "No author bio/credential page",
+          "severity": "Medium",
+          "description": "Sarah Chen and James Liu have no linked bio page. Google and AI crawlers look for entity authority.",
+          "recommendation": "Create /about/team or individual author pages with credentials and article links"
+        },
+        {
+          "title": "ArticleCard shows no publication date",
+          "severity": "Medium",
+          "description": "Listing pages show article cards without dates. Users and search engines can't assess freshness at a glance.",
+          "recommendation": "Pass datePublished through ArticleCard props and display on listing pages"
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 70,
+      "what_works": [
+        "Unique title tags per page with site name suffix",
+        "Unique meta descriptions per page",
+        "H1 headings match page title; homepage H1 is excellent",
+        "Proper H1 > H2 > H3 hierarchy",
+        "Semantic breadcrumb HTML with aria-label on every page",
+        "Clean hyphenated keyword-targeted URL slugs",
+        "Semantic HTML structure (article, nav, main, section)"
+      ],
+      "findings": [
+        {
+          "title": "Homepage title is 'Home | FacialCupping.com'",
+          "severity": "High",
+          "description": "index.astro passes title='Home' to BaseLayout. This wastes the homepage's strongest SEO signal.",
+          "recommendation": "Change to: 'Facial Cupping: Complete Guide to Benefits, Techniques & Safety | FacialCupping.com'"
+        },
+        {
+          "title": "Homepage uses default fallback meta description",
+          "severity": "Medium",
+          "description": "No description prop is passed to BaseLayout in index.astro. The generic fallback is used.",
+          "recommendation": "Pass explicit description prop to BaseLayout on homepage"
+        },
+        {
+          "title": "Section listing page titles too generic",
+          "severity": "Medium",
+          "description": "/learn/ → 'Learn | FacialCupping.com' (28 chars). Bare section names waste keyword space.",
+          "recommendation": "Use computed titles: '{Section}: {Subtopics} | FacialCupping.com'"
+        },
+        {
+          "title": "og:image uses relative paths",
+          "severity": "Medium",
+          "description": "BaseLayout.astro:40 passes ogImage as relative path. Facebook/LinkedIn may fail to resolve.",
+          "recommendation": "Prepend Astro.site to ogImage URL: https://facialcupping.com/images/...png"
+        },
+        {
+          "title": "No twitter:image meta tag",
+          "severity": "Medium",
+          "description": "Twitter card has summary_large_image, title, description but no image. X/Twitter cards show no image.",
+          "recommendation": "Add ogImage && <meta name='twitter:image' content={...}> in BaseLayout"
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 55,
+      "what_works": [
+        "WebSite schema on all pages (name, url, description)",
+        "Dynamic Article schema on all article pages (headline, description, author, publisher, dates, image)",
+        "FAQPage schema with 15 Q&A items for FAQ articles",
+        "ContactPage schema for contact page",
+        "Author entity discrimination: Organization vs Person type",
+        "Publisher correctly set as Organization"
+      ],
+      "findings": [
+        {
+          "title": "No BreadcrumbList JSON-LD anywhere on site",
+          "severity": "High",
+          "description": "Breadcrumb.astro renders semantic HTML but no structured data. BreadcrumbList is one of Google's most-used rich snippets. Missing on all 18+ pages.",
+          "recommendation": "Add BreadcrumbList JSON-LD to Breadcrumb.astro with dynamic itemListElement"
+        },
+        {
+          "title": "Listing pages have no CollectionPage schema",
+          "severity": "High",
+          "description": "Section listing pages use only generic WebSite schema. Google can't identify them as content hubs.",
+          "recommendation": "Add CollectionPage schema with mainEntity as ItemList to [section]/index.astro"
+        },
+        {
+          "title": "No HowTo schema on tutorial articles",
+          "severity": "Medium",
+          "description": "Step-by-step guides use generic Article schema. HowTo schema enables step-by-step rich results.",
+          "recommendation": "Add HowTo schema with step/tool/supply/totalTime properties to tutorial articles"
+        },
+        {
+          "title": "No SearchAction in WebSite schema",
+          "severity": "Info",
+          "description": "Sitelinks search box rich result requires SearchAction in WebSite schema.",
+          "recommendation": "Add potentialAction with SearchAction to WebSite schema in BaseLayout"
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 85,
+      "what_works": [
+        "Static site generation — zero server rendering cost",
+        "Minimal JS — only MobileMenu.tsx (<5KB gzipped). No React on article pages",
+        "Tailwind CSS v4 JIT-compiled — extremely small CSS",
+        "Self-hosted fonts via @fontsource/outfit — zero external font requests",
+        "Zero third-party scripts — no analytics, ads, or tracking",
+        "No images on article pages — zero image loading overhead"
+      ],
+      "findings": [
+        {
+          "title": "PageHero uses CSS background-image without responsive variants",
+          "severity": "Medium",
+          "description": "8 hero PNGs loaded via inline style. No responsive images, no srcset, no loading=lazy.",
+          "recommendation": "Convert to WebP with <picture> element and responsive srcset"
+        },
+        {
+          "title": "All hero images are PNG format",
+          "severity": "Medium",
+          "description": "PNG is lossless and larger than necessary. WebP/AVIF could reduce bytes by 60-80%.",
+          "recommendation": "Convert hero images to WebP with PNG fallback via <picture>"
+        },
+        {
+          "title": "MobileMenu uses client:load instead of client:idle",
+          "severity": "Low",
+          "description": "client:load hydrates immediately. client:idle would defer until browser is idle.",
+          "recommendation": "Change client:load to client:idle in Nav.astro"
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 68,
+      "what_works": [
+        "Clear heading structure for AI crawler parsing",
+        "Article and FAQPage schemas improve AI citability",
+        "Named professionals with credentials signal authority to AI",
+        "Scientific citations from PubMed and peer-reviewed journals",
+        "FAQ format is highly citeable by AI assistants",
+        "Clear topical clusters from rich internal linking",
+        "Comprehensive editorial transparency policies"
+      ],
+      "findings": [
+        {
+          "title": "No llms.txt at site root",
+          "severity": "Medium",
+          "description": "AI crawlers from ChatGPT, Perplexity, Claude have no guidance on which pages to prioritize or cite.",
+          "recommendation": "Create /public/llms.txt with prioritized page list and summaries"
+        },
+        {
+          "title": "No AI-crawler-specific directives in robots.txt",
+          "severity": "Medium",
+          "description": "GPTBot, Claude-Web, CCBot, PerplexityBot get same treatment as all crawlers.",
+          "recommendation": "Add explicit User-agent + Allow directives for major AI crawlers"
+        },
+        {
+          "title": "No author credential page for entity signals",
+          "severity": "Low",
+          "description": "AI models evaluate entity authority. No linked bio page for named authors.",
+          "recommendation": "Create author bio page with credentials, license numbers, and article archive"
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 35,
+      "what_works": [
+        "Section listing pages have branded hero background images",
+        "OG image mapping exists for social sharing in article pages",
+        "Decorative hero images correctly use CSS background-image"
+      ],
+      "findings": [
+        {
+          "title": "Zero images in any published article",
+          "severity": "Critical",
+          "description": "Not a single image across 18 published articles. For a skincare/wellness site, before/after photos, technique diagrams, tool photos, and product images are expected and drive significant engagement and image search traffic.",
+          "recommendation": "Add 3-5 images per article: technique photos for how-to, before/after for benefits, tool photos for tools/brands"
+        },
+        {
+          "title": "All images are PNG format, no WebP/AVIF",
+          "severity": "Medium",
+          "description": "All hero and OG images use .png extension. WebP reduces file size by 60-80% with comparable quality.",
+          "recommendation": "Convert static PNGs to WebP with <picture> fallback for older browsers"
+        },
+        {
+          "title": "No image sitemap",
+          "severity": "Medium",
+          "description": "Images are not indexed for Google Image Search, missing a significant traffic channel.",
+          "recommendation": "Generate image sitemap once article images are added"
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Publish Safety section — change sections/safety.md to published, verify article statuses",
+          "Rewrite homepage title from 'Home' to 'Facial Cupping: Complete Guide to Benefits, Techniques & Safety'",
+          "Add explicit description prop to homepage BaseLayout call",
+          "Fix og:image URLs to absolute (prepend https://facialcupping.com) in BaseLayout.astro",
+          "Add twitter:image meta tag in BaseLayout.astro",
+          "Add BreadcrumbList JSON-LD to Breadcrumb.astro component"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Publish Tools section (4 articles)",
+          "Create /public/llms.txt for AI crawler guidance",
+          "Update robots.txt with AI crawler directives",
+          "Add CollectionPage schema to [section]/index.astro",
+          "Enhance section listing titles with subtopics",
+          "Add publication dates to ArticleCard component",
+          "Pass OG image from homepage to BaseLayout",
+          "Change MobileMenu from client:load to client:idle"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Publish Oils, Comparisons, Brands, and GlowCup sections",
+          "Add 3-5 images to each published article",
+          "Create author bio page for Sarah Chen and James Liu",
+          "Convert hero PNGs to WebP with <picture> fallback",
+          "Add HowTo schema to tutorial articles",
+          "Expand 2-3 key articles to 2,000+ words",
+          "Create custom 404 page"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Set up Google Search Console + CrUX monitoring",
+          "Add image sitemap once article images exist",
+          "Add sequential article navigation (prev/next)",
+          "Plan pagination for growing sections",
+          "Add SearchAction to WebSite schema",
+          "Add Lighthouse CI to build pipeline",
+          "Build backlink/PR strategy for brand authority"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "docs/audits/findings/",
+    "screenshots_dir": "docs/audits/screenshots/"
+  }
+}

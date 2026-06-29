@@ -4,6 +4,21 @@ interface Props {
 }
 
 const { items } = Astro.props;
+const siteURL = Astro.site?.toString().replace(/\/$/, "") ?? "";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: siteURL },
+    ...items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 2,
+      name: item.label,
+      item: `${siteURL}${item.href}`,
+    })),
+  ],
+};
 ---
 
 <nav aria-label="Breadcrumb" class="text-sm text-muted">
@@ -25,3 +40,6 @@ const { items } = Astro.props;
     ))}
   </ol>
 </nav>
+
+<!-- BreadcrumbList JSON-LD -->
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

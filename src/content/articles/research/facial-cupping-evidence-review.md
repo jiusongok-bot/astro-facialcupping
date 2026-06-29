@@ -26,7 +26,7 @@ Several systematic reviews have examined cupping therapy for various conditions.
 
 A 2019 review in the *Journal of Traditional and Complementary Medicine* analyzed 64 studies and found consistent evidence that cupping increases local microcirculation through multiple mechanisms including nitric oxide pathway activation and tissue stretch responses [\[source\]](https://doi.org/10.1016/j.jtcme.2018.03.003). The effect appears to be dose-dependent, with greater suction and longer duration producing larger increases in blood flow [\[source\]](https://doi.org/10.3389/fbioe.2020.608509).
 
-These findings are directly relevant to facial cupping because enhanced microcirculation supports nutrient delivery and waste removal in dermal tissues. The practical implications for facial skin health — including the visible glow many users report — are discussed in our [circulation and facial skin](/benefits/circulation) article.
+These findings are directly relevant to facial cupping because enhanced microcirculation supports nutrient delivery and waste removal in dermal tissues.
 
 The dose-dependent nature of the response is particularly important: facial skin is thinner and more vascular than most body sites, suggesting that even gentle suction may produce meaningful circulatory changes. However, no study has directly measured the dose-response curve for facial tissue specifically.
 
@@ -40,7 +40,7 @@ While these studies focus on body cupping for musculoskeletal pain, the underlyi
 
 Some studies have examined cupping's effect on inflammatory biomarkers. A small 2020 study found that a single cupping session reduced levels of TNF-alpha and increased levels of interleukin-10 — both markers of reduced inflammation. However, the sample sizes were small and the results need replication [\[source\]](https://pmc.ncbi.nlm.nih.gov/articles/PMC7793847/).
 
-Chronic low-grade inflammation is a recognized contributor to skin aging, including collagen degradation and loss of elasticity. If cupping's anti-inflammatory effects extend to facial tissue — a hypothesis not yet tested directly — this could partially explain the [rejuvenation benefits](/benefits/rejuvenation) reported by practitioners. The current evidence, however, is too preliminary to draw firm conclusions.
+Chronic low-grade inflammation is a recognized contributor to skin aging, including collagen degradation and loss of elasticity. If cupping's anti-inflammatory effects extend to facial tissue — a hypothesis not yet tested directly — this could partially explain the rejuvenation benefits reported by practitioners. The current evidence, however, is too preliminary to draw firm conclusions.
 
 ## Facial-Specific Research
 
@@ -58,7 +58,7 @@ A larger 2023 observational study followed 45 women who used facial cupping twic
 
 This study improved on the pilot by using validated outcome measures (Skin Elasticity Meter and Corneometer for hydration) and a larger sample. However, the self-selected participant group (all volunteers from a single dermatology clinic) introduces selection bias. The 82% subjective satisfaction rate is notably higher than the objective measurements would suggest, a common pattern in cosmetic self-report studies.
 
-The hydration findings are interesting in the context of [lymphatic drainage](/benefits/lymphatic) — improved fluid balance in the dermis could explain both the hydration measurements and the puffiness reduction many users describe. See also our [before and after results](/benefits/before-after) gallery for real-world user outcomes.
+The hydration findings are interesting in the context of lymphatic drainage — improved fluid balance in the dermis could explain both the hydration measurements and the puffiness reduction many users describe.
 
 ## Key Research Gaps
 
@@ -102,7 +102,7 @@ Extrapolated from the robust pain management evidence in body cupping (18 RCTs s
 
 ### Wrinkle Reduction and Collagen Stimulation: Limited Evidence
 
-The 2015 pilot study showed reduced fine lines, but without a control group this finding is unreliable. The theoretical basis — that mechanical stretch stimulates fibroblast activity and collagen synthesis — is plausible and supported by in-vitro cell studies, but has not been confirmed in living facial tissue. See our [wrinkles and facial cupping](/benefits/wrinkles) analysis for a detailed discussion of the collagen hypothesis.
+The 2015 pilot study showed reduced fine lines, but without a control group this finding is unreliable. The theoretical basis — that mechanical stretch stimulates fibroblast activity and collagen synthesis — is plausible and supported by in-vitro cell studies, but has not been confirmed in living facial tissue.
 
 ### Long-Term Anti-Aging Effects: Insufficient Evidence
 
@@ -118,4 +118,4 @@ For those new to the practice, our [step-by-step facial cupping tutorial](/how-t
 
 ---
 
-**Related:** [Does Facial Cupping Work?](/safety/does-facial-cupping-work) | [Before & After Results](/benefits/before-after) | [Expert Opinions](/research/facial-cupping-expert-opinions)
+**Related:** [Expert Opinions](/research/facial-cupping-expert-opinions)

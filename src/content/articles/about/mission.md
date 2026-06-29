@@ -38,4 +38,4 @@ We update our content regularly to reflect new research and reader feedback. Thi
 
 Unlike many skincare and wellness sites, we do not use affiliate marketing as our primary business model. Our product evaluations are based on material quality, safety testing, and usability criteria — not commission rates. We clearly label any affiliate relationships when they exist. We also go further than most sites in acknowledging the limits of available evidence rather than overpromising results.
 
-**Related:** [Our Story](/glowcup/story) | [Our Philosophy](/glowcup/philosophy) | [Review Process](/about/review-process)
+**Related:** [Review Process](/about/review-process)

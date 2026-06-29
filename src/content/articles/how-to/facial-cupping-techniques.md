@@ -131,10 +131,10 @@ Smaller cups concentrate suction into a smaller area, so they require lighter sq
 
 Regardless of which technique you use, follow these universal safety guidelines:
 
-- **Always use oil or serum** to provide glide and prevent the cup from dragging on dry skin. See our [guide to the best oils for facial cupping](/oils/best-oil) for recommendations.
+- **Always use oil or serum** to provide glide and prevent the cup from dragging on dry skin.
 - **Start with lighter suction** than you think you need — you can always increase pressure in subsequent sessions.
 - **Never hold a cup stationary for more than 5 seconds** on facial skin.
-- **Avoid cupping over active acne, open wounds, broken capillaries, or sunburned skin.** For a full list of conditions to watch for, see our [contraindications guide](/safety/contraindications).
+- **Avoid cupping over active acne, open wounds, broken capillaries, or sunburned skin.**
 - **Clean your cups** after every session with mild soap and warm water.
 
 ---
@@ -145,7 +145,6 @@ The techniques described in this guide draw on principles from traditional Chine
 
 - [Lymphatic drainage and facial cupping: mechanisms and evidence](/research/facial-cupping-scientific-studies) — our review of the scientific literature
 - [How facial cupping works on a physiological level](/learn/how-facial-cupping-works) — the science behind the suction
-- [Facial cupping buying guide](/tools/buying-guide) — how to choose the right cupping set for these techniques
 
 ---
 

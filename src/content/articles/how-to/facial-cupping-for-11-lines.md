@@ -33,11 +33,9 @@ Facial cupping addresses glabella wrinkles through three interconnected mechanis
 Before starting, gather the following supplies:
 
 - **Small silicone cup** (15-20mm diameter): The smallest cup in your set concentrates suction precisely on the narrow frown area without pulling surrounding skin.
-- **Facial oil or serum:** Choose an oil with lasting slip — jojoba oil mimics the skin's natural sebum and provides consistent glide. Grapeseed oil works well for oily skin types. See our [best oils for facial cupping](/oils/best-oil) guide for detailed recommendations.
+- **Facial oil or serum:** Choose an oil with lasting slip — jojoba oil mimics the skin's natural sebum and provides consistent glide. Grapeseed oil works well for oily skin types.
 - **Clean, dry skin:** Always remove makeup and cleanse thoroughly before each session.
 - **A mirror:** Helpful for precise cup placement during your first few sessions.
-
-For a complete guide to choosing the right set, see our [facial cupping buying guide](/tools/buying-guide).
 
 ## Step-by-Step Technique
 
@@ -66,7 +64,7 @@ Follow this targeted routine to address 11 lines effectively:
 | Total forehead session | 5-8 minutes (including surrounding areas) |
 | Adjustment period | 2 weeks at lighter suction before increasing |
 
-The skin between the brows is thin and sensitive — overworking it can cause temporary redness or bruising (see [side effects guide](/safety/side-effects)). If you notice any marks, reduce suction or frequency immediately.
+The skin between the brows is thin and sensitive — overworking it can cause temporary redness or bruising. If you notice any marks, reduce suction or frequency immediately.
 
 ## Tips for Best Results
 
@@ -106,7 +104,7 @@ Individual results vary based on age, skin type, depth of existing lines, and co
 
 Facial cupping works best as part of a comprehensive anti-aging approach for 11 lines:
 
-- **Gua sha:** Use a gua sha tool on the forehead after cupping to further release muscle tension. See our [cupping vs. gua sha comparison](/comparisons/vs-gua-sha) for technique differences.
+- **Gua sha:** Use a gua sha tool on the forehead after cupping to further release muscle tension.
 - **Topical retinoids:** Apply after your cupping session to amplify collagen production during the window of elevated microcirculation.
 - **Facial exercises:** Gentle forehead stretches between cupping sessions help maintain muscle flexibility.
 - **Sunscreen:** Daily SPF 30+ is essential — UV damage accelerates collagen breakdown and will undermine your cupping progress.
@@ -136,4 +134,4 @@ Yes, when done correctly with light suction, adequate oil, and a small silicone 
 
 ---
 
-**Related:** [Beginner Guide](/how-to/how-to-do-facial-cupping) | [Step-by-Step Tutorial](/how-to/facial-cupping-step-by-step-tutorial) | [Cupping for Wrinkles](/benefits/wrinkles) | [Buying Guide](/tools/buying-guide) | [How Cupping Works](/learn/how-facial-cupping-works)
+**Related:** [Beginner Guide](/how-to/how-to-do-facial-cupping) | [Step-by-Step Tutorial](/how-to/facial-cupping-step-by-step-tutorial) | [How Cupping Works](/learn/how-facial-cupping-works)

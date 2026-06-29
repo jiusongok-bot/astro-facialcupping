@@ -8,6 +8,7 @@ const sections = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    longDescription: z.string().optional(),
     order: z.number(),
     status: z.enum(["published", "draft", "dev"]).default("published"),
   }),

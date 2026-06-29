@@ -1,19 +1,29 @@
 ---
+import { Picture } from "astro:assets";
+
 interface Props {
   title: string;
   description: string;
-  backgroundImage: string;
+  image: ImageMetadata;
+  alt: string;
+  priority?: boolean;
 }
 
-const { title, description, backgroundImage } = Astro.props;
-const heroStyle = `background-image: url(${backgroundImage}); background-size: cover; background-position: center top;`;
+const { title, description, image, alt, priority = false } = Astro.props;
 ---
 
-<!-- Image banner -->
-<div
-  class="relative overflow-hidden min-h-[400px] lg:aspect-[330/100]"
-  style={heroStyle}
->
+<!-- Hero banner with responsive image -->
+<div class="relative overflow-hidden min-h-[400px] lg:aspect-[330/100]">
+  <Picture
+    src={image}
+    alt={alt}
+    formats={["webp"]}
+    widths={[640, 1024, 1536]}
+    sizes="(max-width: 768px) 100vw, 1200px"
+    class="absolute inset-0 w-full h-full object-cover object-top"
+    loading={priority ? "eager" : "lazy"}
+    fetchpriority={priority ? "high" : undefined}
+  />
 </div>
 
 <!-- Title & description below banner -->

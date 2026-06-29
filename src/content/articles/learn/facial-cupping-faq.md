@@ -145,6 +145,5 @@ For best de-puffing results:
 
 ## Related Articles
 
-- [Safety Guide: How to Practice Facial Cupping Safely](/safety/safety-guide)
 - [How Facial Cupping Works: The Science Behind the Technique](/learn/how-facial-cupping-works)
 - [What Is Facial Cupping? A Complete Beginner's Guide](/learn/what-is-facial-cupping)

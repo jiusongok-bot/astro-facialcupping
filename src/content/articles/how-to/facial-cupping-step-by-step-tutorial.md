@@ -23,11 +23,9 @@ This complete facial cupping tutorial walks you through every step of a full ses
 Before you begin, gather the following within easy reach:
 
 - **Facial cupping set** — 3 to 4 silicone cups in different sizes (small, medium, large)
-- **Facial oil** — jojoba, grapeseed, sweet almond, or a [blend formulated for cupping](/oils/best-oil); you need enough to create a visible slip across the skin
+- **Facial oil** — jojoba, grapeseed, sweet almond, or a blend formulated for cupping; you need enough to create a visible slip across the skin
 - **Clean towel** — to catch any excess oil drips
 - **Clean, dry face** — remove all makeup, sunscreen, and surface oils before starting
-
-If you are unsure which cupping set to use, our [facial cupping tools guide](/tools/best-tools) compares the most popular options.
 
 ## Step 1: Prepare Your Skin and Tools
 
@@ -95,7 +93,7 @@ Use the **smallest cup** with extremely light suction for the delicate under-eye
 
 Place the cup at the inner corner of the eye socket (near the nose) and glide gently outward along the orbital bone toward the temple. Do not pull the cup directly under the eye — work along the bone, not the soft tissue.
 
-**Safety note:** If you have very thin or fragile under-eye skin, consider skipping this step entirely and focusing on the cheeks and forehead to indirectly support the eye area through improved overall [lymphatic drainage](/learn/how-facial-cupping-works). See our [safety guide](/safety/safety-guide) for more details on working with sensitive skin.
+**Safety note:** If you have very thin or fragile under-eye skin, consider skipping this step entirely and focusing on the cheeks and forehead to indirectly support the eye area through improved overall [lymphatic drainage](/learn/how-facial-cupping-works).
 
 ## What to Expect After Your Session
 
@@ -138,8 +136,6 @@ Facial cupping is generally safe, but there are situations where you should exer
 - **Blood-thinning medications:** Cupping may leave marks more easily — consult your physician.
 - **Sunburn or windburn:** Wait until the skin has fully healed.
 
-For a comprehensive list, see our [full contraindications guide](/safety/contraindications).
-
 ## Frequently Asked Questions
 
 ### How long does a facial cupping session take?
@@ -152,10 +148,10 @@ No. Facial cupping improves circulation, reduces puffiness, and may enhance skin
 With correct technique and light suction, facial cupping should not leave marks. Circular marks indicate excessive suction. Reduce your squeeze pressure and ensure you are using enough facial oil. See our [common mistakes guide](/how-to/common-facial-cupping-mistakes) for more tips.
 
 ### What is the best oil for facial cupping?
-Lightweight, non-comedogenic oils like jojoba, grapeseed, and sweet almond work best. The oil needs to provide enough slip for the cup to glide without absorbing too quickly. Our [best oils for facial cupping](/oils/best-oil) guide compares options in detail.
+Lightweight, non-comedogenic oils like jojoba, grapeseed, and sweet almond work best. The oil needs to provide enough slip for the cup to glide without absorbing too quickly.
 
 ### Is facial cupping safe for all skin types?
-Most skin types tolerate facial cupping well. However, if you have rosacea, active acne, or extremely thin skin, consult a dermatologist before starting. Our [safety guide](/safety/safety-guide) covers skin-type-specific recommendations.
+Most skin types tolerate facial cupping well. However, if you have rosacea, active acne, or extremely thin skin, consult a dermatologist before starting.
 
 ---
 

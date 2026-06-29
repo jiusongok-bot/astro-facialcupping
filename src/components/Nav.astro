@@ -24,8 +24,8 @@ const currentPath = Astro.url.pathname;
 <header class="sticky top-0 z-50 bg-bone/90 backdrop-blur-md border-b border-border">
   <nav class="max-w-[1200px] mx-auto px-5 h-[68px] flex items-center gap-6">
     <!-- Logo on the left -->
-    <a href="/" class="text-lg font-bold tracking-tight text-forest shrink-0">
-      FacialCupping<span class="text-amber">.com</span>
+    <a href="/" class="shrink-0">
+      <img src="/FacialCupping-logo.png" alt="FacialCupping.com" class="h-[48px] w-auto" />
     </a>
 
     <!-- Desktop nav -->
@@ -48,6 +48,6 @@ const currentPath = Astro.url.pathname;
     </ul>
 
     <!-- Mobile trigger -->
-    <MobileMenu client:load navItems={navItems} currentPath={currentPath} />
+    <MobileMenu client:idle navItems={navItems} currentPath={currentPath} />
   </nav>
 </header>

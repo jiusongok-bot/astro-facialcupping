@@ -24,8 +24,10 @@
     "motion": "^12.41.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "rehype": "^13.0.2",
     "rehype-external-links": "^3.0.0",
-    "tailwindcss": "^4.3.1"
+    "tailwindcss": "^4.3.1",
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",

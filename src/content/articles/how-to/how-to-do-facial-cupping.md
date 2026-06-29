@@ -16,20 +16,18 @@ Starting facial cupping for the first time? This guide covers everything you nee
 - Always apply a generous layer of **facial oil** before cupping; never drag a dry cup across bare skin.
 - Keep the cup **in constant motion** — never hold it stationary, or you risk bruising.
 - Start with **2–3 sessions per week**, each lasting 3–5 minutes, and build up gradually.
-- Facial cupping supports [lymphatic drainage](/benefits/lymphatic), circulation, and a healthy glow — but results are cumulative, not instant.
+- Facial cupping supports lymphatic drainage, circulation, and a healthy glow — but results are cumulative, not instant.
 - If you feel pain or see marks that last more than 30 minutes, your suction is too strong.
 
 ## What You'll Need
 
-A facial cupping set designed for the face — [silicone cups](/tools/silicone) are strongly recommended for beginners because they are easy to control and allow you to adjust suction by squeezing more or less. You will also need a facial oil or serum for glide; thicker oils like jojoba or grapeseed work best. Finally, start with clean, dry skin — always remove makeup and cleanse before each session.
+A facial cupping set designed for the face — silicone cups are strongly recommended for beginners because they are easy to control and allow you to adjust suction by squeezing more or less. You will also need a facial oil or serum for glide; thicker oils like jojoba or grapeseed work best. Finally, start with clean, dry skin — always remove makeup and cleanse before each session.
 
 **Beginner checklist:**
 - Facial cupping set (silicone, 3–4 cup sizes)
 - Facial oil or serum with lasting slip (jojoba, grapeseed, or squalane)
 - Clean towel for wiping excess oil
 - Mirror (helpful for tracking cup placement during your first sessions)
-
-If you are not sure which set to buy, see our [facial cupping tools guide](/tools/best-tools) for recommendations by skin type and experience level.
 
 ## How to Prepare Your Skin
 
@@ -40,7 +38,7 @@ Proper skin preparation makes a noticeable difference in both comfort and effect
 3. **Apply facial oil generously** — you should be able to glide two fingers across your cheek without resistance. If the cup catches or drags at any point, stop and reapply.
 4. **Warm up the skin (optional)** — spend 30 seconds gently pressing a warm (not hot) washcloth to your face. This opens pores and softens the tissue, making the cups glide more smoothly.
 
-Never cup over broken skin, active acne lesions, sunburn, or freshly exfoliated skin. If you have concerns about your skin's condition, consult our [safety guide](/safety/safety-guide) before starting.
+Never cup over broken skin, active acne lesions, sunburn, or freshly exfoliated skin.
 
 ## First Session Tips
 
@@ -52,11 +50,11 @@ Once you are comfortable with the sensation, follow this basic sequence. For a f
 
 ### Neck and Jaw Prep
 
-Begin at the base of the neck, just above the collarbone, using the largest cup with slow upward strokes toward the jawline. This step is important because it clears the lymphatic pathways before you work the face — think of it as opening the drainage routes first. Spend about 1 minute on each side. Then switch to a medium cup and work along the jawline from chin toward earlobe, 3–4 strokes per side. The jawline often holds significant tension, and regular cupping here can help [define the jawline](/benefits/jawline) over time.
+Begin at the base of the neck, just above the collarbone, using the largest cup with slow upward strokes toward the jawline. This step is important because it clears the lymphatic pathways before you work the face — think of it as opening the drainage routes first. Spend about 1 minute on each side. Then switch to a medium cup and work along the jawline from chin toward earlobe, 3–4 strokes per side. The jawline often holds significant tension, and regular cupping here can help define the jawline over time.
 
 ### Cheeks
 
-Using a medium cup, start at the side of the nose and glide outward toward the ear in slow, sweeping motions. Work the entire cheek area — upper cheekbone, mid-cheek, and lower cheek near the mouth. Spend 2–3 minutes total. This is where most people notice the most immediate change in skin tone and plumpness, thanks to the boost in [local blood circulation](/benefits/circulation).
+Using a medium cup, start at the side of the nose and glide outward toward the ear in slow, sweeping motions. Work the entire cheek area — upper cheekbone, mid-cheek, and lower cheek near the mouth. Spend 2–3 minutes total. This is where most people notice the most immediate change in skin tone and plumpness, thanks to the boost in local blood circulation.
 
 ### Forehead
 
@@ -64,7 +62,7 @@ Switch to the largest cup. Start just above the brows and glide outward toward t
 
 ### Under-Eye Area (Optional)
 
-Use the smallest cup with extremely light suction. Place the cup at the inner corner of the eye socket near the nose and glide gently outward along the orbital bone toward the temple. Do not pull the cup directly under the eye — follow the bone. Limit to 30 seconds per side. If you have thin or fragile under-eye skin, skip this step and focus on the cheeks to indirectly support the area. This technique is particularly effective for reducing [morning puffiness](/benefits/puffiness).
+Use the smallest cup with extremely light suction. Place the cup at the inner corner of the eye socket near the nose and glide gently outward along the orbital bone toward the temple. Do not pull the cup directly under the eye — follow the bone. Limit to 30 seconds per side. If you have thin or fragile under-eye skin, skip this step and focus on the cheeks to indirectly support the area. This technique is particularly effective for reducing morning puffiness.
 
 ## Cup Sizes Guide
 
@@ -84,8 +82,6 @@ For a complete breakdown of cupping methods for each zone, see the [facial cuppi
 
 Look for oils that provide lasting slip rather than those that absorb quickly. Jojoba oil is an excellent all-rounder — it mimics the skin's natural sebum and provides consistent glide. Grapeseed oil works well for oily skin, while almond oil suits drier skin types. Avoid coconut oil, which can clog pores. Apply generously and keep a bottle nearby to reapply during your session if the cup begins to drag.
 
-For a detailed comparison of oils by skin type — including our top picks — read our [best oils for facial cupping](/oils/best-oil) guide.
-
 ## Precautions & Contraindications
 
 Facial cupping is gentle and non-invasive, but it is not suitable for every skin condition. **Avoid facial cupping** if you have:
@@ -97,8 +93,6 @@ Facial cupping is gentle and non-invasive, but it is not suitable for every skin
 - Broken capillaries or very thin, fragile skin
 
 If you are pregnant, facial cupping is generally considered safe due to the light suction involved, but always check with your OB-GYN before starting. If you are on blood-thinning medication or have a bleeding disorder, consult your physician first.
-
-For a full list of conditions to watch for, see our [contraindications guide](/safety/contraindications).
 
 ## Aftercare Tips
 
@@ -118,9 +112,9 @@ Facial cupping results are cumulative — think of it like exercise for your fac
 
 - **After 1 session:** A subtle, temporary glow from increased blood flow. Skin may feel smoother and look slightly more plump. This typically lasts a few hours.
 - **After 2–4 weeks (consistent practice):** More noticeable improvements in skin tone, reduced morning puffiness, and a slightly more sculpted appearance — especially along the jawline and cheekbones.
-- **After 6–8 weeks:** Cumulative [rejuvenation effects](/benefits/rejuvenation) become more visible: softer fine lines, improved skin elasticity, and a consistent healthy glow.
+- **After 6–8 weeks:** Cumulative rejuvenation effects become more visible: softer fine lines, improved skin elasticity, and a consistent healthy glow.
 
-Results vary based on skin type, age, and consistency of practice. For a deeper look at what to expect at each stage, see our [results timeline](/benefits/results-timeline) article.
+Results vary based on skin type, age, and consistency of practice.
 
 ## Common Beginner Mistakes
 

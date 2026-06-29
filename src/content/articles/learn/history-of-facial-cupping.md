@@ -23,7 +23,7 @@ Cupping therapy has been practiced for over 3,000 years across multiple civiliza
 
 The earliest recorded use of cupping appears in the [Ebers Papyrus](https://en.wikipedia.org/wiki/Ebers_Papyrus), one of the oldest and most important medical documents from ancient Egypt. Written around 1550 BCE, this 110-meter papyrus scroll describes cupping as a treatment for fever, pain, and menstrual imbalances.
 
-Egyptian healers used hollowed animal horns or bronze cups to create suction on the skin. They believed that cupping drew out toxins and restored the body's natural balance — a concept remarkably similar to the modern understanding of [improved circulation and lymphatic drainage](/benefits/lymphatic). Archaeological evidence from tomb paintings and medical instruments confirms that cupping was a routine procedure in Egyptian medicine, not an experimental one.
+Egyptian healers used hollowed animal horns or bronze cups to create suction on the skin. They believed that cupping drew out toxins and restored the body's natural balance — a concept remarkably similar to the modern understanding of improved circulation and lymphatic drainage. Archaeological evidence from tomb paintings and medical instruments confirms that cupping was a routine procedure in Egyptian medicine, not an experimental one.
 
 ### China (circa 300 BCE)
 
@@ -47,20 +47,20 @@ The Persian physician [Ibn Sina (Avicenna)](https://en.wikipedia.org/wiki/Ibn_Si
 
 For most of its history, cupping was applied to the back, shoulders, and larger muscle groups. The adaptation to facial use began in earnest during the 2010s, driven by several converging trends:
 
-**Non-invasive beauty demand.** The global shift away from surgical procedures created a market for tools that offered visible results without injections or downtime. Consumers sought alternatives to Botox and fillers, and cupping — with its proven ability to [stimulate blood flow and reduce puffiness](/benefits/circulation) — fit the need perfectly.
+**Non-invasive beauty demand.** The global shift away from surgical procedures created a market for tools that offered visible results without injections or downtime. Consumers sought alternatives to Botox and fillers, and cupping — with its proven ability to stimulate blood flow and reduce puffiness — fit the need perfectly.
 
 **Korean beauty influence.** K-beauty trends, which emphasized gentle, multi-step skincare routines, popularized facial massage techniques including cupping. Korean estheticians integrated facial cupping into professional treatments, and at-home kits made the practice accessible to a global audience.
 
-**Silicone cup innovation.** Manufacturers began producing [silicone cups](/tools/silicone) specifically designed for facial contours — softer, smaller, and gentler than traditional glass or bamboo cups. These cups could be used safely on delicate facial skin without the bruising risk associated with traditional body cupping, making daily home use practical.
+**Silicone cup innovation.** Manufacturers began producing silicone cups specifically designed for facial contours — softer, smaller, and gentler than traditional glass or bamboo cups. These cups could be used safely on delicate facial skin without the bruising risk associated with traditional body cupping, making daily home use practical.
 
 ## Modern Recognition
 
 Facial cupping gained mainstream attention around 2015–2017 as celebrities and estheticians shared their routines on social media. High-profile endorsements from beauty influencers and dermatologists accelerated adoption, and the practice was featured in publications including *Vogue*, *Allure*, and *Harper's Bazaar*.
 
-Today facial cupping is offered in spas worldwide, recommended by dermatologists as a [complementary treatment for skin rejuvenation](/benefits/rejuvenation), and practiced by millions at home. The [scientific evidence](/research/facial-cupping-evidence-review) supporting its benefits continues to grow, with studies examining its effects on microcirculation, collagen production, and facial muscle tension.
+Today facial cupping is offered in spas worldwide, recommended by dermatologists as a complementary treatment for skin rejuvenation, and practiced by millions at home. The [scientific evidence](/research/facial-cupping-evidence-review) supporting its benefits continues to grow, with studies examining its effects on microcirculation, collagen production, and facial muscle tension.
 
-The practice continues to evolve. Recent innovations include electric cupping devices with adjustable pressure, combination tools that pair cupping with microcurrent technology, and specialized cup shapes designed for specific facial zones such as the jawline, under-eye area, and forehead. As [safety research](/safety/safety-guide) advances, practitioners now have clearer guidelines on proper technique, duration, and frequency.
+The practice continues to evolve. Recent innovations include electric cupping devices with adjustable pressure, combination tools that pair cupping with microcurrent technology, and specialized cup shapes designed for specific facial zones such as the jawline, under-eye area, and forehead. As safety research advances, practitioners now have clearer guidelines on proper technique, duration, and frequency.
 
 ---
 
-**Related:** [What Is Facial Cupping](/learn/what-is-facial-cupping) | [How It Works](/learn/how-facial-cupping-works) | [Facial Cupping Therapy](/learn/facial-cupping-therapy) | [Facial Cupping Benefits](/benefits/facial-cupping-benefits)
+**Related:** [What Is Facial Cupping](/learn/what-is-facial-cupping) | [How It Works](/learn/how-facial-cupping-works) | [Facial Cupping Therapy](/learn/facial-cupping-therapy)
