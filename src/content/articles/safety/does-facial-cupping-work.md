@@ -2,6 +2,7 @@
 title: "Does Facial Cupping Work?"
 description: "An honest, evidence-based assessment of facial cupping effectiveness — what the research says and what remains unproven."
 section: "safety"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-03-01"
 dateUpdated: "2026-06-01"

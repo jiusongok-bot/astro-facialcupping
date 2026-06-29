@@ -2,6 +2,7 @@
 title: "Amazon Facial Cupping Sets"
 description: "A guide to buying facial cupping sets on Amazon — what to look for, trusted sellers, and how to avoid low-quality products."
 section: "brands"
+status: "draft"
 ---
 
 Amazon offers a vast selection of facial cupping sets at every price point. While the convenience is appealing, the variety makes it challenging to separate quality products from poor ones.

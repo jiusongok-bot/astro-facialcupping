@@ -9,7 +9,7 @@ const sections = defineCollection({
     title: z.string(),
     description: z.string(),
     order: z.number(),
-    published: z.boolean().default(true),
+    status: z.enum(["published", "draft", "dev"]).default("published"),
   }),
 });
 
@@ -21,7 +21,7 @@ const articles = defineCollection({
     title: z.string(),
     description: z.string(),
     section: z.string(),
-    published: z.boolean().default(true),
+    status: z.enum(["published", "draft", "dev"]).default("published"),
     author: z.string().default("FacialCupping.com Team"),
     datePublished: z.string().default("2026-01-01"),
     dateUpdated: z.string().optional(),

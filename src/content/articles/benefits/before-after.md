@@ -2,6 +2,7 @@
 title: "Facial Cupping Before & After Results"
 description: "Documented results from facial cupping practitioners, with context on what to expect."
 section: "benefits"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-01"
 dateUpdated: "2026-06-15"

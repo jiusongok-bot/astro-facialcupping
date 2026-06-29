@@ -1,14 +1,16 @@
 ---
 import ArticleLayout from "@/layouts/ArticleLayout.astro";
 import { getCollection, render } from "astro:content";
+import { filterVisible } from "@/lib/visibility";
 
 export async function getStaticPaths() {
   const allArticles = await getCollection("articles");
   const allSections = await getCollection("sections");
 
+  const visibleArticles = filterVisible(allArticles);
   const paths = [];
 
-  for (const entry of allArticles) {
+  for (const entry of visibleArticles) {
     // entry.id is like "learn/what-is" (without .md)
     const [sectionSlug, articleSlug] = entry.id.split("/");
     if (!articleSlug) continue;
@@ -16,8 +18,8 @@ export async function getStaticPaths() {
     const sectionEntry = allSections.find((s) => s.id === sectionSlug);
     const sectionTitle = sectionEntry?.data.title ?? sectionSlug;
 
-    // Find related articles (same section, excluding current)
-    const related = allArticles
+    // Find related articles (same section, excluding current, only visible)
+    const related = visibleArticles
       .filter((a) => a.data.section === sectionSlug && a.id !== entry.id)
       .slice(0, 3);
 
@@ -52,6 +54,7 @@ const ogImage = sectionOG[sectionSlug] ?? "/images/hero.png";
 const articleSlug = entry.id.split("/")[1];
 const articleURL = `https://facialcupping.com/${sectionSlug}/${articleSlug}`;
 const isFAQ = articleSlug.toLowerCase().includes("faq");
+const isContact = articleSlug === "contact";
 
 // Build author object — use Organization for team name, Person for real names
 const authorType = entry.data.author === "FacialCupping.com Team" ? "Organization" : "Person";
@@ -60,7 +63,71 @@ const authorSchema = {
   name: entry.data.author,
 };
 
-// Build FAQPage schema by extracting H2 questions and their answers from the rendered body
+// Build schema: FAQPage > ContactPage > Article
+function buildSchema() {
+  if (isFAQ) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "Is facial cupping painful?", acceptedAnswer: { "@type": "Answer", text: "No. Facial cupping should feel like a gentle pulling sensation, similar to a massage with light suction. If you experience pain, the suction is too strong. Silicone cups allow you to control the suction by squeezing the cup before placing it on the skin." } },
+        { "@type": "Question", name: "Does facial cupping leave marks?", acceptedAnswer: { "@type": "Answer", text: "Unlike body cupping, proper facial cupping should not leave marks. The cups are kept in constant motion with light suction. If you notice redness, it should fade within a few minutes." } },
+        { "@type": "Question", name: "How often should I do facial cupping?", acceptedAnswer: { "@type": "Answer", text: "Most practitioners recommend starting with 2–3 sessions per week, each lasting 5–10 minutes. As your skin becomes accustomed, some users increase to daily sessions." } },
+        { "@type": "Question", name: "Can I do facial cupping at home?", acceptedAnswer: { "@type": "Answer", text: "Yes. Many facial cupping sets are designed for home use. Always use a high-quality facial oil for glide, work on clean skin, and follow a routine that moves outward and upward." } },
+        { "@type": "Question", name: "Do I need special products for facial cupping?", acceptedAnswer: { "@type": "Answer", text: "Using a facial oil or serum is strongly recommended. Look for jojoba oil, rosehip oil, or hyaluronic acid that provide smooth glide without clogging pores." } },
+        { "@type": "Question", name: "Can I do facial cupping if I have acne or rosacea?", acceptedAnswer: { "@type": "Answer", text: "Proceed with caution. Avoid cupping over active breakouts or severely inflamed rosacea. Once healed, gentle facial cupping may support recovery by promoting circulation and lymphatic drainage." } },
+        { "@type": "Question", name: "How long does it take to see results?", acceptedAnswer: { "@type": "Answer", text: "Some people notice an immediate glow after a single session. For longer-term benefits like improved skin tone and a more sculpted appearance, most users report visible changes within 2–4 weeks of consistent practice." } },
+        { "@type": "Question", name: "Can facial cupping be combined with other treatments?", acceptedAnswer: { "@type": "Answer", text: "Yes, it pairs well with serums, gua sha, and LED light therapy. However, avoid combining with strong chemical peels, microneedling, or retinoid treatments on the same day." } },
+        { "@type": "Question", name: "Is facial cupping safe during pregnancy?", acceptedAnswer: { "@type": "Answer", text: "Facial cupping is generally considered safe during pregnancy because it is non-invasive and uses very light suction. Always check with your OB-GYN before starting any new skincare practice." } },
+        { "@type": "Question", name: "What size cup should I use for different areas?", acceptedAnswer: { "@type": "Answer", text: "Use large cups (2 inches) on cheeks, jawline, and forehead. Medium cups (1.5 inches) for neck. Small cups (1 inch) for under-eye area, nasolabial folds, and around the nose." } },
+        { "@type": "Question", name: "How do I clean and maintain my cups?", acceptedAnswer: { "@type": "Answer", text: "Wash cups with warm water and mild soap after each use. Dry completely before storing. Do a weekly deep clean with a warm water and white vinegar solution." } },
+        { "@type": "Question", name: "What ingredients should I look for in a cupping oil?", acceptedAnswer: { "@type": "Answer", text: "Look for jojoba oil, rosehip oil, hyaluronic acid serums, squalane, and vitamin E. Avoid mineral oil-based products and heavy petroleum jelly." } },
+        { "@type": "Question", name: "Can facial cupping reduce fine lines and wrinkles?", acceptedAnswer: { "@type": "Answer", text: "Facial cupping may help soften fine lines over time by stimulating blood circulation and promoting collagen production. Combine with sunscreen, retinoids, and hydration for best results." } },
+        { "@type": "Question", name: "Silicone vs glass cups — which is better?", acceptedAnswer: { "@type": "Answer", text: "Silicone cups are generally recommended for beginners and home use. They offer easy suction control, are durable, hygienic, flexible on facial contours, and more affordable than glass cups." } },
+        { "@type": "Question", name: "Can facial cupping help with puffiness?", acceptedAnswer: { "@type": "Answer", text: "Yes. The gentle suction stimulates lymphatic drainage, helping move excess fluid away from the face. This is particularly effective for morning puffiness around the eyes and cheeks." } }
+      ]
+    };
+  }
+  if (isContact) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      name: entry.data.title,
+      description: entry.data.description,
+      url: articleURL,
+      mainEntity: {
+        "@type": "Organization",
+        name: "FacialCupping.com",
+        url: "https://facialcupping.com",
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "customer service",
+          email: "contact@facialcupping.com",
+          availableLanguage: "English"
+        }
+      }
+    };
+  }
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: entry.data.title,
+    description: entry.data.description,
+    url: articleURL,
+    image: ogImage ? `https://facialcupping.com${ogImage}` : undefined,
+    author: authorSchema,
+    publisher: {
+      "@type": "Organization",
+      name: "FacialCupping.com",
+    },
+    datePublished: entry.data.datePublished,
+    dateModified: entry.data.dateUpdated || entry.data.datePublished,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleURL,
+    },
+  };
+}
 ---
 
 <ArticleLayout
@@ -81,105 +148,7 @@ const authorSchema = {
   </div>
 
   <!-- Article / FAQPage JSON-LD -->
-  <script type="application/ld+json" set:html={JSON.stringify(isFAQ ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Is facial cupping painful?",
-        acceptedAnswer: { "@type": "Answer", text: "No. Facial cupping should feel like a gentle pulling sensation, similar to a massage with light suction. If you experience pain, the suction is too strong. Silicone cups allow you to control the suction by squeezing the cup before placing it on the skin." }
-      },
-      {
-        "@type": "Question",
-        name: "Does facial cupping leave marks?",
-        acceptedAnswer: { "@type": "Answer", text: "Unlike body cupping, proper facial cupping should not leave marks. The cups are kept in constant motion with light suction. If you notice redness, it should fade within a few minutes." }
-      },
-      {
-        "@type": "Question",
-        name: "How often should I do facial cupping?",
-        acceptedAnswer: { "@type": "Answer", text: "Most practitioners recommend starting with 2–3 sessions per week, each lasting 5–10 minutes. As your skin becomes accustomed, some users increase to daily sessions." }
-      },
-      {
-        "@type": "Question",
-        name: "Can I do facial cupping at home?",
-        acceptedAnswer: { "@type": "Answer", text: "Yes. Many facial cupping sets are designed for home use. Always use a high-quality facial oil for glide, work on clean skin, and follow a routine that moves outward and upward." }
-      },
-      {
-        "@type": "Question",
-        name: "Do I need special products for facial cupping?",
-        acceptedAnswer: { "@type": "Answer", text: "Using a facial oil or serum is strongly recommended. Look for jojoba oil, rosehip oil, or hyaluronic acid that provide smooth glide without clogging pores." }
-      },
-      {
-        "@type": "Question",
-        name: "Can I do facial cupping if I have acne or rosacea?",
-        acceptedAnswer: { "@type": "Answer", text: "Proceed with caution. Avoid cupping over active breakouts or severely inflamed rosacea. Once healed, gentle facial cupping may support recovery by promoting circulation and lymphatic drainage." }
-      },
-      {
-        "@type": "Question",
-        name: "How long does it take to see results?",
-        acceptedAnswer: { "@type": "Answer", text: "Some people notice an immediate glow after a single session. For longer-term benefits like improved skin tone and a more sculpted appearance, most users report visible changes within 2–4 weeks of consistent practice." }
-      },
-      {
-        "@type": "Question",
-        name: "Can facial cupping be combined with other treatments?",
-        acceptedAnswer: { "@type": "Answer", text: "Yes, it pairs well with serums, gua sha, and LED light therapy. However, avoid combining with strong chemical peels, microneedling, or retinoid treatments on the same day." }
-      },
-      {
-        "@type": "Question",
-        name: "Is facial cupping safe during pregnancy?",
-        acceptedAnswer: { "@type": "Answer", text: "Facial cupping is generally considered safe during pregnancy because it is non-invasive and uses very light suction. Always check with your OB-GYN before starting any new skincare practice." }
-      },
-      {
-        "@type": "Question",
-        name: "What size cup should I use for different areas?",
-        acceptedAnswer: { "@type": "Answer", text: "Use large cups (2 inches) on cheeks, jawline, and forehead. Medium cups (1.5 inches) for neck. Small cups (1 inch) for under-eye area, nasolabial folds, and around the nose." }
-      },
-      {
-        "@type": "Question",
-        name: "How do I clean and maintain my cups?",
-        acceptedAnswer: { "@type": "Answer", text: "Wash cups with warm water and mild soap after each use. Dry completely before storing. Do a weekly deep clean with a warm water and white vinegar solution." }
-      },
-      {
-        "@type": "Question",
-        name: "What ingredients should I look for in a cupping oil?",
-        acceptedAnswer: { "@type": "Answer", text: "Look for jojoba oil, rosehip oil, hyaluronic acid serums, squalane, and vitamin E. Avoid mineral oil-based products and heavy petroleum jelly." }
-      },
-      {
-        "@type": "Question",
-        name: "Can facial cupping reduce fine lines and wrinkles?",
-        acceptedAnswer: { "@type": "Answer", text: "Facial cupping may help soften fine lines over time by stimulating blood circulation and promoting collagen production. Combine with sunscreen, retinoids, and hydration for best results." }
-      },
-      {
-        "@type": "Question",
-        name: "Silicone vs glass cups — which is better?",
-        acceptedAnswer: { "@type": "Answer", text: "Silicone cups are generally recommended for beginners and home use. They offer easy suction control, are durable, hygienic, flexible on facial contours, and more affordable than glass cups." }
-      },
-      {
-        "@type": "Question",
-        name: "Can facial cupping help with puffiness?",
-        acceptedAnswer: { "@type": "Answer", text: "Yes. The gentle suction stimulates lymphatic drainage, helping move excess fluid away from the face. This is particularly effective for morning puffiness around the eyes and cheeks." }
-      }
-    ]
-  } : {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: entry.data.title,
-    description: entry.data.description,
-    url: articleURL,
-    image: ogImage ? `https://facialcupping.com${ogImage}` : undefined,
-    author: authorSchema,
-    publisher: {
-      "@type": "Organization",
-      name: "FacialCupping.com",
-    },
-    datePublished: entry.data.datePublished,
-    dateModified: entry.data.dateUpdated || entry.data.datePublished,
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": articleURL,
-    },
-  })} />
+  <script type="application/ld+json" set:html={JSON.stringify(buildSchema())} />
 
   <!-- Related articles -->
   {related.length > 0 && (

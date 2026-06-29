@@ -2,6 +2,7 @@
 title: "Can Facial Cupping Damage Skin"
 description: "An evidence-based look at whether facial cupping can damage skin, and how to practice safely."
 section: "safety"
+status: "draft"
 ---
 
 A common concern about facial cupping is whether it can damage the skin. When practiced correctly, facial cupping is generally safe — but improper technique can cause problems.

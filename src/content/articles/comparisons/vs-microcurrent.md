@@ -2,6 +2,7 @@
 title: "Facial Cupping vs Microcurrent"
 description: "Comparing facial cupping with microcurrent devices — cost, results, and which treatment suits your needs."
 section: "comparisons"
+status: "draft"
 ---
 
 Microcurrent facial devices have gained popularity as at-home alternatives to professional facial toning treatments. But how do they stack up against facial cupping?

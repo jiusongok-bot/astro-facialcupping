@@ -2,6 +2,7 @@
 title: "Facial Cupping for Lymphatic Drainage"
 description: "How facial cupping stimulates lymphatic drainage to reduce puffiness, improve skin tone, and support detoxification."
 section: "benefits"
+status: "draft"
 author: "Sarah Chen, Licensed Esthetician"
 datePublished: "2026-02-01"
 dateUpdated: "2026-06-01"

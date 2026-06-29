@@ -2,6 +2,7 @@
 title: "Facial Cupping for Skin Rejuvenation"
 description: "How facial cupping supports skin rejuvenation through circulation, collagen stimulation, and cellular renewal."
 section: "benefits"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-06-01"
 dateUpdated: "2026-06-25"

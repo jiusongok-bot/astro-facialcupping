@@ -1,36 +1,41 @@
 ---
 import MobileMenu from "./MobileMenu";
+import { getCollection } from "astro:content";
+import { filterVisible } from "@/lib/visibility";
+
+const allSections = await getCollection("sections");
+const allArticles = await getCollection("articles");
+
+const visibleSections = filterVisible(allSections)
+  .sort((a, b) => a.data.order - b.data.order)
+  .filter((section) => {
+    // Only show sections that have at least one visible article
+    return filterVisible(allArticles).some((a) => a.data.section === section.id);
+  });
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Learn", href: "/learn" },
-  { label: "Benefits", href: "/benefits" },
-  { label: "How To", href: "/how-to" },
-  { label: "Safety", href: "/safety" },
-  { label: "Tools", href: "/tools" },
-  { label: "Research", href: "/research" },
-  { label: "Oils", href: "/oils" },
-  { label: "GlowCup", href: "/glowcup" },
-  { label: "About", href: "/about" },
+  ...visibleSections.map((s) => ({ label: s.data.title, href: `/${s.id}` })),
 ];
 
 const currentPath = Astro.url.pathname;
 ---
 
 <header class="sticky top-0 z-50 bg-bone/90 backdrop-blur-md border-b border-border">
-  <nav class="max-w-[1200px] mx-auto px-5 h-[68px] flex items-center justify-between">
+  <nav class="max-w-[1200px] mx-auto px-5 h-[68px] flex items-center gap-6">
+    <!-- Logo on the left -->
     <a href="/" class="text-lg font-bold tracking-tight text-forest shrink-0">
       FacialCupping<span class="text-amber">.com</span>
     </a>
 
     <!-- Desktop nav -->
-    <ul class="hidden lg:flex items-center gap-0.5">
+    <ul class="hidden lg:flex items-center gap-4">
       {navItems.map((item) => (
         <li>
           <a
             href={item.href}
             class:list={[
-              "px-2 py-2 text-sm font-medium rounded-[var(--radius-btn)] transition-colors",
+              "px-3 py-2 text-sm font-medium rounded-[var(--radius-btn)] transition-colors",
               currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href))
                 ? "text-forest bg-sage"
                 : "text-muted hover:text-forest hover:bg-sage/60",

@@ -2,6 +2,7 @@
 title: "Primally Pure Facial Cupping"
 description: "An in-depth review of Primally Pure's facial cupping products, ingredients philosophy, and whether they deliver results."
 section: "brands"
+status: "draft"
 ---
 
 Primally Pure is a clean beauty brand known for its natural, non-toxic skincare philosophy. Their facial cupping set has gained popularity among those who prioritize chemical-free beauty tools and want a complete system that includes both cups and compatible skincare products.

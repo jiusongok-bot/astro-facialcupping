@@ -2,6 +2,7 @@
 title: "Facial Cupping Results Timeline"
 description: "What to expect week by week when starting facial cupping — from initial changes to long-term results."
 section: "benefits"
+status: "draft"
 ---
 
 When you start facial cupping, results develop gradually. Understanding the timeline helps set realistic expectations and keeps you motivated.

@@ -2,6 +2,7 @@
 title: "Bellabaci Facial Cups"
 description: "A comprehensive review of Bellabaci facial cupping cups — design, effectiveness, and value for money."
 section: "brands"
+status: "draft"
 ---
 
 Bellabaci is one of the most recognized brands in the facial cupping space, known for their distinctive pink silicone cups and comprehensive treatment systems. Founded by a South African esthetician, the brand has built a global presence through a combination of product quality and practitioner education.

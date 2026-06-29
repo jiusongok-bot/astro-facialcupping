@@ -5,6 +5,18 @@ import Footer from "@/components/Footer.astro";
 import TopicCard from "@/components/TopicCard.astro";
 import ArticleCard from "@/components/ArticleCard.astro";
 import SectionHeading from "@/components/SectionHeading.astro";
+import { getCollection } from "astro:content";
+import { filterVisible } from "@/lib/visibility";
+
+const allArticles = await getCollection("articles");
+const allSections = await getCollection("sections");
+const visibleArticles = filterVisible(allArticles);
+const visibleSectionIds = new Set(
+  filterVisible(allSections)
+    .filter((s) => visibleArticles.some((a) => a.data.section === s.id))
+    .map((s) => s.id)
+);
+const visibleArticleIds = new Set(visibleArticles.map((a) => a.id));
 
 const topics = [
   {
@@ -158,7 +170,7 @@ const researchArticles = [
           subtitle="Everything you need to know, organized by topic."
         />
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {topics.map((topic) => (
+          {topics.filter((t) => visibleSectionIds.has(t.href.slice(1))).map((topic) => (
             <TopicCard
               title={topic.title}
               description={topic.description}
@@ -181,7 +193,7 @@ const researchArticles = [
           hrefLabel="All guides"
         />
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {popularGuides.map((guide) => (
+          {popularGuides.filter((g) => visibleArticleIds.has(g.href.slice(1))).map((guide) => (
             <ArticleCard
               title={guide.title}
               description={guide.description}
@@ -194,34 +206,36 @@ const researchArticles = [
     </section>
 
     <!-- Tool Recommendations -->
-    <section class="py-16 md:py-24">
-      <div class="max-w-[1200px] mx-auto px-5">
-        <SectionHeading
-          title="Tool Recommendations"
-          subtitle="Independently evaluated facial cupping tools and accessories."
-          href="/tools"
-          hrefLabel="All tools"
-        />
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {tools.map((tool) => (
-            <a
-              href={tool.href}
-              class="group block rounded-[var(--radius-card)] border border-border bg-white p-6 hover:border-forest/30 hover:shadow-md transition-all active:-translate-y-[1px]"
-            >
-              <span class="text-xs font-medium text-amber uppercase tracking-wider">
-                {tool.category}
-              </span>
-              <h3 class="text-lg font-semibold text-forest mt-2 mb-2 group-hover:text-forest-light transition-colors">
-                {tool.name}
-              </h3>
-              <p class="text-sm text-muted leading-relaxed">
-                {tool.description}
-              </p>
-            </a>
-          ))}
+    {visibleSectionIds.has('tools') && (
+      <section class="py-16 md:py-24">
+        <div class="max-w-[1200px] mx-auto px-5">
+          <SectionHeading
+            title="Tool Recommendations"
+            subtitle="Independently evaluated facial cupping tools and accessories."
+            href="/tools"
+            hrefLabel="All tools"
+          />
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {tools.filter((t) => visibleArticleIds.has(t.href.slice(1))).map((tool) => (
+              <a
+                href={tool.href}
+                class="group block rounded-[var(--radius-card)] border border-border bg-white p-6 hover:border-forest/30 hover:shadow-md transition-all active:-translate-y-[1px]"
+              >
+                <span class="text-xs font-medium text-amber uppercase tracking-wider">
+                  {tool.category}
+                </span>
+                <h3 class="text-lg font-semibold text-forest mt-2 mb-2 group-hover:text-forest-light transition-colors">
+                  {tool.name}
+                </h3>
+                <p class="text-sm text-muted leading-relaxed">
+                  {tool.description}
+                </p>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    )}
 
     <!-- Latest Research -->
     <section class="py-16 md:py-24 bg-forest text-bone">
@@ -243,7 +257,7 @@ const researchArticles = [
           </a>
         </div>
         <div class="divide-y divide-bone/10">
-          {researchArticles.map((article) => (
+          {researchArticles.filter((r) => visibleArticleIds.has(r.href.slice(1))).map((article) => (
             <a
               href={article.href}
               class="group flex items-center justify-between py-5 hover:pl-2 transition-all"

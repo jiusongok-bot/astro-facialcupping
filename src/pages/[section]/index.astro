@@ -6,6 +6,7 @@ import ArticleCard from "@/components/ArticleCard.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import PageHero from "@/components/PageHero.astro";
 import { getCollection } from "astro:content";
+import { filterVisible } from "@/lib/visibility";
 
 // Section → background image mapping
 const sectionBgImage: Record<string, string> = {
@@ -24,17 +25,21 @@ export async function getStaticPaths() {
   const allSections = await getCollection("sections");
   const allArticles = await getCollection("articles");
 
-  return allSections
+  const visibleArticles = filterVisible(allArticles);
+
+  return filterVisible(allSections)
     .sort((a, b) => a.data.order - b.data.order)
     .map((section) => {
-      const sectionArticles = allArticles.filter(
+      const sectionArticles = visibleArticles.filter(
         (a) => a.data.section === section.id
       );
       return {
         params: { section: section.id },
         props: { section, sectionArticles },
       };
-    });
+    })
+    // Skip sections with no visible articles
+    .filter((route) => route.props.sectionArticles.length > 0);
 }
 
 const { section, sectionArticles } = Astro.props;

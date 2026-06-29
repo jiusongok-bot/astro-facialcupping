@@ -2,6 +2,7 @@
 title: "Rena Chris Facial Cupping Set"
 description: "Review of the Rena Chris facial cupping set — build quality, value, and how it compares to premium brands."
 section: "brands"
+status: "draft"
 ---
 
 Rena Chris has become a popular choice on Amazon for affordable facial cupping sets. But does lower price mean lower quality? We tested their set against premium brands to find out whether the savings come with meaningful trade-offs.

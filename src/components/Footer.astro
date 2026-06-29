@@ -1,7 +1,21 @@
 ---
+import { getCollection } from "astro:content";
+import { filterVisible } from "@/lib/visibility";
+
 const year = new Date().getFullYear();
 
-const columns = [
+const allArticles = await getCollection("articles");
+const allSections = await getCollection("sections");
+const visibleArticleIds = new Set(filterVisible(allArticles).map((a) => a.id));
+const visibleSectionIds = new Set(filterVisible(allSections).map((s) => s.id));
+
+/** A footer link is visible if its target (section or article) is visible. */
+function isLinkVisible(href: string): boolean {
+  const id = href.slice(1); // strip leading /
+  return visibleSectionIds.has(id) || visibleArticleIds.has(id);
+}
+
+const allColumns = [
   {
     title: "Learn",
     links: [
@@ -47,6 +61,11 @@ const columns = [
     ],
   },
 ];
+
+// Filter out invisible links, then drop columns with no remaining links
+const columns = allColumns
+  .map((col) => ({ ...col, links: col.links.filter((l) => isLinkVisible(l.href)) }))
+  .filter((col) => col.links.length > 0);
 ---
 
 <footer class="bg-forest text-bone/80">
@@ -85,9 +104,11 @@ const columns = [
       <p class="text-xs text-bone/40">
         &copy; {year} FacialCupping.com. All rights reserved.
       </p>
-      <p class="text-xs text-bone/40">
-        Powered by <a href="/glowcup" class="text-amber/70 hover:text-amber transition-colors">GlowCup</a>
-      </p>
+      {visibleSectionIds.has('glowcup') && (
+        <p class="text-xs text-bone/40">
+          Powered by <a href="/glowcup" class="text-amber/70 hover:text-amber transition-colors">GlowCup</a>
+        </p>
+      )}
     </div>
   </div>
 </footer>

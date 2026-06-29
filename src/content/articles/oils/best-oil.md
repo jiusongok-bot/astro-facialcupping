@@ -2,6 +2,7 @@
 title: "Best Oil for Facial Cupping"
 description: "Our top picks for facial cupping oils, evaluated by skin type, glide performance, and ingredient quality."
 section: "oils"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-06-15"
 dateUpdated: "2026-06-25"

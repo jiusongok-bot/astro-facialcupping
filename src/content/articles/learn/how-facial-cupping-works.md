@@ -2,6 +2,7 @@
 title: "How Facial Cupping Works"
 description: "Facial cupping works through three mechanisms — suction, lymphatic drainage, and collagen stimulation. Learn how this gentle technique improves circulation, reduces puffiness, and firms skin naturally."
 section: "learn"
+status: "published"
 author: "Sarah Chen, Licensed Esthetician"
 datePublished: "2026-03-20"
 dateUpdated: "2026-06-27"

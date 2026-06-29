@@ -2,7 +2,7 @@
 title: "Facial Cupping FAQ"
 description: "New to facial cupping? Get expert answers to 15 common questions about pain, marks, frequency, safety, acne, pregnancy, products, and at-home techniques."
 section: "learn"
-published: true
+status: "published"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-01"
 dateUpdated: "2026-06-27"

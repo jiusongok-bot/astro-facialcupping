@@ -2,6 +2,7 @@
 title: "Facial Cupping Therapy"
 description: "How facial cupping is used as a therapeutic practice for skin health and wellness — applications, session guide, contraindications, and how to choose a practitioner."
 section: "learn"
+status: "published"
 author: "Sarah Chen, Licensed Esthetician"
 datePublished: "2026-01-12"
 dateUpdated: "2026-06-27"

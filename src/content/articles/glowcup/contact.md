@@ -2,6 +2,7 @@
 title: "Contact GlowCup Facial Cupping"
 description: "Get in touch with the GlowCup team."
 section: "glowcup"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-15"
 dateUpdated: "2026-05-20"

@@ -2,6 +2,7 @@
 title: "Facial Cupping vs Jade Roller"
 description: "Comparing facial cupping and jade rollers — which tool delivers better results for your skincare goals."
 section: "comparisons"
+status: "draft"
 ---
 
 Jade rollers have been a skincare staple for years, but how do they compare to facial cupping? Both tools offer benefits, but they work through different mechanisms and produce different results.

@@ -2,6 +2,7 @@
 title: "Facial Cupping Safety Guide"
 description: "Essential safety guidelines for practicing facial cupping at home or professionally."
 section: "safety"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-10"
 dateUpdated: "2026-06-20"

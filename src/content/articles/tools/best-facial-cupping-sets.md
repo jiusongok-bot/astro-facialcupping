@@ -2,6 +2,7 @@
 title: "Best Facial Cupping Sets"
 description: "Our evaluation of the top facial cupping sets available, based on material, design, and usability."
 section: "tools"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-08"
 dateUpdated: "2026-06-10"

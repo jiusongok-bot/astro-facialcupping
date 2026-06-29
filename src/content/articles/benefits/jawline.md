@@ -2,6 +2,7 @@
 title: "Facial Cupping for Jawline & Contouring"
 description: "Using facial cupping for jawline definition and facial contouring — techniques, cup selection, and expected results."
 section: "benefits"
+status: "draft"
 author: "Sarah Chen, Licensed Esthetician"
 datePublished: "2026-01-20"
 dateUpdated: "2026-06-01"

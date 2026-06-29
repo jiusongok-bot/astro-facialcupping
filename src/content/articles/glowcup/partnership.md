@@ -2,6 +2,7 @@
 title: "Partner with GlowCup Facial Cupping"
 description: "Information about partnering with GlowCup and FacialCupping.com."
 section: "glowcup"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-15"
 dateUpdated: "2026-06-01"

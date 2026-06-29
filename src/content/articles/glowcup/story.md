@@ -2,6 +2,7 @@
 title: "Our GlowCup Story: Facial Cupping Expertise"
 description: "How GlowCup became the resource center behind FacialCupping.com."
 section: "glowcup"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-03-25"
 dateUpdated: "2026-05-20"

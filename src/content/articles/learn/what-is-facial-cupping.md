@@ -2,6 +2,7 @@
 title: "What Is Facial Cupping: Benefits, Techniques & Complete Guide"
 description: "Learn what facial cupping is, how it differs from body cupping, its surprising benefits for skin health, and why millions practice this natural anti-aging technique at home."
 section: "learn"
+status: "published"
 author: "Sarah Chen, Licensed Esthetician"
 datePublished: "2026-03-05"
 dateUpdated: "2026-06-27"

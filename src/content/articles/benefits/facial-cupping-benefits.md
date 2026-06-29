@@ -2,6 +2,7 @@
 title: "Facial Cupping Benefits: A Complete Overview"
 description: "A comprehensive look at the reported benefits of facial cupping, from skin health to relaxation."
 section: "benefits"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-03-10"
 dateUpdated: "2026-06-01"

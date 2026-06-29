@@ -2,6 +2,7 @@
 title: "Facial Cupping Buying Guide"
 description: "What to consider when purchasing your first or next facial cupping set."
 section: "tools"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-05"
 dateUpdated: "2026-06-10"

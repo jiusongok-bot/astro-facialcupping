@@ -2,6 +2,7 @@
 title: "Facial Cupping Contraindications"
 description: "Who should avoid facial cupping and when to seek professional advice."
 section: "safety"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-03-15"
 dateUpdated: "2026-06-10"

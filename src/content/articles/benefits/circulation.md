@@ -2,6 +2,7 @@
 title: "Facial Cupping for Improved Circulation"
 description: "How facial cupping boosts blood flow and what that means for your skin."
 section: "benefits"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-03-15"
 dateUpdated: "2026-05-20"

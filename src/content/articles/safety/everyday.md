@@ -2,6 +2,7 @@
 title: "Can You Do Facial Cupping Everyday"
 description: "Is daily facial cupping safe and beneficial? Guidelines for frequency based on your experience level."
 section: "safety"
+status: "draft"
 ---
 
 One of the most frequently asked questions about facial cupping is whether it can be practiced daily. The answer depends on your experience level, technique, and skin sensitivity.

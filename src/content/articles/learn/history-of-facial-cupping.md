@@ -2,6 +2,7 @@
 title: "History of Facial Cupping"
 description: "Tracing the origins of cupping therapy from ancient civilizations to modern facial applications — a 3,000-year journey."
 section: "learn"
+status: "published"
 author: "James Liu, TCM Practitioner"
 datePublished: "2026-01-10"
 dateUpdated: "2026-06-27"

@@ -2,6 +2,7 @@
 title: "Facial Cupping Side Effects"
 description: "Known side effects of facial cupping and how to minimize risk."
 section: "safety"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-03-15"
 dateUpdated: "2026-06-10"

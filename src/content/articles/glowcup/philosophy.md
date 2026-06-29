@@ -2,6 +2,7 @@
 title: "GlowCup Philosophy on Facial Cupping"
 description: "Our approach to facial cupping content and tool evaluation."
 section: "glowcup"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-03-28"
 dateUpdated: "2026-05-22"

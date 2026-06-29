@@ -2,6 +2,7 @@
 title: "Facial Cupping for Reducing Puffiness"
 description: "How facial cupping helps reduce morning puffiness and fluid retention through targeted lymphatic drainage techniques."
 section: "benefits"
+status: "draft"
 author: "Sarah Chen, Licensed Esthetician"
 datePublished: "2026-01-18"
 dateUpdated: "2026-06-01"

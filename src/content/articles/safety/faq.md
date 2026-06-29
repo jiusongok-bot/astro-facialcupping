@@ -2,6 +2,7 @@
 title: "Facial Cupping Safety FAQ"
 description: "Frequently asked questions about facial cupping safety."
 section: "safety"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-03-15"
 dateUpdated: "2026-06-10"

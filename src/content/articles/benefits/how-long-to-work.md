@@ -2,6 +2,7 @@
 title: "How Long Does Facial Cupping Take to Work"
 description: "Realistic expectations for how soon you'll see results from facial cupping, based on practitioner reports and available evidence."
 section: "benefits"
+status: "draft"
 ---
 
 One of the most common questions from new practitioners is how quickly facial cupping produces visible results. The answer depends on what you're trying to achieve.

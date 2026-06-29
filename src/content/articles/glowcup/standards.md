@@ -2,6 +2,7 @@
 title: "Facial Cupping Product Standards"
 description: "How we evaluate and recommend facial cupping products."
 section: "glowcup"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-01"
 dateUpdated: "2026-05-25"

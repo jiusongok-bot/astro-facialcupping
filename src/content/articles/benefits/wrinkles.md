@@ -2,6 +2,7 @@
 title: "Facial Cupping for Wrinkles & Fine Lines"
 description: "How facial cupping may help reduce the appearance of wrinkles and fine lines through improved circulation and collagen stimulation."
 section: "benefits"
+status: "draft"
 author: "Sarah Chen, Licensed Esthetician"
 datePublished: "2026-01-15"
 dateUpdated: "2026-06-01"

@@ -2,6 +2,7 @@
 title: "Silicone Facial Cups for Facial Cupping"
 description: "Why silicone is the preferred material for facial cupping and what to look for when choosing cups."
 section: "tools"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-02"
 dateUpdated: "2026-05-15"

@@ -2,6 +2,7 @@
 title: "Best Facial Cupping Tools"
 description: "A broader look at facial cupping tools beyond sets, including individual cups, electric devices, and gua sha combos."
 section: "tools"
+status: "draft"
 author: "FacialCupping.com Team"
 datePublished: "2026-04-10"
 dateUpdated: "2026-06-12"
