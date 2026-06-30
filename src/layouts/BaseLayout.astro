@@ -92,6 +92,15 @@ const isArticle = ogType === "article";
       logo: `${siteURL}/favicon.svg`,
       description: "The Facial Cupping Resource Center — expert guides on techniques, benefits, safety and tools for facial cupping therapy.",
     })} />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67J6Q7KSLQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-67J6Q7KSLQ');
+    </script>
   </head>
   <body class="min-h-screen flex flex-col">
     <slot />
