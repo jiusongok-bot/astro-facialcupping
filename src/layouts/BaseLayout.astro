@@ -41,6 +41,10 @@ const isArticle = ogType === "article";
     <meta name="robots" content={robots} />
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- Preconnect to external origins -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
 
@@ -93,13 +97,19 @@ const isArticle = ogType === "article";
       description: "The Facial Cupping Resource Center — expert guides on techniques, benefits, safety and tools for facial cupping therapy.",
     })} />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-67J6Q7KSLQ"></script>
+    <!-- Google tag (gtag.js) – deferred to avoid render-blocking -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-67J6Q7KSLQ');
+      // Defer loading external gtag script until idle
+      window.addEventListener('DOMContentLoaded', () => {
+        const s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-67J6Q7KSLQ';
+        s.async = true;
+        document.head.appendChild(s);
+      });
     </script>
   </head>
   <body class="min-h-screen flex flex-col">

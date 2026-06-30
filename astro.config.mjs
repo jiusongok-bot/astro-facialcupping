@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import rehypeExternalLinks from "rehype-external-links";
@@ -51,8 +50,8 @@ function slugify(text) {
 }
 
 export default defineConfig({
-  site: "https://facialcupping.com",
-  integrations: [react(), sitemap()],
+  site: "https://www.facial-cupping.com",
+  integrations: [sitemap()],
   markdown: {
     rehypePlugins: [
       rehypeHeadingIds,

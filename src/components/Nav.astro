@@ -1,5 +1,5 @@
 ---
-import MobileMenu from "./MobileMenu";
+import MobileMenu from "./MobileMenu.astro";
 import { getCollection } from "astro:content";
 import { filterVisible } from "@/lib/visibility";
 
@@ -25,7 +25,7 @@ const currentPath = Astro.url.pathname;
   <nav class="max-w-[1200px] mx-auto px-5 h-[68px] flex items-center gap-6">
     <!-- Logo on the left -->
     <a href="/" class="shrink-0">
-      <img src="/FacialCupping-logo.png" alt="FacialCupping.com" class="h-[48px] w-auto" />
+      <img src="/FacialCupping-logo.png" alt="FacialCupping.com" class="h-[48px] w-auto" width="400" height="97" />
     </a>
 
     <!-- Desktop nav -->
@@ -48,6 +48,6 @@ const currentPath = Astro.url.pathname;
     </ul>
 
     <!-- Mobile trigger -->
-    <MobileMenu client:idle navItems={navItems} currentPath={currentPath} />
+    <MobileMenu navItems={navItems} currentPath={currentPath} />
   </nav>
 </header>
